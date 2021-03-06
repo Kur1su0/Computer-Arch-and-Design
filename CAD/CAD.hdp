@@ -1,0 +1,18 @@
+[ModelSim]
+CAD_lib = $HDS_PROJECT_DIR/CAD_lib/work
+[Precision]
+CAD_lib = $HDS_PROJECT_DIR/CAD_lib/ps
+[hdl]
+CAD_lib = $HDS_PROJECT_DIR/CAD_lib/hdl
+[hds]
+CAD_lib = $HDS_PROJECT_DIR/CAD_lib/hds
+[hds_settings]
+default_library = CAD_lib
+project_description = whole lab arch
+version = 2
+[library_files_inclusion]
+CAD_lib = specify
+[library_type]
+CAD_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp
