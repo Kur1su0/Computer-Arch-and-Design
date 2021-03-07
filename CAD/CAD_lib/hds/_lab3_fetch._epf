@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behave
+DEFAULT_FILE atom lab3_fetch_behave.vhd

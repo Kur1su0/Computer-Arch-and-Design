@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/HDS/CAD/CAD_lib/work
+Efetch_tb
+w1614377337
+DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+8C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd
+FC:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd
+l0
+L8
+VRNm4zTZIFl^C898e9M98]1
+!s100 7O7>9_jQU03SOgj??3MOD1
+OL;C;10.6e;65
+32
+!s110 1614377414
+!i10b 1
+!s108 1614377414.000000
+!s90 -reportprogress|300|-work|work|C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd|
+!s107 C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd|
+!i113 0
+o-work work
+tExplicit 1 CvgOpt 0

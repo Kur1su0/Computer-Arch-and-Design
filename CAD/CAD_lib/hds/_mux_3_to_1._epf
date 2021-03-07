@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom mixed
+DEFAULT_FILE atom mux_3_to_1_mixed.vhd

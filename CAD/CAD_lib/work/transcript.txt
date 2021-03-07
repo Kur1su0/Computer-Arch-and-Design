@@ -1,0 +1,12 @@
+# vsim -f hds_args.tmp -foreign "hdsInit C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll" -pli ""C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll"" 
+# Start time: 04:38:37 on Mar 07,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rv32i(body)
+# Loading work.lab5_rv32i_decoder_tb(rtl)#1
+# Loading work.lab5_rv32i_decoder(behav)#1
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll

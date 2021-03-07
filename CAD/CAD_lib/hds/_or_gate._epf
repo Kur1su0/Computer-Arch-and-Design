@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behave
+DEFAULT_FILE atom or_gate_behave.vhd

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behav
+DEFAULT_FILE atom mem_delay_behav.vhd

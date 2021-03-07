@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom mixed
+DEFAULT_FILE atom lab2_counter_mixed.vhd

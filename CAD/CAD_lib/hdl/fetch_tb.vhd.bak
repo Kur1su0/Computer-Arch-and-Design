@@ -75,36 +75,36 @@ begin
  
 end process;
 
-Check : PROCESS(clk)
-variable flag : natural:=0;
-BEGIN
-    
-    IF (rising_edge(clk)) THEN
-      vecno <= vecno + 1;
-       ASSERT out_Read = Readv
-            REPORT "ERROR: read " & to_string(vecno)
-            SEVERITY WARNING;
-            
-            
-        ASSERT Inst = Instv
-            REPORT "ERROR: Inst " & to_string(vecno)
-            SEVERITY WARNING;
-        
-          
-    ELSE
-    
-         ASSERT Addr = Addrv
-            REPORT "ERROR: addr "& to_string(vecno)
-            SEVERITY WARNING; 
-                   
-   END IF;
-   
-    
-
-    
-    
-
-END PROCESS;
+--Check : PROCESS(clk)
+--variable flag : natural:=0;
+--BEGIN
+--    
+--    IF (rising_edge(clk)) THEN
+--      vecno <= vecno + 1;
+--       ASSERT out_Read = Readv
+--            REPORT "ERROR: read " & to_string(vecno)
+--            SEVERITY WARNING;
+--            
+--            
+--        ASSERT Inst = Instv
+--            REPORT "ERROR: Inst " & to_string(vecno)
+--            SEVERITY WARNING;
+--        
+--          
+--    ELSE
+--    
+--         ASSERT Addr = Addrv
+--            REPORT "ERROR: addr "& to_string(vecno)
+--            SEVERITY WARNING; 
+--                   
+--   END IF;
+--   
+--    
+--
+--    
+--    
+--
+--END PROCESS;
 end ARCHITECTURE Testbench;
 
 

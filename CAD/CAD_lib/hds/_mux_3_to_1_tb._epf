@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom rtl
+DEFAULT_FILE atom mux_3_to_1_tb_tb_rtl.vhd

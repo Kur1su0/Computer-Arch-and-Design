@@ -1,0 +1,1 @@
+ -L CAD_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays CAD_lib.lab5_rv32i_decoder_tb(rtl)

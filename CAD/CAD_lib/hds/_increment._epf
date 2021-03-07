@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom mixed
+DEFAULT_FILE atom Increment_mixed.vhd

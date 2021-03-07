@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behav
+DEFAULT_FILE atom read_ctrl_behav.vhd

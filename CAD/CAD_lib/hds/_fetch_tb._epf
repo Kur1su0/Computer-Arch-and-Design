@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Testbench
+DEFAULT_FILE atom fetch_tb.vhd

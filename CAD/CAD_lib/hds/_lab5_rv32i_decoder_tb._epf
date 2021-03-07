@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom rtl
+DEFAULT_FILE atom lab5_rv32i_decoder_tb_tb_rtl.vhd
