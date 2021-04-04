@@ -1,0 +1,11 @@
+8:-out_dir
+72:C:/HDS/CAD/CAD_lib/ps/mux_4_to_1_mixed/mux_4_to_1_mixed_impl_3//rtlc.out
+10:-pipe_flow
+4:-vhf
+83:C:/HDS/CAD/CAD_lib/ps/mux_4_to_1_mixed/mux_4_to_1_mixed_impl_3//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+72:C:/HDS/CAD/CAD_lib/ps/mux_4_to_1_mixed/mux_4_to_1_mixed_impl_3//.jaguarc
+7:-sv2009
+69:+incdir+C:/HDS/CAD/CAD_lib/hdl+C:/HDS/CAD/CAD_lib/ps/mux_4_to_1_mixed
+17:+define+synthesis

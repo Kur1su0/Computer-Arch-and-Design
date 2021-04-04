@@ -1,0 +1,12 @@
+module mux_256u_8u (a, b, d);
+input [255 : 0] a;
+input [7 : 0] b;
+output d;
+
+// pragma attribute mux_256u_8u ikos_rtlc$GENERIC mux
+// pragma attribute mux_256u_8u ikos_rtlc$size 256
+// pragma attribute mux_256u_8u ikos_rtlc$signed false
+
+
+endmodule
+

@@ -1,0 +1,565 @@
+(edif lab3_fetch 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 02 23 04 17 42)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external maxv 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell GND (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Y (direction OUTPUT)))))
+  (cell maxv_io (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port oe (direction INPUT))
+     (port padio (direction INOUT))
+     (port combout (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell lab3_fetch (cellType GENERIC)
+   (view behave  (viewType NETLIST)
+    (interface 
+     (port (array (rename Jaddr "Jaddr(31:0)") 32 )(direction INPUT))
+     (port (array (rename Mdata "Mdata(31:0)") 32 )(direction INPUT))
+     (port clk (direction INPUT))
+     (port Jmp (direction INPUT))
+     (port Reset (direction INPUT))
+     (port Delay (direction INPUT))
+     (port (array (rename Addr "Addr(31:0)") 32 )(direction OUTPUT))
+     (port (array (rename Inst "Inst(31:0)") 32 )(direction OUTPUT))
+     (port Read (direction OUTPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance GND (viewRef NETLIST  (cellRef GND (libraryRef maxv ))))
+     (instance Addr_triBus1_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_8_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_9_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_10_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_11_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_12_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_13_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_14_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_15_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_16_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_17_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_18_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_19_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_20_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_21_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_22_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_23_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_24_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_25_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_26_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_27_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_28_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_29_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_30_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_triBus1_31_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_8_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_9_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_10_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_11_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_12_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_13_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_14_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_15_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_16_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_17_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_18_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_19_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_20_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_21_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_22_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_23_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_24_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_25_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_26_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_27_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_28_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_29_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_30_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_triBus2_31_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance ix9968z23008 (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (net Addr_31_ 
+      (joined 
+       (portRef (member Addr 0))
+       (portRef padio (instanceRef Addr_triBus1_31_ ))))
+     (net Addr_30_ 
+      (joined 
+       (portRef (member Addr 1))
+       (portRef padio (instanceRef Addr_triBus1_30_ ))))
+     (net Addr_29_ 
+      (joined 
+       (portRef (member Addr 2))
+       (portRef padio (instanceRef Addr_triBus1_29_ ))))
+     (net Addr_28_ 
+      (joined 
+       (portRef (member Addr 3))
+       (portRef padio (instanceRef Addr_triBus1_28_ ))))
+     (net Addr_27_ 
+      (joined 
+       (portRef (member Addr 4))
+       (portRef padio (instanceRef Addr_triBus1_27_ ))))
+     (net Addr_26_ 
+      (joined 
+       (portRef (member Addr 5))
+       (portRef padio (instanceRef Addr_triBus1_26_ ))))
+     (net Addr_25_ 
+      (joined 
+       (portRef (member Addr 6))
+       (portRef padio (instanceRef Addr_triBus1_25_ ))))
+     (net Addr_24_ 
+      (joined 
+       (portRef (member Addr 7))
+       (portRef padio (instanceRef Addr_triBus1_24_ ))))
+     (net Addr_23_ 
+      (joined 
+       (portRef (member Addr 8))
+       (portRef padio (instanceRef Addr_triBus1_23_ ))))
+     (net Addr_22_ 
+      (joined 
+       (portRef (member Addr 9))
+       (portRef padio (instanceRef Addr_triBus1_22_ ))))
+     (net Addr_21_ 
+      (joined 
+       (portRef (member Addr 10))
+       (portRef padio (instanceRef Addr_triBus1_21_ ))))
+     (net Addr_20_ 
+      (joined 
+       (portRef (member Addr 11))
+       (portRef padio (instanceRef Addr_triBus1_20_ ))))
+     (net Addr_19_ 
+      (joined 
+       (portRef (member Addr 12))
+       (portRef padio (instanceRef Addr_triBus1_19_ ))))
+     (net Addr_18_ 
+      (joined 
+       (portRef (member Addr 13))
+       (portRef padio (instanceRef Addr_triBus1_18_ ))))
+     (net Addr_17_ 
+      (joined 
+       (portRef (member Addr 14))
+       (portRef padio (instanceRef Addr_triBus1_17_ ))))
+     (net Addr_16_ 
+      (joined 
+       (portRef (member Addr 15))
+       (portRef padio (instanceRef Addr_triBus1_16_ ))))
+     (net Addr_15_ 
+      (joined 
+       (portRef (member Addr 16))
+       (portRef padio (instanceRef Addr_triBus1_15_ ))))
+     (net Addr_14_ 
+      (joined 
+       (portRef (member Addr 17))
+       (portRef padio (instanceRef Addr_triBus1_14_ ))))
+     (net Addr_13_ 
+      (joined 
+       (portRef (member Addr 18))
+       (portRef padio (instanceRef Addr_triBus1_13_ ))))
+     (net Addr_12_ 
+      (joined 
+       (portRef (member Addr 19))
+       (portRef padio (instanceRef Addr_triBus1_12_ ))))
+     (net Addr_11_ 
+      (joined 
+       (portRef (member Addr 20))
+       (portRef padio (instanceRef Addr_triBus1_11_ ))))
+     (net Addr_10_ 
+      (joined 
+       (portRef (member Addr 21))
+       (portRef padio (instanceRef Addr_triBus1_10_ ))))
+     (net Addr_9_ 
+      (joined 
+       (portRef (member Addr 22))
+       (portRef padio (instanceRef Addr_triBus1_9_ ))))
+     (net Addr_8_ 
+      (joined 
+       (portRef (member Addr 23))
+       (portRef padio (instanceRef Addr_triBus1_8_ ))))
+     (net Addr_7_ 
+      (joined 
+       (portRef (member Addr 24))
+       (portRef padio (instanceRef Addr_triBus1_7_ ))))
+     (net Addr_6_ 
+      (joined 
+       (portRef (member Addr 25))
+       (portRef padio (instanceRef Addr_triBus1_6_ ))))
+     (net Addr_5_ 
+      (joined 
+       (portRef (member Addr 26))
+       (portRef padio (instanceRef Addr_triBus1_5_ ))))
+     (net Addr_4_ 
+      (joined 
+       (portRef (member Addr 27))
+       (portRef padio (instanceRef Addr_triBus1_4_ ))))
+     (net Addr_3_ 
+      (joined 
+       (portRef (member Addr 28))
+       (portRef padio (instanceRef Addr_triBus1_3_ ))))
+     (net Addr_2_ 
+      (joined 
+       (portRef (member Addr 29))
+       (portRef padio (instanceRef Addr_triBus1_2_ ))))
+     (net Addr_1_ 
+      (joined 
+       (portRef (member Addr 30))
+       (portRef padio (instanceRef Addr_triBus1_1_ ))))
+     (net Addr_0_ 
+      (joined 
+       (portRef (member Addr 31))
+       (portRef padio (instanceRef Addr_triBus1_0_ ))))
+     (net Inst_31_ 
+      (joined 
+       (portRef (member Inst 0))
+       (portRef padio (instanceRef Inst_triBus2_31_ ))))
+     (net Inst_30_ 
+      (joined 
+       (portRef (member Inst 1))
+       (portRef padio (instanceRef Inst_triBus2_30_ ))))
+     (net Inst_29_ 
+      (joined 
+       (portRef (member Inst 2))
+       (portRef padio (instanceRef Inst_triBus2_29_ ))))
+     (net Inst_28_ 
+      (joined 
+       (portRef (member Inst 3))
+       (portRef padio (instanceRef Inst_triBus2_28_ ))))
+     (net Inst_27_ 
+      (joined 
+       (portRef (member Inst 4))
+       (portRef padio (instanceRef Inst_triBus2_27_ ))))
+     (net Inst_26_ 
+      (joined 
+       (portRef (member Inst 5))
+       (portRef padio (instanceRef Inst_triBus2_26_ ))))
+     (net Inst_25_ 
+      (joined 
+       (portRef (member Inst 6))
+       (portRef padio (instanceRef Inst_triBus2_25_ ))))
+     (net Inst_24_ 
+      (joined 
+       (portRef (member Inst 7))
+       (portRef padio (instanceRef Inst_triBus2_24_ ))))
+     (net Inst_23_ 
+      (joined 
+       (portRef (member Inst 8))
+       (portRef padio (instanceRef Inst_triBus2_23_ ))))
+     (net Inst_22_ 
+      (joined 
+       (portRef (member Inst 9))
+       (portRef padio (instanceRef Inst_triBus2_22_ ))))
+     (net Inst_21_ 
+      (joined 
+       (portRef (member Inst 10))
+       (portRef padio (instanceRef Inst_triBus2_21_ ))))
+     (net Inst_20_ 
+      (joined 
+       (portRef (member Inst 11))
+       (portRef padio (instanceRef Inst_triBus2_20_ ))))
+     (net Inst_19_ 
+      (joined 
+       (portRef (member Inst 12))
+       (portRef padio (instanceRef Inst_triBus2_19_ ))))
+     (net Inst_18_ 
+      (joined 
+       (portRef (member Inst 13))
+       (portRef padio (instanceRef Inst_triBus2_18_ ))))
+     (net Inst_17_ 
+      (joined 
+       (portRef (member Inst 14))
+       (portRef padio (instanceRef Inst_triBus2_17_ ))))
+     (net Inst_16_ 
+      (joined 
+       (portRef (member Inst 15))
+       (portRef padio (instanceRef Inst_triBus2_16_ ))))
+     (net Inst_15_ 
+      (joined 
+       (portRef (member Inst 16))
+       (portRef padio (instanceRef Inst_triBus2_15_ ))))
+     (net Inst_14_ 
+      (joined 
+       (portRef (member Inst 17))
+       (portRef padio (instanceRef Inst_triBus2_14_ ))))
+     (net Inst_13_ 
+      (joined 
+       (portRef (member Inst 18))
+       (portRef padio (instanceRef Inst_triBus2_13_ ))))
+     (net Inst_12_ 
+      (joined 
+       (portRef (member Inst 19))
+       (portRef padio (instanceRef Inst_triBus2_12_ ))))
+     (net Inst_11_ 
+      (joined 
+       (portRef (member Inst 20))
+       (portRef padio (instanceRef Inst_triBus2_11_ ))))
+     (net Inst_10_ 
+      (joined 
+       (portRef (member Inst 21))
+       (portRef padio (instanceRef Inst_triBus2_10_ ))))
+     (net Inst_9_ 
+      (joined 
+       (portRef (member Inst 22))
+       (portRef padio (instanceRef Inst_triBus2_9_ ))))
+     (net Inst_8_ 
+      (joined 
+       (portRef (member Inst 23))
+       (portRef padio (instanceRef Inst_triBus2_8_ ))))
+     (net Inst_7_ 
+      (joined 
+       (portRef (member Inst 24))
+       (portRef padio (instanceRef Inst_triBus2_7_ ))))
+     (net Inst_6_ 
+      (joined 
+       (portRef (member Inst 25))
+       (portRef padio (instanceRef Inst_triBus2_6_ ))))
+     (net Inst_5_ 
+      (joined 
+       (portRef (member Inst 26))
+       (portRef padio (instanceRef Inst_triBus2_5_ ))))
+     (net Inst_4_ 
+      (joined 
+       (portRef (member Inst 27))
+       (portRef padio (instanceRef Inst_triBus2_4_ ))))
+     (net Inst_3_ 
+      (joined 
+       (portRef (member Inst 28))
+       (portRef padio (instanceRef Inst_triBus2_3_ ))))
+     (net Inst_2_ 
+      (joined 
+       (portRef (member Inst 29))
+       (portRef padio (instanceRef Inst_triBus2_2_ ))))
+     (net Inst_1_ 
+      (joined 
+       (portRef (member Inst 30))
+       (portRef padio (instanceRef Inst_triBus2_1_ ))))
+     (net Inst_0_ 
+      (joined 
+       (portRef (member Inst 31))
+       (portRef padio (instanceRef Inst_triBus2_0_ ))))
+     (net Read 
+      (joined 
+       (portRef Read )
+       (portRef padio (instanceRef ix9968z23008 ))))
+     (net GND 
+      (joined 
+       (portRef Y (instanceRef GND ))
+       (portRef datain (instanceRef Addr_triBus1_0_ ))
+       (portRef oe (instanceRef Addr_triBus1_0_ ))
+       (portRef datain (instanceRef Addr_triBus1_1_ ))
+       (portRef oe (instanceRef Addr_triBus1_1_ ))
+       (portRef datain (instanceRef Addr_triBus1_2_ ))
+       (portRef oe (instanceRef Addr_triBus1_2_ ))
+       (portRef datain (instanceRef Addr_triBus1_3_ ))
+       (portRef oe (instanceRef Addr_triBus1_3_ ))
+       (portRef datain (instanceRef Addr_triBus1_4_ ))
+       (portRef oe (instanceRef Addr_triBus1_4_ ))
+       (portRef datain (instanceRef Addr_triBus1_5_ ))
+       (portRef oe (instanceRef Addr_triBus1_5_ ))
+       (portRef datain (instanceRef Addr_triBus1_6_ ))
+       (portRef oe (instanceRef Addr_triBus1_6_ ))
+       (portRef datain (instanceRef Addr_triBus1_7_ ))
+       (portRef oe (instanceRef Addr_triBus1_7_ ))
+       (portRef datain (instanceRef Addr_triBus1_8_ ))
+       (portRef oe (instanceRef Addr_triBus1_8_ ))
+       (portRef datain (instanceRef Addr_triBus1_9_ ))
+       (portRef oe (instanceRef Addr_triBus1_9_ ))
+       (portRef datain (instanceRef Addr_triBus1_10_ ))
+       (portRef oe (instanceRef Addr_triBus1_10_ ))
+       (portRef datain (instanceRef Addr_triBus1_11_ ))
+       (portRef oe (instanceRef Addr_triBus1_11_ ))
+       (portRef datain (instanceRef Addr_triBus1_12_ ))
+       (portRef oe (instanceRef Addr_triBus1_12_ ))
+       (portRef datain (instanceRef Addr_triBus1_13_ ))
+       (portRef oe (instanceRef Addr_triBus1_13_ ))
+       (portRef datain (instanceRef Addr_triBus1_14_ ))
+       (portRef oe (instanceRef Addr_triBus1_14_ ))
+       (portRef datain (instanceRef Addr_triBus1_15_ ))
+       (portRef oe (instanceRef Addr_triBus1_15_ ))
+       (portRef datain (instanceRef Addr_triBus1_16_ ))
+       (portRef oe (instanceRef Addr_triBus1_16_ ))
+       (portRef datain (instanceRef Addr_triBus1_17_ ))
+       (portRef oe (instanceRef Addr_triBus1_17_ ))
+       (portRef datain (instanceRef Addr_triBus1_18_ ))
+       (portRef oe (instanceRef Addr_triBus1_18_ ))
+       (portRef datain (instanceRef Addr_triBus1_19_ ))
+       (portRef oe (instanceRef Addr_triBus1_19_ ))
+       (portRef datain (instanceRef Addr_triBus1_20_ ))
+       (portRef oe (instanceRef Addr_triBus1_20_ ))
+       (portRef datain (instanceRef Addr_triBus1_21_ ))
+       (portRef oe (instanceRef Addr_triBus1_21_ ))
+       (portRef datain (instanceRef Addr_triBus1_22_ ))
+       (portRef oe (instanceRef Addr_triBus1_22_ ))
+       (portRef datain (instanceRef Addr_triBus1_23_ ))
+       (portRef oe (instanceRef Addr_triBus1_23_ ))
+       (portRef datain (instanceRef Addr_triBus1_24_ ))
+       (portRef oe (instanceRef Addr_triBus1_24_ ))
+       (portRef datain (instanceRef Addr_triBus1_25_ ))
+       (portRef oe (instanceRef Addr_triBus1_25_ ))
+       (portRef datain (instanceRef Addr_triBus1_26_ ))
+       (portRef oe (instanceRef Addr_triBus1_26_ ))
+       (portRef datain (instanceRef Addr_triBus1_27_ ))
+       (portRef oe (instanceRef Addr_triBus1_27_ ))
+       (portRef datain (instanceRef Addr_triBus1_28_ ))
+       (portRef oe (instanceRef Addr_triBus1_28_ ))
+       (portRef datain (instanceRef Addr_triBus1_29_ ))
+       (portRef oe (instanceRef Addr_triBus1_29_ ))
+       (portRef datain (instanceRef Addr_triBus1_30_ ))
+       (portRef oe (instanceRef Addr_triBus1_30_ ))
+       (portRef datain (instanceRef Addr_triBus1_31_ ))
+       (portRef oe (instanceRef Addr_triBus1_31_ ))
+       (portRef datain (instanceRef Inst_triBus2_0_ ))
+       (portRef oe (instanceRef Inst_triBus2_0_ ))
+       (portRef datain (instanceRef Inst_triBus2_1_ ))
+       (portRef oe (instanceRef Inst_triBus2_1_ ))
+       (portRef datain (instanceRef Inst_triBus2_2_ ))
+       (portRef oe (instanceRef Inst_triBus2_2_ ))
+       (portRef datain (instanceRef Inst_triBus2_3_ ))
+       (portRef oe (instanceRef Inst_triBus2_3_ ))
+       (portRef datain (instanceRef Inst_triBus2_4_ ))
+       (portRef oe (instanceRef Inst_triBus2_4_ ))
+       (portRef datain (instanceRef Inst_triBus2_5_ ))
+       (portRef oe (instanceRef Inst_triBus2_5_ ))
+       (portRef datain (instanceRef Inst_triBus2_6_ ))
+       (portRef oe (instanceRef Inst_triBus2_6_ ))
+       (portRef datain (instanceRef Inst_triBus2_7_ ))
+       (portRef oe (instanceRef Inst_triBus2_7_ ))
+       (portRef datain (instanceRef Inst_triBus2_8_ ))
+       (portRef oe (instanceRef Inst_triBus2_8_ ))
+       (portRef datain (instanceRef Inst_triBus2_9_ ))
+       (portRef oe (instanceRef Inst_triBus2_9_ ))
+       (portRef datain (instanceRef Inst_triBus2_10_ ))
+       (portRef oe (instanceRef Inst_triBus2_10_ ))
+       (portRef datain (instanceRef Inst_triBus2_11_ ))
+       (portRef oe (instanceRef Inst_triBus2_11_ ))
+       (portRef datain (instanceRef Inst_triBus2_12_ ))
+       (portRef oe (instanceRef Inst_triBus2_12_ ))
+       (portRef datain (instanceRef Inst_triBus2_13_ ))
+       (portRef oe (instanceRef Inst_triBus2_13_ ))
+       (portRef datain (instanceRef Inst_triBus2_14_ ))
+       (portRef oe (instanceRef Inst_triBus2_14_ ))
+       (portRef datain (instanceRef Inst_triBus2_15_ ))
+       (portRef oe (instanceRef Inst_triBus2_15_ ))
+       (portRef datain (instanceRef Inst_triBus2_16_ ))
+       (portRef oe (instanceRef Inst_triBus2_16_ ))
+       (portRef datain (instanceRef Inst_triBus2_17_ ))
+       (portRef oe (instanceRef Inst_triBus2_17_ ))
+       (portRef datain (instanceRef Inst_triBus2_18_ ))
+       (portRef oe (instanceRef Inst_triBus2_18_ ))
+       (portRef datain (instanceRef Inst_triBus2_19_ ))
+       (portRef oe (instanceRef Inst_triBus2_19_ ))
+       (portRef datain (instanceRef Inst_triBus2_20_ ))
+       (portRef oe (instanceRef Inst_triBus2_20_ ))
+       (portRef datain (instanceRef Inst_triBus2_21_ ))
+       (portRef oe (instanceRef Inst_triBus2_21_ ))
+       (portRef datain (instanceRef Inst_triBus2_22_ ))
+       (portRef oe (instanceRef Inst_triBus2_22_ ))
+       (portRef datain (instanceRef Inst_triBus2_23_ ))
+       (portRef oe (instanceRef Inst_triBus2_23_ ))
+       (portRef datain (instanceRef Inst_triBus2_24_ ))
+       (portRef oe (instanceRef Inst_triBus2_24_ ))
+       (portRef datain (instanceRef Inst_triBus2_25_ ))
+       (portRef oe (instanceRef Inst_triBus2_25_ ))
+       (portRef datain (instanceRef Inst_triBus2_26_ ))
+       (portRef oe (instanceRef Inst_triBus2_26_ ))
+       (portRef datain (instanceRef Inst_triBus2_27_ ))
+       (portRef oe (instanceRef Inst_triBus2_27_ ))
+       (portRef datain (instanceRef Inst_triBus2_28_ ))
+       (portRef oe (instanceRef Inst_triBus2_28_ ))
+       (portRef datain (instanceRef Inst_triBus2_29_ ))
+       (portRef oe (instanceRef Inst_triBus2_29_ ))
+       (portRef datain (instanceRef Inst_triBus2_30_ ))
+       (portRef oe (instanceRef Inst_triBus2_30_ ))
+       (portRef datain (instanceRef Inst_triBus2_31_ ))
+       (portRef oe (instanceRef Inst_triBus2_31_ ))
+       (portRef datain (instanceRef ix9968z23008 ))
+       (portRef oe (instanceRef ix9968z23008 ))))))))
+ (design lab3_fetch (cellRef lab3_fetch (libraryRef cad_lib ))))

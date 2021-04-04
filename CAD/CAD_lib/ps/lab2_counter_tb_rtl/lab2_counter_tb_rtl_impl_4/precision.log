@@ -1,0 +1,39 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab2_counter_tb_rtl/lab2_counter_tb_rtl_impl_4/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab2_counter_tb_rtl/lab2_counter_tb_rtl_impl_4/precision.log.suppressed
+# Info: [9552]: Activated implementation lab2_counter_tb_rtl_impl_4 in project C:/HDS/CAD/CAD_lib/ps/lab2_counter_tb_rtl/lab2_counter_tb_rtl.psp.
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 80: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 82: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 86: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 87: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 89: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 90: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 92: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 93: No separator between number and identifier.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd" ...
+# Error: [42512]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 80: Use of undeclared identifier 'clk'
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 80: No separator between number and identifier.
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 82: No separator between number and identifier.
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 86: No separator between number and identifier.
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 87: No separator between number and identifier.
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 89: No separator between number and identifier.
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 90: No separator between number and identifier.
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 92: No separator between number and identifier.
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd", line 93: No separator between number and identifier.
+# Error: [40008]: HDL analysis failed.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab2_counter_tb_rtl/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab2_counter_tb_rtl_impl_4.

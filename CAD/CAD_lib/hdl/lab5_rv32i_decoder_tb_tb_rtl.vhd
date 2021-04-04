@@ -26,8 +26,8 @@ END lab5_rv32i_decoder_tb;
 ARCHITECTURE rtl OF lab5_rv32i_decoder_tb IS
   
   -- Architecture declarations
-  FILE test_vectors : text OPEN read_mode IS "Decoder_tb.txt";	
-  --FILE test_vectors : text OPEN read_mode IS "lab5_instSet_vec.txt";	
+  --FILE test_vectors : text OPEN read_mode IS "Decoder_tb.txt";	
+  FILE test_vectors : text OPEN read_mode IS "lab5_instSet_vec.txt";	
   -- Internal signal declarations
   SIGNAL instruction                               : std_ulogic_vector(31 DOWNTO 0);
   SIGNAL Function_op,Function_op_valid             : RV32I_Op;
@@ -60,32 +60,78 @@ BEGIN
   VARIABLE L : LINE;
   VARIABLE v_in_fn7:std_ulogic_vector(6 DOWNTO 0);
   VARIABLE v_in_fn3: std_ulogic_vector(2 DOWNTO 0);
-  --VARIABLE v_in_rs2,v_in_rs1,v_in_rd :std_ulogic_vector(4 DOWNTO 0);
+  VARIABLE v_in_rs2,v_in_rs1,v_in_rd,v_in_op :std_ulogic_vector(4 DOWNTO 0);
   VARIABLE v_out_rs2,v_out_rs1,v_out_rd :std_ulogic_vector(4 DOWNTO 0);
   VARIABLE v_in_inst,v_out_imm:std_ulogic_vector(31 downto 0);
   VARIABLE v_Function_op :     Func_Name;
   VARIABLE v_rs1v,v_rs2v,v_rdv: std_ulogic;
+  VARIABLE v_last_two : std_ulogic_vector(1 downto 0);
   VARIABLE space:string(1 DOWNTO 1);
   begin
     readline(test_vectors,L);
     
     WHILE NOT endfile(test_vectors) LOOP
+    
       readline(test_vectors,L);
       
-      read(L,v_in_inst);      instruction<=v_in_inst;
+      --read(L,v_in_inst);      instruction<=v_in_inst;
+      read(L,v_in_fn7); read(L,v_in_rs2);read(L,v_in_rs1);read(L,v_in_fn3); read(L,v_in_rd); read(L,v_in_op);read(L,v_last_two);
+      
+      instruction<=v_in_fn7&v_in_rs2&v_in_rs1&v_in_fn3&v_in_rd&v_in_op&v_last_two;
       
       read(L,space); 
       read(L,v_Function_op);  Function_op_valid<=Ftype(v_Function_op);
       
+      
+      read(L,v_out_rd);   RD_valid<=v_out_rd;
       read(L,v_out_rs1);  RS1_valid<=v_out_rs1;
       read(L,v_out_rs2);  RS2_valid<=v_out_rs2;
-      read(L,v_out_rd);   RD_valid<=v_out_rd;
       
+      read(L,v_rdv);   RDv_valid<=v_rdv;
       read(L,v_rs1v);   RS1v_valid<=v_rs1v;
       read(L,v_rs2v);   RS2v_valid<=v_rs2v;
-      read(L,v_rdv);   RDv_valid<=v_rdv;
+      
       
       read(L,v_out_imm);  Immediate_valid<=v_out_imm;
+      
+      
+      
+      
+      
+      vecno <= vecno + 1;
+      ASSERT RS1 = RS1_valid
+      REPORT "ERROR: rs2 " & to_string(vecno)
+      SEVERITY WARNING;
+      
+      
+      ASSERT RS2 = RS2_valid
+      REPORT "ERROR: rs2 " & to_string(vecno)
+      SEVERITY WARNING;
+      
+      ASSERT RD = RD_valid
+      REPORT "ERROR: rd " & to_string(vecno)
+      SEVERITY WARNING;
+      
+      ASSERT RS1v = RS1v_valid
+      REPORT "ERROR: rs1v " & to_string(vecno)
+      SEVERITY WARNING;
+      
+      ASSERT RS2v = RS2v_valid
+      REPORT "ERROR: rs2v " & to_string(vecno)
+      SEVERITY WARNING;
+      
+      
+      ASSERT RDv = RDv_valid
+      REPORT "ERROR: rdv " & to_string(vecno)
+      SEVERITY WARNING;
+      
+      
+      
+      
+      ASSERT Function_op = Function_op_valid
+      REPORT "ERROR: Function_op " & to_string(vecno)
+      SEVERITY WARNING;  
+      
       
       
       wait for 100ns;
@@ -96,61 +142,55 @@ BEGIN
     wait;
   end process;
   
-  check: process
-  begin
-    vecno <= vecno + 1;
-    
-
-    ASSERT RS1 = RS1_valid
-    REPORT "ERROR: rs2 " & to_string(vecno)
-    SEVERITY WARNING;
-    
-    
-    ASSERT RS2 = RS2_valid
-    REPORT "ERROR: rs2 " & to_string(vecno)
-    SEVERITY WARNING;
-    
-    ASSERT RD = RD_valid
-    REPORT "ERROR: rd " & to_string(vecno)
-    SEVERITY WARNING;
-    
-    ASSERT RS1v = RS1v_valid
-    REPORT "ERROR: rs1v " & to_string(vecno)
-    SEVERITY WARNING;
-    
-    ASSERT RS2v = RS2v_valid
-    REPORT "ERROR: rs2v " & to_string(vecno)
-    SEVERITY WARNING;
-    
-    
-    ASSERT RDv = RDv_valid
-    REPORT "ERROR: rdv " & to_string(vecno)
-    SEVERITY WARNING;
-    
-    
-    ASSERT Immediate = Immediate_valid
-    REPORT "ERROR: Immediate " & to_string(vecno)
-    SEVERITY WARNING;
-    
-    
-    
-    
-  end process;
-  --
-  --  process
+  -- check: process(instruction)
   --  begin
-  --    instruction <= "00000001010110100000010010110011";
-  --    wait for 100ns;
-  --    instruction <= "01000001010110100000010010110011";
-  --    wait for 100ns;
-  --    instruction <= "00000001010110100001010010110011";
-  --    wait for 100ns;
-  --    instruction <=  "00000001010110100010010010110011";  --"00000001010110100  010010110011";
-  --    wait for 100ns;
-  --    instruction <=  "00000000001000001001001110011011";
   --    
-  --
-  --    wait;
+  --  
+  --      vecno <= vecno + 1;
+  --      
+  --      ASSERT RS1 = RS1_valid
+  --      REPORT "ERROR: rs2 " & to_string(vecno)
+  --      SEVERITY WARNING;
+  --      
+  --      
+  --      ASSERT RS2 = RS2_valid
+  --      REPORT "ERROR: rs2 " & to_string(vecno)
+  --      SEVERITY WARNING;
+  --      
+  --      ASSERT RD = RD_valid
+  --      REPORT "ERROR: rd " & to_string(vecno)
+  --      SEVERITY WARNING;
+  --      
+  --      ASSERT RS1v = RS1v_valid
+  --      REPORT "ERROR: rs1v " & to_string(vecno)
+  --      SEVERITY WARNING;
+  --      
+  --      ASSERT RS2v = RS2v_valid
+  --      REPORT "ERROR: rs2v " & to_string(vecno)
+  --      SEVERITY WARNING;
+  --      
+  --      
+  --      ASSERT RDv = RDv_valid
+  --      REPORT "ERROR: rdv " & to_string(vecno)
+  --      SEVERITY WARNING;
+  --      
+  --      
+  --      
+  --      
+  --      ASSERT Function_op = Function_op_valid
+  --      REPORT "ERROR: Function_op " & to_string(vecno)
+  --      SEVERITY WARNING;  
+  --      
+  --      
+  --     
+  --    
+  --    
   --  end process;
   
+  
 END rtl;
+
+
+
+
+

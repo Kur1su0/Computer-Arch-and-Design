@@ -1,0 +1,65 @@
+//  Precision RTL Synthesis 64-bit 2018.1.0.19 (Production Release) Fri Aug 10 05:55:53 PDT 2018
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2018, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 W@DESKTOP-86TQKQ1  10.0.19041 x64
+//  
+//  Start time Fri Feb 26 20:18:42 2021
+
+***************************************************************
+Device Utilization for 3S50tq144
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               3       97        3.09%
+Global Buffers                    0       8         0.00%
+LUTs                              1       1536      0.07%
+CLB Slices                        1       768       0.13%
+Dffs or Latches                   0       1827      0.00%
+Block RAMs                        0       4         0.00%
+Block Multipliers                 0       4         0.00%
+Block Multiplier Dffs             0       144       0.00%
+---------------------------------------------------------------
+
+***************************************************
+
+Library: cad_lib    Cell: pc_enable    View: behave
+
+***************************************************
+
+  Cell    Library  References     Total Area
+
+ IBUF    xis3     2 x
+ LUT2    xis3     1 x      1      1 LUTs
+ OBUF    xis3     1 x
+
+ Number of ports :                            3
+ Number of nets :                             6
+ Number of instances :                        4
+ Number of references to this view :          0
+
+Total accumulated area : 
+ Number of LUTs :                             1
+ Number of gates :                            1
+ Number of accumulated instances :            4
+
+
+*****************************
+ IO Register Mapping Report
+*****************************
+Design: cad_lib.pc_enable.behave
+
++---------------+-----------+----------+----------+----------+
+| Port          | Direction |   INFF   |  OUTFF   |  TRIFF   |
++---------------+-----------+----------+----------+----------+
+| jmp_or_rst    | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Delay         | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Dout          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+Total registers mapped: 0

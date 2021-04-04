@@ -1,0 +1,13 @@
+module rom_2_8_256_2(address, q );
+
+input [7 : 0] address;
+wire [7 : 0] address;
+output [1 : 0] q;
+wire [1 : 0] q;
+
+mux_256u_8u mux0 (.a({ 156'b0, 4'b1111, 96'b0 }), .b({ address[7], address[6], address[5], address[4], address[3], address[2], address[1], address[0] }), .d(q[0]));
+
+mux_256u_8u mux1 (.a({ 144'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111, 8'b0, 4'b1111, 4'b0, 48'b111111111111111111111111111111111111111111111111, 8'b0, 40'b1111111111111111111111111111111111111111 }), .b({ address[7], address[6], address[5], address[4], address[3], address[2], address[1], address[0] }), .d(q[1]));
+
+endmodule
+

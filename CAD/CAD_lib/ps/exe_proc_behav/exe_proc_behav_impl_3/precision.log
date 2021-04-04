@@ -1,0 +1,69 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3/precision.log.suppressed
+# Info: [9552]: Activated implementation exe_proc_behav_impl_3 in project C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav.psp.
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s50tq144".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.exe_proc(behav): Pre-processing...
+# Warning: [45531]: ".\auxi\packages\IEEE\IEEE_2008\numeric_std.vhdl", line 1128: Incorrect usage of built-in pragma inside function TO_INTEGER.
+# Warning: [45531]: ".\auxi\packages\IEEE\IEEE_2008\numeric_std.vhdl", line 1128: Incorrect usage of built-in pragma inside function TO_INTEGER.
+# Warning: [45531]: ".\auxi\packages\IEEE\IEEE_2008\numeric_std.vhdl", line 1128: Incorrect usage of built-in pragma inside function TO_INTEGER.
+# Info: [44523]: Root Module CAD_lib.exe_proc(behav): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 223.
+# Info: [44835]: Total CPU time for compilation: 1.6 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3.
+# Info: [15002]: Optimizing design view:.cad_lib.exe_proc.behav
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3/exe_proc.edf.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3/exe_proc.ucf.
+# Info: ***********************************************
+# Info: Device Utilization for 3S50tq144
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               200     97      206.19%
+# Info: Global Buffers                    0       8         0.00%
+# Info: LUTs                              834     1536     54.30%
+# Info: CLB Slices                        417     768      54.30%
+# Info: Dffs or Latches                   0       1827      0.00%
+# Info: Block RAMs                        0       4         0.00%
+# Info: Block Multipliers                 0       4         0.00%
+# Info: Block Multiplier Dffs             0       144       0.00%
+# Info: ---------------------------------------------------------------
+# Warning: This design does not fit in the device specified!
+# Info: Recommending to try an alternate device 3S400fg320
+# Info: ***********************************************
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 11.5 s secs.
+# Info: [11020]: Overall running time for synthesis: 11.8 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/hds/precision.tcl
+# COMMAND: report_area C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3/exe_proc_area.rep -cell_usage
+report_area C:/HDS/CAD/CAD_lib/ps/exe_proc_behav/exe_proc_behav_impl_3/exe_proc_area.rep -cell_usage
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation exe_proc_behav_impl_3.

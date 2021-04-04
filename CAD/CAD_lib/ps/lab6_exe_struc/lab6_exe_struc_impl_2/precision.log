@@ -1,0 +1,192 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2/precision.log.suppressed
+# Info: [9552]: Activated implementation lab6_exe_struc_impl_2 in project C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc.psp.
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s50tq144".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab6_exe(struc){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.reg(mixed){generic map (width => 32)}: Pre-processing...
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 20: Input port Rd_in has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 21: Input port FunC_in has never been used.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 22: Output port Func_out has never been assigned a value.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 23: Output port Rd_out has never been assigned a value.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 24: Output port Address has never been assigned a value.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 24: Output port Data has never been assigned a value.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 24: Output port Jaddr has never been assigned a value.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 25: Output port Jump has never been assigned a value.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 32: signal wire_LReg_to_proc has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 32: signal wire_RReg_to_proc has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 32: signal wire_ExReg_to_proc has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd", line 33: signal wire_funC has never been used.
+# Info: [44508]: Module CAD_lib.reg(mixed){generic map (width => 32)}: Compiling...
+# Info: [44523]: Root Module CAD_lib.lab6_exe(struc){generic map (width => 32)}: Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 105.
+# Info: [44835]: Total CPU time for compilation: 0.2 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2.
+# Info: [15002]: Optimizing design view:.cad_lib.lab6_exe.struc
+# Warning: [1621]: Port Func_out(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Func_out(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Func_out(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Func_out(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Func_out(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Func_out(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Rd_out(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Rd_out(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Rd_out(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Rd_out(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Rd_out(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(8) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(9) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(10) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(11) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(12) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(13) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(14) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(15) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(16) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(17) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(18) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(19) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(20) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(21) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(22) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(23) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(24) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(25) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(26) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(27) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(28) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(29) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(30) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Address(31) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(8) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(9) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(10) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(11) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(12) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(13) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(14) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(15) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(16) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(17) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(18) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(19) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(20) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(21) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(22) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(23) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(24) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(25) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(26) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(27) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(28) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(29) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(30) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Data(31) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(8) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(9) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(10) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(11) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(12) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(13) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(14) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(15) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(16) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(17) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(18) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(19) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(20) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(21) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(22) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(23) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(24) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(25) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(26) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(27) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(28) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(29) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(30) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jaddr(31) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Jump is connected to a disabled tristate, possibly unconnected Port in design.
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2/lab6_exe.edf.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2/lab6_exe.ucf.
+# Info: ***********************************************
+# Info: Device Utilization for 3S50tq144
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               216     97      222.68%
+# Info: Global Buffers                    0       8         0.00%
+# Info: LUTs                              0       1536      0.00%
+# Info: CLB Slices                        0       768       0.00%
+# Info: Dffs or Latches                   0       1827      0.00%
+# Info: Block RAMs                        0       4         0.00%
+# Info: Block Multipliers                 0       4         0.00%
+# Info: Block Multiplier Dffs             0       144       0.00%
+# Info: ---------------------------------------------------------------
+# Warning: This design does not fit in the device specified!
+# Info: Recommending to try an alternate device 3S400fg320
+# Info: ***********************************************
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.2 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.3 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab6_exe_struc_impl_2.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_2/precision.log.suppressed
+# Info: [9552]: Activated implementation lab6_exe_struc_impl_2 in project C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc_impl_3.
+# Info: [9557]: Created implementation lab6_exe_struc_impl_3 in project C:/HDS/CAD/CAD_lib/ps/lab6_exe_struc/lab6_exe_struc.psp.

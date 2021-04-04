@@ -1,0 +1,5 @@
+vendor_name = exemplar
+source_file = 1, C:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd
+design_name = rst_syn
+instance =      comp,            Dout_obuf,            Dout_obuf,              rst_syn,         1, 27:-1:27:
+instance =       net,                 Dout,                 Dout,              rst_syn,         1, 27:-1:27:

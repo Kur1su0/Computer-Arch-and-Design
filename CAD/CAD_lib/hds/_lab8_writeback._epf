@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom mixed
+DEFAULT_FILE atom lab8_writeback_mixed.vhd

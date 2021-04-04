@@ -1,0 +1,133 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave_impl_10/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave_impl_10/precision.log.suppressed
+# Info: [9552]: Activated implementation lab3_fetch_behave_impl_10 in project C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave.psp.
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave_impl_10.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab3_fetch(behave){generic map (width => 32)}: Pre-processing...
+# Info: [44523]: Root Module CAD_lib.lab3_fetch(behave){generic map (width => 32)}: Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 59.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave_impl_10.
+# Error: Net is driven by multiple primitive gates --  NET: Addr(31)  DRIVING GATE: lat_Addr(31)
+# Info:  PORT out OF BUF: ix67  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(31)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(30)  DRIVING GATE: lat_Addr(30)
+# Info:  PORT out OF BUF: ix65  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(30)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(29)  DRIVING GATE: lat_Addr(29)
+# Info:  PORT out OF BUF: ix63  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(29)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(28)  DRIVING GATE: lat_Addr(28)
+# Info:  PORT out OF BUF: ix61  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(28)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(27)  DRIVING GATE: lat_Addr(27)
+# Info:  PORT out OF BUF: ix59  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(27)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(26)  DRIVING GATE: lat_Addr(26)
+# Info:  PORT out OF BUF: ix57  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(26)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(25)  DRIVING GATE: lat_Addr(25)
+# Info:  PORT out OF BUF: ix55  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(25)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(24)  DRIVING GATE: lat_Addr(24)
+# Info:  PORT out OF BUF: ix53  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(24)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(23)  DRIVING GATE: lat_Addr(23)
+# Info:  PORT out OF BUF: ix51  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(23)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(22)  DRIVING GATE: lat_Addr(22)
+# Info:  PORT out OF BUF: ix49  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(22)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(21)  DRIVING GATE: lat_Addr(21)
+# Info:  PORT out OF BUF: ix47  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(21)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(20)  DRIVING GATE: lat_Addr(20)
+# Info:  PORT out OF BUF: ix45  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(20)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(19)  DRIVING GATE: lat_Addr(19)
+# Info:  PORT out OF BUF: ix43  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(19)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(18)  DRIVING GATE: lat_Addr(18)
+# Info:  PORT out OF BUF: ix41  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(18)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(17)  DRIVING GATE: lat_Addr(17)
+# Info:  PORT out OF BUF: ix39  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(17)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(16)  DRIVING GATE: lat_Addr(16)
+# Info:  PORT out OF BUF: ix37  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(16)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(15)  DRIVING GATE: lat_Addr(15)
+# Info:  PORT out OF BUF: ix35  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(15)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(14)  DRIVING GATE: lat_Addr(14)
+# Info:  PORT out OF BUF: ix33  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(14)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(13)  DRIVING GATE: lat_Addr(13)
+# Info:  PORT out OF BUF: ix31  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(13)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(12)  DRIVING GATE: lat_Addr(12)
+# Info:  PORT out OF BUF: ix29  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(12)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(11)  DRIVING GATE: lat_Addr(11)
+# Info:  PORT out OF BUF: ix27  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(11)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(10)  DRIVING GATE: lat_Addr(10)
+# Info:  PORT out OF BUF: ix25  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(10)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(9)  DRIVING GATE: lat_Addr(9)
+# Info:  PORT out OF BUF: ix23  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(9)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(8)  DRIVING GATE: lat_Addr(8)
+# Info:  PORT out OF BUF: ix21  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(8)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(7)  DRIVING GATE: lat_Addr(7)
+# Info:  PORT out OF BUF: ix19  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(7)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(6)  DRIVING GATE: lat_Addr(6)
+# Info:  PORT out OF BUF: ix17  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(6)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(5)  DRIVING GATE: lat_Addr(5)
+# Info:  PORT out OF BUF: ix15  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(5)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(4)  DRIVING GATE: lat_Addr(4)
+# Info:  PORT out OF BUF: ix13  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(4)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(3)  DRIVING GATE: lat_Addr(3)
+# Info:  PORT out OF BUF: ix11  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(3)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(2)  DRIVING GATE: lat_Addr(2)
+# Info:  PORT out OF BUF: ix9  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(2)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(1)  DRIVING GATE: lat_Addr(1)
+# Info:  PORT out OF BUF: ix7  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(1)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Error: Net is driven by multiple primitive gates --  NET: Addr(0)  DRIVING GATE: lat_Addr(0)
+# Info:  PORT out OF BUF: ix5  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info:  PORT out OF LATRS: lat_Addr(0)  PORT out OF BLOCK: cad_lib/lab3_fetch/behave
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab3_fetch_behave_impl_10.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave_impl_10/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave_impl_10/precision.log.suppressed
+# Info: [9552]: Activated implementation lab3_fetch_behave_impl_10 in project C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave_impl_11.
+# Info: [9557]: Created implementation lab3_fetch_behave_impl_11 in project C:/HDS/CAD/CAD_lib/ps/lab3_fetch_behave/lab3_fetch_behave.psp.

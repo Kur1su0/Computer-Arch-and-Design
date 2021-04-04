@@ -1,0 +1,106 @@
+(edif lab2_counter 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 02 15 01 30 08)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external maxv 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell GND (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Y (direction OUTPUT)))))
+  (cell maxv_io (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port oe (direction INPUT))
+     (port padio (direction INOUT))
+     (port combout (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell lab2_counter (cellType GENERIC)
+   (view mixed  (viewType NETLIST)
+    (interface 
+     (port (array (rename D "D(7:0)") 8 )(direction INPUT))
+     (port (array (rename Inc_val "Inc_val(1:0)") 2 )(direction INPUT))
+     (port (array (rename Q "Q(7:0)") 8 )(direction OUTPUT))
+     (port Clock (direction INPUT))
+     (port enable (direction INPUT))
+     (port reset (direction INPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance GND (viewRef NETLIST  (cellRef GND (libraryRef maxv ))))
+     (instance Q_triBus1_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_triBus1_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_triBus1_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_triBus1_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_triBus1_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_triBus1_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_triBus1_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_triBus1_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (net Q_7_ 
+      (joined 
+       (portRef (member Q 0))
+       (portRef padio (instanceRef Q_triBus1_7_ ))))
+     (net Q_6_ 
+      (joined 
+       (portRef (member Q 1))
+       (portRef padio (instanceRef Q_triBus1_6_ ))))
+     (net Q_5_ 
+      (joined 
+       (portRef (member Q 2))
+       (portRef padio (instanceRef Q_triBus1_5_ ))))
+     (net Q_4_ 
+      (joined 
+       (portRef (member Q 3))
+       (portRef padio (instanceRef Q_triBus1_4_ ))))
+     (net Q_3_ 
+      (joined 
+       (portRef (member Q 4))
+       (portRef padio (instanceRef Q_triBus1_3_ ))))
+     (net Q_2_ 
+      (joined 
+       (portRef (member Q 5))
+       (portRef padio (instanceRef Q_triBus1_2_ ))))
+     (net Q_1_ 
+      (joined 
+       (portRef (member Q 6))
+       (portRef padio (instanceRef Q_triBus1_1_ ))))
+     (net Q_0_ 
+      (joined 
+       (portRef (member Q 7))
+       (portRef padio (instanceRef Q_triBus1_0_ ))))
+     (net GND 
+      (joined 
+       (portRef Y (instanceRef GND ))
+       (portRef datain (instanceRef Q_triBus1_0_ ))
+       (portRef oe (instanceRef Q_triBus1_0_ ))
+       (portRef datain (instanceRef Q_triBus1_1_ ))
+       (portRef oe (instanceRef Q_triBus1_1_ ))
+       (portRef datain (instanceRef Q_triBus1_2_ ))
+       (portRef oe (instanceRef Q_triBus1_2_ ))
+       (portRef datain (instanceRef Q_triBus1_3_ ))
+       (portRef oe (instanceRef Q_triBus1_3_ ))
+       (portRef datain (instanceRef Q_triBus1_4_ ))
+       (portRef oe (instanceRef Q_triBus1_4_ ))
+       (portRef datain (instanceRef Q_triBus1_5_ ))
+       (portRef oe (instanceRef Q_triBus1_5_ ))
+       (portRef datain (instanceRef Q_triBus1_6_ ))
+       (portRef oe (instanceRef Q_triBus1_6_ ))
+       (portRef datain (instanceRef Q_triBus1_7_ ))
+       (portRef oe (instanceRef Q_triBus1_7_ ))))))))
+ (design lab2_counter (cellRef lab2_counter (libraryRef cad_lib ))))

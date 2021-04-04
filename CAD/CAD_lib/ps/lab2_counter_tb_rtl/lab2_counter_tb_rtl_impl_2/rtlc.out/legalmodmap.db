@@ -1,0 +1,6 @@
+mux_2_to_1-8 mux_2_to_1_8
+Increment-8 Increment_8
+lab2_counter-8 lab2_counter_8
+reg-8 reg_8
+lab2_counter_tb lab2_counter_tb
+#LEGALIZEDMOD_COUNTER 0

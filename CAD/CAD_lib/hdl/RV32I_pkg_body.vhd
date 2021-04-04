@@ -49,7 +49,8 @@ PACKAGE BODY RV32I IS
       WHEN "SRLr-" => ret := SRLr;
       WHEN "SRAr-" => ret := SRAr;
       WHEN "ORr--" => ret := ORr;
-      WHEN "ANDr-" => ret := ANDr;     
+      WHEN "ANDr-" => ret := ANDr;
+	  WHEN "NOP--" => ret := NOP;
       WHEN OTHERS => ret := BAD;
     END CASE;
     RETURN ret;

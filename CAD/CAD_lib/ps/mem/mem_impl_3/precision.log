@@ -1,0 +1,55 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_3/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_3/precision.log.suppressed
+# Info: [9552]: Activated implementation mem_impl_3 in project C:/HDS/CAD/CAD_lib/ps/mem/mem.psp.
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_3.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.mem(behave): Pre-processing...
+# Error: [46239]: "C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd", line 38: Unsupported Clocking Style: Assignment to Signal Delay not supported in else clause of clocked if or conditional assignments...
+# Error: [46292]: Module CAD_lib.mem(behave) cannot be compiled because it contains non-rtl constructs. Please check the log for warnings or errors about non-synthesizable constructs in this module.
+# Info: [44536]: No modules were compiled in this run of RTLC, please check the logs for blackboxes or non-rtl constructs in the design.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Error: [46259]: Design compilation failed, unsupported or non-rtl constructs detected in the following modules :
+# Info: [40000]: CAD_lib.mem(behave)
+# Info: [40000]: Please check the log for details pertaining to unsupported or non-rtl construct(s)
+# Error: [679]: Unable to elaborate design CAD_lib.mem in vhdl.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# COMMAND: source C:/HDS/CAD/CAD_lib/ps/mem_behave/hds/precision.tcl
+# Info: HDL Designer Synthesis run started
+# Error: [9518]: Another project (C:/HDS/CAD/CAD_lib/ps/mem/mem.psp) is already open.
+source C:/HDS/CAD/CAD_lib/ps/mem_behave/hds/precision.tcl
+# COMMAND: source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# Info: HDL Designer Synthesis run started
+# Error: [9518]: Another project (C:/HDS/CAD/CAD_lib/ps/mem/mem.psp) is already open.
+source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# COMMAND: source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# Info: HDL Designer Synthesis run started
+# Error: [9518]: Another project (C:/HDS/CAD/CAD_lib/ps/mem/mem.psp) is already open.
+source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# COMMAND: source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# Info: HDL Designer Synthesis run started
+# Error: [9518]: Another project (C:/HDS/CAD/CAD_lib/ps/mem/mem.psp) is already open.
+source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation mem_impl_3.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_3/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_3/precision.log.suppressed
+# Info: [9552]: Activated implementation mem_impl_3 in project C:/HDS/CAD/CAD_lib/ps/mem/mem.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_4.
+# Info: [9557]: Created implementation mem_impl_4 in project C:/HDS/CAD/CAD_lib/ps/mem/mem.psp.

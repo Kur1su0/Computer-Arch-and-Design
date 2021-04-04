@@ -1,0 +1,73 @@
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/HDS_2018.2/bin/precision.log
+//  Precision RTL Synthesis 64-bit 2018.1.0.19 (Production Release) Fri Aug 10 05:55:53 PDT 2018
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2018, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 W@DESKTOP-86TQKQ1  10.0.19041 x64
+//  
+//  Start time Mon Feb 22 17:44:34 2021
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/HDS_2018.2/bin/precision.log
+# COMMAND: source C:/HDS/CAD/CAD_lib/ps/or_gate/hds/precision.tcl
+# Info: HDL Designer Synthesis run started
+# Info: [9577]: Input directory: C:/HDS/CAD/CAD_lib/ps/or_gate
+# Info: [9572]: Moving session transcript to file C:/HDS/CAD/CAD_lib/ps/or_gate/precision.log
+# Info: [9558]: Created project C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate.psp in folder C:/HDS/CAD/CAD_lib/ps/or_gate.
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1.
+# Info: [9557]: Created implementation or_gate_impl_1 in project C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate.psp.
+# Info: [9578]: The Results Directory has been set to: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation or_gate_impl_1 in project C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate.psp.
+new_impl -name or_gate_impl_1
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.or_gate(behave): Pre-processing...
+# Info: [44523]: Root Module CAD_lib.or_gate(behave): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 9.
+# Info: [44835]: Total CPU time for compilation: 0.1 secs.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1.
+# Info: [15002]: Optimizing design view:.cad_lib.or_gate.behave
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/or_gate.edf.
+# Info: Info, Writing xrf file 'C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/or_gate.xrf'
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/or_gate.xrf.
+# Info: -- Writing file C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/or_gate.tcl
+# Info: exq_pr_compile_project gen_vcf or_gate 1
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.0 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.1 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/or_gate/hds/precision.tcl
+# COMMAND: report_area C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/or_gate_area.rep -cell_usage
+report_area C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate_impl_1/or_gate_area.rep -cell_usage
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation or_gate_impl_1.
+# Info: [9530]: Closed project: C:/HDS/CAD/CAD_lib/ps/or_gate/or_gate.psp.
+close_project -discard
+exit -force

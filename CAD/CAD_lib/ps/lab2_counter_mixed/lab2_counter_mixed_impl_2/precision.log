@@ -1,0 +1,137 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/precision.log.suppressed
+# Info: [9552]: Activated implementation lab2_counter_mixed_impl_2 in project C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed.psp.
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab2_counter(mixed){generic map (width => 8)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.mux_2_to_1(mixed){generic map (width => 8)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.Increment(mixed){generic map (width => 8)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.reg(mixed){generic map (width => 8)}: Pre-processing...
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd", line 19: Output port Q has never been assigned a value.
+# Info: [44508]: Module CAD_lib.mux_2_to_1(mixed){generic map (width => 8)}: Compiling...
+# Info: [44508]: Module CAD_lib.Increment(mixed){generic map (width => 8)}: Compiling...
+# Info: [44508]: Module CAD_lib.reg(mixed){generic map (width => 8)}: Compiling...
+# Info: [44523]: Root Module CAD_lib.lab2_counter(mixed){generic map (width => 8)}: Compiling...
+# Info: [44846]: Rebalanced Expression Tree...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 1, Inferred (Modgen/Selcounter/AddSub) : 0 (0 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 1 ===
+# Info: [44856]: Total lines of RTL compiled: 104.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2.
+# Info: [15002]: Optimizing design view:.cad_lib.lab2_counter.mixed
+# Warning: [1621]: Port Q(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/lab2_counter.edf.
+# Info: Info, Writing xrf file 'C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/lab2_counter.xrf'
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/lab2_counter.xrf.
+# Info: -- Writing file C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/lab2_counter.tcl
+# Info: exq_pr_compile_project gen_vcf lab2_counter 1
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.0 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.1 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/hds/precision.tcl
+# COMMAND: set_attribute -design rtl -name HIERARCHY -value preserve_interface_block_and_sub_blocks {.cad_lib.lab2_counter.mixed_XRTL}
+set_attribute -design rtl -name HIERARCHY -value preserve_interface_block_and_sub_blocks {.cad_lib.lab2_counter.mixed_XRTL}
+# COMMAND: update_constraint_file
+update_constraint_file
+# COMMAND: set_attribute -design rtl -name HIERARCHY -value flatten_sub_blocks {.cad_lib.lab2_counter.mixed_XRTL}
+set_attribute -design rtl -name HIERARCHY -value flatten_sub_blocks {.cad_lib.lab2_counter.mixed_XRTL}
+# COMMAND: update_constraint_file
+update_constraint_file
+# COMMAND: set_attribute -design rtl -name HIERARCHY -value preserve_block_and_sub_blocks {.cad_lib.lab2_counter.mixed_XRTL}
+set_attribute -design rtl -name HIERARCHY -value preserve_block_and_sub_blocks {.cad_lib.lab2_counter.mixed_XRTL}
+# COMMAND: update_constraint_file
+update_constraint_file
+# COMMAND: compile
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab2_counter(mixed){generic map (width => 8)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.mux_2_to_1(mixed){generic map (width => 8)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.Increment(mixed){generic map (width => 8)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.reg(mixed){generic map (width => 8)}: Pre-processing...
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd", line 19: Output port Q has never been assigned a value.
+# Info: [44508]: Module CAD_lib.mux_2_to_1(mixed){generic map (width => 8)}: Compiling...
+# Info: [44508]: Module CAD_lib.Increment(mixed){generic map (width => 8)}: Compiling...
+# Info: [44508]: Module CAD_lib.reg(mixed){generic map (width => 8)}: Compiling...
+# Info: [44523]: Root Module CAD_lib.lab2_counter(mixed){generic map (width => 8)}: Compiling...
+# Info: [44846]: Rebalanced Expression Tree...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 1, Inferred (Modgen/Selcounter/AddSub) : 0 (0 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 1 ===
+# Info: [44856]: Total lines of RTL compiled: 104.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [3022]: Reading file: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/precision_rtl.sdc.
+# Info: [665]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2.
+# Info: [15002]: Optimizing design view:.cad_lib.lab2_counter.mixed
+# Warning: [1621]: Port Q(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/lab2_counter.edf.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/lab2_counter.xrf.
+# Info: -- Writing file C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/lab2_counter.tcl
+# Info: exq_pr_compile_project gen_vcf lab2_counter 1
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.0 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.1 s secs.
+synthesize
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab2_counter_mixed_impl_2.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_2/precision.log.suppressed
+# Info: [9552]: Activated implementation lab2_counter_mixed_impl_2 in project C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed_impl_3.
+# Info: [9557]: Created implementation lab2_counter_mixed_impl_3 in project C:/HDS/CAD/CAD_lib/ps/lab2_counter_mixed/lab2_counter_mixed.psp.

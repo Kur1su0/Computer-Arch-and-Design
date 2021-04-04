@@ -1,0 +1,89 @@
+(edif read_ctrl 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 02 22 21 23 11)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external maxv 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell maxv_io (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port oe (direction INPUT))
+     (port padio (direction INOUT))
+     (port combout (direction OUTPUT)))))
+  (cell maxv_lcell (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port clk (direction INPUT))
+     (port dataa (direction INPUT))
+     (port datab (direction INPUT))
+     (port datac (direction INPUT))
+     (port datad (direction INPUT))
+     (port aclr (direction INPUT))
+     (port aload (direction INPUT))
+     (port sclr (direction INPUT))
+     (port sload (direction INPUT))
+     (port ena (direction INPUT))
+     (port cin (direction INPUT))
+     (port cin0 (direction INPUT))
+     (port cin1 (direction INPUT))
+     (port inverta (direction INPUT))
+     (port regcascin (direction INPUT))
+     (port devclrn (direction INPUT))
+     (port devpor (direction INPUT))
+     (port combout (direction OUTPUT))
+     (port regout (direction OUTPUT))
+     (port cout (direction OUTPUT))
+     (port cout0 (direction OUTPUT))
+     (port cout1 (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell read_ctrl (cellType GENERIC)
+   (view behav  (viewType NETLIST)
+    (interface 
+     (port jmp (direction INPUT))
+     (port rst (direction INPUT))
+     (port Read (direction OUTPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance jmp_ibuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance rst_ibuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Read_obuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance ix57715z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "8888")))
+     (net jmp 
+      (joined 
+       (portRef jmp )
+       (portRef padio (instanceRef jmp_ibuf ))))
+     (net rst 
+      (joined 
+       (portRef rst )
+       (portRef padio (instanceRef rst_ibuf ))))
+     (net jmp_int 
+      (joined 
+       (portRef combout (instanceRef jmp_ibuf ))
+       (portRef dataa (instanceRef ix57715z42612 ))))
+     (net rst_int 
+      (joined 
+       (portRef combout (instanceRef rst_ibuf ))
+       (portRef datab (instanceRef ix57715z42612 ))))
+     (net Read 
+      (joined 
+       (portRef Read )
+       (portRef padio (instanceRef Read_obuf ))))
+     (net Read_dup_0 
+      (joined 
+       (portRef combout (instanceRef ix57715z42612 ))
+       (portRef datain (instanceRef Read_obuf ))))))))
+ (design read_ctrl (cellRef read_ctrl (libraryRef cad_lib ))))

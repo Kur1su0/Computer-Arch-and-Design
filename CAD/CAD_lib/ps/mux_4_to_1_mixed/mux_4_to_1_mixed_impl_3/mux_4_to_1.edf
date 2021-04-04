@@ -1,0 +1,581 @@
+(edif mux_4_to_1 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 02 13 07 25 07)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external maxv 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell maxv_io (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port oe (direction INPUT))
+     (port padio (direction INOUT))
+     (port combout (direction OUTPUT)))))
+  (cell maxv_lcell (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port clk (direction INPUT))
+     (port dataa (direction INPUT))
+     (port datab (direction INPUT))
+     (port datac (direction INPUT))
+     (port datad (direction INPUT))
+     (port aclr (direction INPUT))
+     (port aload (direction INPUT))
+     (port sclr (direction INPUT))
+     (port sload (direction INPUT))
+     (port ena (direction INPUT))
+     (port cin (direction INPUT))
+     (port cin0 (direction INPUT))
+     (port cin1 (direction INPUT))
+     (port inverta (direction INPUT))
+     (port regcascin (direction INPUT))
+     (port devclrn (direction INPUT))
+     (port devpor (direction INPUT))
+     (port combout (direction OUTPUT))
+     (port regout (direction OUTPUT))
+     (port cout (direction OUTPUT))
+     (port cout0 (direction OUTPUT))
+     (port cout1 (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell mux_4_to_1 (cellType GENERIC)
+   (view mixed  (viewType NETLIST)
+    (interface 
+     (port (array (rename Data_In_0 "Data_In_0(7:0)") 8 )(direction INPUT))
+     (port (array (rename Data_In_1 "Data_In_1(7:0)") 8 )(direction INPUT))
+     (port (array (rename Data_In_2 "Data_In_2(7:0)") 8 )(direction INPUT))
+     (port (array (rename Data_In_3 "Data_In_3(7:0)") 8 )(direction INPUT))
+     (port (array (rename Q "Q(7:0)") 8 )(direction OUTPUT))
+     (port (array (rename Sel "Sel(1:0)") 2 )(direction INPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance Data_In_0_ibuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_0_ibuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_0_ibuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_0_ibuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_0_ibuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_0_ibuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_0_ibuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_0_ibuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_1_ibuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_2_ibuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Data_In_3_ibuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Sel_ibuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Sel_ibuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Q_obuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_obuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_obuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_obuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_obuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_obuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_obuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Q_obuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance ix64553z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix64553z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (instance ix14z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix14z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (instance ix1011z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix1011z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (instance ix2008z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix2008z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (instance ix3005z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix3005z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (instance ix4002z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix4002z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (instance ix4999z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix4999z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (instance ix5996z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "e3e0")))
+     (instance ix5996z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "afc0")))
+     (net Data_In_0_7_ 
+      (joined 
+       (portRef (member Data_In_0 0))
+       (portRef padio (instanceRef Data_In_0_ibuf_7_ ))))
+     (net Data_In_0_6_ 
+      (joined 
+       (portRef (member Data_In_0 1))
+       (portRef padio (instanceRef Data_In_0_ibuf_6_ ))))
+     (net Data_In_0_5_ 
+      (joined 
+       (portRef (member Data_In_0 2))
+       (portRef padio (instanceRef Data_In_0_ibuf_5_ ))))
+     (net Data_In_0_4_ 
+      (joined 
+       (portRef (member Data_In_0 3))
+       (portRef padio (instanceRef Data_In_0_ibuf_4_ ))))
+     (net Data_In_0_3_ 
+      (joined 
+       (portRef (member Data_In_0 4))
+       (portRef padio (instanceRef Data_In_0_ibuf_3_ ))))
+     (net Data_In_0_2_ 
+      (joined 
+       (portRef (member Data_In_0 5))
+       (portRef padio (instanceRef Data_In_0_ibuf_2_ ))))
+     (net Data_In_0_1_ 
+      (joined 
+       (portRef (member Data_In_0 6))
+       (portRef padio (instanceRef Data_In_0_ibuf_1_ ))))
+     (net Data_In_0_0_ 
+      (joined 
+       (portRef (member Data_In_0 7))
+       (portRef padio (instanceRef Data_In_0_ibuf_0_ ))))
+     (net Data_In_1_7_ 
+      (joined 
+       (portRef (member Data_In_1 0))
+       (portRef padio (instanceRef Data_In_1_ibuf_7_ ))))
+     (net Data_In_1_6_ 
+      (joined 
+       (portRef (member Data_In_1 1))
+       (portRef padio (instanceRef Data_In_1_ibuf_6_ ))))
+     (net Data_In_1_5_ 
+      (joined 
+       (portRef (member Data_In_1 2))
+       (portRef padio (instanceRef Data_In_1_ibuf_5_ ))))
+     (net Data_In_1_4_ 
+      (joined 
+       (portRef (member Data_In_1 3))
+       (portRef padio (instanceRef Data_In_1_ibuf_4_ ))))
+     (net Data_In_1_3_ 
+      (joined 
+       (portRef (member Data_In_1 4))
+       (portRef padio (instanceRef Data_In_1_ibuf_3_ ))))
+     (net Data_In_1_2_ 
+      (joined 
+       (portRef (member Data_In_1 5))
+       (portRef padio (instanceRef Data_In_1_ibuf_2_ ))))
+     (net Data_In_1_1_ 
+      (joined 
+       (portRef (member Data_In_1 6))
+       (portRef padio (instanceRef Data_In_1_ibuf_1_ ))))
+     (net Data_In_1_0_ 
+      (joined 
+       (portRef (member Data_In_1 7))
+       (portRef padio (instanceRef Data_In_1_ibuf_0_ ))))
+     (net Data_In_2_7_ 
+      (joined 
+       (portRef (member Data_In_2 0))
+       (portRef padio (instanceRef Data_In_2_ibuf_7_ ))))
+     (net Data_In_2_6_ 
+      (joined 
+       (portRef (member Data_In_2 1))
+       (portRef padio (instanceRef Data_In_2_ibuf_6_ ))))
+     (net Data_In_2_5_ 
+      (joined 
+       (portRef (member Data_In_2 2))
+       (portRef padio (instanceRef Data_In_2_ibuf_5_ ))))
+     (net Data_In_2_4_ 
+      (joined 
+       (portRef (member Data_In_2 3))
+       (portRef padio (instanceRef Data_In_2_ibuf_4_ ))))
+     (net Data_In_2_3_ 
+      (joined 
+       (portRef (member Data_In_2 4))
+       (portRef padio (instanceRef Data_In_2_ibuf_3_ ))))
+     (net Data_In_2_2_ 
+      (joined 
+       (portRef (member Data_In_2 5))
+       (portRef padio (instanceRef Data_In_2_ibuf_2_ ))))
+     (net Data_In_2_1_ 
+      (joined 
+       (portRef (member Data_In_2 6))
+       (portRef padio (instanceRef Data_In_2_ibuf_1_ ))))
+     (net Data_In_2_0_ 
+      (joined 
+       (portRef (member Data_In_2 7))
+       (portRef padio (instanceRef Data_In_2_ibuf_0_ ))))
+     (net Data_In_3_7_ 
+      (joined 
+       (portRef (member Data_In_3 0))
+       (portRef padio (instanceRef Data_In_3_ibuf_7_ ))))
+     (net Data_In_3_6_ 
+      (joined 
+       (portRef (member Data_In_3 1))
+       (portRef padio (instanceRef Data_In_3_ibuf_6_ ))))
+     (net Data_In_3_5_ 
+      (joined 
+       (portRef (member Data_In_3 2))
+       (portRef padio (instanceRef Data_In_3_ibuf_5_ ))))
+     (net Data_In_3_4_ 
+      (joined 
+       (portRef (member Data_In_3 3))
+       (portRef padio (instanceRef Data_In_3_ibuf_4_ ))))
+     (net Data_In_3_3_ 
+      (joined 
+       (portRef (member Data_In_3 4))
+       (portRef padio (instanceRef Data_In_3_ibuf_3_ ))))
+     (net Data_In_3_2_ 
+      (joined 
+       (portRef (member Data_In_3 5))
+       (portRef padio (instanceRef Data_In_3_ibuf_2_ ))))
+     (net Data_In_3_1_ 
+      (joined 
+       (portRef (member Data_In_3 6))
+       (portRef padio (instanceRef Data_In_3_ibuf_1_ ))))
+     (net Data_In_3_0_ 
+      (joined 
+       (portRef (member Data_In_3 7))
+       (portRef padio (instanceRef Data_In_3_ibuf_0_ ))))
+     (net Q_dup_0_7_ 
+      (joined 
+       (portRef combout (instanceRef ix5996z42612 ))
+       (portRef datain (instanceRef Q_obuf_7_ ))))
+     (net Q_dup_0_6_ 
+      (joined 
+       (portRef combout (instanceRef ix4999z42612 ))
+       (portRef datain (instanceRef Q_obuf_6_ ))))
+     (net Q_dup_0_5_ 
+      (joined 
+       (portRef combout (instanceRef ix4002z42612 ))
+       (portRef datain (instanceRef Q_obuf_5_ ))))
+     (net Q_dup_0_4_ 
+      (joined 
+       (portRef combout (instanceRef ix3005z42612 ))
+       (portRef datain (instanceRef Q_obuf_4_ ))))
+     (net Q_dup_0_3_ 
+      (joined 
+       (portRef combout (instanceRef ix2008z42612 ))
+       (portRef datain (instanceRef Q_obuf_3_ ))))
+     (net Q_dup_0_2_ 
+      (joined 
+       (portRef combout (instanceRef ix1011z42612 ))
+       (portRef datain (instanceRef Q_obuf_2_ ))))
+     (net Q_dup_0_1_ 
+      (joined 
+       (portRef combout (instanceRef ix14z42612 ))
+       (portRef datain (instanceRef Q_obuf_1_ ))))
+     (net Q_dup_0_0_ 
+      (joined 
+       (portRef combout (instanceRef ix64553z42612 ))
+       (portRef datain (instanceRef Q_obuf_0_ ))))
+     (net Sel_1_ 
+      (joined 
+       (portRef (member Sel 0))
+       (portRef padio (instanceRef Sel_ibuf_1_ ))))
+     (net Sel_0_ 
+      (joined 
+       (portRef (member Sel 1))
+       (portRef padio (instanceRef Sel_ibuf_0_ ))))
+     (net nx64553z1 
+      (joined 
+       (portRef combout (instanceRef ix64553z42613 ))
+       (portRef datad (instanceRef ix64553z42612 ))))
+     (net nx14z1 
+      (joined 
+       (portRef combout (instanceRef ix14z42613 ))
+       (portRef datad (instanceRef ix14z42612 ))))
+     (net nx1011z1 
+      (joined 
+       (portRef combout (instanceRef ix1011z42613 ))
+       (portRef datad (instanceRef ix1011z42612 ))))
+     (net nx2008z1 
+      (joined 
+       (portRef combout (instanceRef ix2008z42613 ))
+       (portRef datad (instanceRef ix2008z42612 ))))
+     (net nx3005z1 
+      (joined 
+       (portRef combout (instanceRef ix3005z42613 ))
+       (portRef datad (instanceRef ix3005z42612 ))))
+     (net nx4002z1 
+      (joined 
+       (portRef combout (instanceRef ix4002z42613 ))
+       (portRef datad (instanceRef ix4002z42612 ))))
+     (net nx4999z1 
+      (joined 
+       (portRef combout (instanceRef ix4999z42613 ))
+       (portRef datad (instanceRef ix4999z42612 ))))
+     (net nx5996z1 
+      (joined 
+       (portRef combout (instanceRef ix5996z42613 ))
+       (portRef datad (instanceRef ix5996z42612 ))))
+     (net Data_In_0_int_7_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_7_ ))
+       (portRef datad (instanceRef ix5996z42613 ))))
+     (net Data_In_0_int_6_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_6_ ))
+       (portRef datad (instanceRef ix4999z42613 ))))
+     (net Data_In_0_int_5_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_5_ ))
+       (portRef datad (instanceRef ix4002z42613 ))))
+     (net Data_In_0_int_4_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_4_ ))
+       (portRef datad (instanceRef ix3005z42613 ))))
+     (net Data_In_0_int_3_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_3_ ))
+       (portRef datad (instanceRef ix2008z42613 ))))
+     (net Data_In_0_int_2_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_2_ ))
+       (portRef datad (instanceRef ix1011z42613 ))))
+     (net Data_In_0_int_1_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_1_ ))
+       (portRef datad (instanceRef ix14z42613 ))))
+     (net Data_In_0_int_0_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_0_ibuf_0_ ))
+       (portRef datad (instanceRef ix64553z42613 ))))
+     (net Data_In_1_int_7_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_7_ ))
+       (portRef dataa (instanceRef ix5996z42613 ))))
+     (net Data_In_1_int_6_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_6_ ))
+       (portRef dataa (instanceRef ix4999z42613 ))))
+     (net Data_In_1_int_5_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_5_ ))
+       (portRef dataa (instanceRef ix4002z42613 ))))
+     (net Data_In_1_int_4_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_4_ ))
+       (portRef dataa (instanceRef ix3005z42613 ))))
+     (net Data_In_1_int_3_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_3_ ))
+       (portRef dataa (instanceRef ix2008z42613 ))))
+     (net Data_In_1_int_2_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_2_ ))
+       (portRef dataa (instanceRef ix1011z42613 ))))
+     (net Data_In_1_int_1_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_1_ ))
+       (portRef dataa (instanceRef ix14z42613 ))))
+     (net Data_In_1_int_0_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_1_ibuf_0_ ))
+       (portRef dataa (instanceRef ix64553z42613 ))))
+     (net Data_In_2_int_7_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_7_ ))
+       (portRef datab (instanceRef ix5996z42612 ))))
+     (net Data_In_2_int_6_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_6_ ))
+       (portRef datab (instanceRef ix4999z42612 ))))
+     (net Data_In_2_int_5_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_5_ ))
+       (portRef datab (instanceRef ix4002z42612 ))))
+     (net Data_In_2_int_4_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_4_ ))
+       (portRef datab (instanceRef ix3005z42612 ))))
+     (net Data_In_2_int_3_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_3_ ))
+       (portRef datab (instanceRef ix2008z42612 ))))
+     (net Data_In_2_int_2_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_2_ ))
+       (portRef datab (instanceRef ix1011z42612 ))))
+     (net Data_In_2_int_1_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_1_ ))
+       (portRef datab (instanceRef ix14z42612 ))))
+     (net Data_In_2_int_0_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_2_ibuf_0_ ))
+       (portRef datab (instanceRef ix64553z42612 ))))
+     (net Data_In_3_int_7_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_7_ ))
+       (portRef dataa (instanceRef ix5996z42612 ))))
+     (net Data_In_3_int_6_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_6_ ))
+       (portRef dataa (instanceRef ix4999z42612 ))))
+     (net Data_In_3_int_5_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_5_ ))
+       (portRef dataa (instanceRef ix4002z42612 ))))
+     (net Data_In_3_int_4_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_4_ ))
+       (portRef dataa (instanceRef ix3005z42612 ))))
+     (net Data_In_3_int_3_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_3_ ))
+       (portRef dataa (instanceRef ix2008z42612 ))))
+     (net Data_In_3_int_2_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_2_ ))
+       (portRef dataa (instanceRef ix1011z42612 ))))
+     (net Data_In_3_int_1_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_1_ ))
+       (portRef dataa (instanceRef ix14z42612 ))))
+     (net Data_In_3_int_0_ 
+      (joined 
+       (portRef combout (instanceRef Data_In_3_ibuf_0_ ))
+       (portRef dataa (instanceRef ix64553z42612 ))))
+     (net Sel_int_1_ 
+      (joined 
+       (portRef combout (instanceRef Sel_ibuf_1_ ))
+       (portRef datab (instanceRef ix64553z42613 ))
+       (portRef datac (instanceRef ix64553z42612 ))
+       (portRef datab (instanceRef ix14z42613 ))
+       (portRef datac (instanceRef ix14z42612 ))
+       (portRef datab (instanceRef ix1011z42613 ))
+       (portRef datac (instanceRef ix1011z42612 ))
+       (portRef datab (instanceRef ix2008z42613 ))
+       (portRef datac (instanceRef ix2008z42612 ))
+       (portRef datab (instanceRef ix3005z42613 ))
+       (portRef datac (instanceRef ix3005z42612 ))
+       (portRef datab (instanceRef ix4002z42613 ))
+       (portRef datac (instanceRef ix4002z42612 ))
+       (portRef datab (instanceRef ix4999z42613 ))
+       (portRef datac (instanceRef ix4999z42612 ))
+       (portRef datab (instanceRef ix5996z42613 ))
+       (portRef datac (instanceRef ix5996z42612 ))))
+     (net Sel_int_0_ 
+      (joined 
+       (portRef combout (instanceRef Sel_ibuf_0_ ))
+       (portRef datac (instanceRef ix64553z42613 ))
+       (portRef datac (instanceRef ix14z42613 ))
+       (portRef datac (instanceRef ix1011z42613 ))
+       (portRef datac (instanceRef ix2008z42613 ))
+       (portRef datac (instanceRef ix3005z42613 ))
+       (portRef datac (instanceRef ix4002z42613 ))
+       (portRef datac (instanceRef ix4999z42613 ))
+       (portRef datac (instanceRef ix5996z42613 ))))
+     (net Q_7_ 
+      (joined 
+       (portRef (member Q 0))
+       (portRef padio (instanceRef Q_obuf_7_ ))))
+     (net Q_6_ 
+      (joined 
+       (portRef (member Q 1))
+       (portRef padio (instanceRef Q_obuf_6_ ))))
+     (net Q_5_ 
+      (joined 
+       (portRef (member Q 2))
+       (portRef padio (instanceRef Q_obuf_5_ ))))
+     (net Q_4_ 
+      (joined 
+       (portRef (member Q 3))
+       (portRef padio (instanceRef Q_obuf_4_ ))))
+     (net Q_3_ 
+      (joined 
+       (portRef (member Q 4))
+       (portRef padio (instanceRef Q_obuf_3_ ))))
+     (net Q_2_ 
+      (joined 
+       (portRef (member Q 5))
+       (portRef padio (instanceRef Q_obuf_2_ ))))
+     (net Q_1_ 
+      (joined 
+       (portRef (member Q 6))
+       (portRef padio (instanceRef Q_obuf_1_ ))))
+     (net Q_0_ 
+      (joined 
+       (portRef (member Q 7))
+       (portRef padio (instanceRef Q_obuf_0_ ))))))))
+ (design mux_4_to_1 (cellRef mux_4_to_1 (libraryRef cad_lib ))))

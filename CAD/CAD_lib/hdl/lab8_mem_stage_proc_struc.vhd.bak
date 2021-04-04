@@ -1,0 +1,93 @@
+--
+-- VHDL Architecture CAD_lib.lab8_mem_stage_proc.behav
+--
+-- Created:
+--          by - W.UNKNOWN (DESKTOP-86TQKQ1)
+--          at - 19:49:58 04/ 3/2021
+--
+-- using Mentor Graphics HDL Designer(TM) 2018.2 (Build 19)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+USE work.RV32I.ALL;
+ENTITY lab8_mem_stage_struc IS
+ GENERIC(width : NATURAL RANGE 1 TO 64 := 32);
+PORT(
+	Data,LSin_arb,Address	:IN  std_ulogic_vector(31 DOWNTO 0);
+	Rd_in			: IN std_ulogic_vector(4 DOWNTO 0);
+	FunC_in			: IN RV32I_Op;
+	mDelay,clk 			: IN std_ulogic;
+	
+	
+	r,w,stall 			: OUT std_ulogic;
+	LSout_arb,Data_out,Address_arb	:OUT  std_ulogic_vector(31 DOWNTO 0);
+	Rd_out : OUT std_ulogic_vector(4 DOWNTO 0);
+	FunC : OUT RV32I_Op;
+	data_size : OUT std_ulogic_vector(1 downto 0)
+	
+	--00=byte (8-bits), 01=half-word (16 bits), 10=word (32 bits).
+	
+	);
+END ENTITY lab8_mem_stage_struc;
+
+--
+ARCHITECTURE struc OF lab8_mem_stage_struc IS
+SIGNAL wire_data_reg,wire_addr_reg :  std_ulogic_vector(31 DOWNTO 0);
+SIGNAL wire_rd : std_ulogic_vector(4 downto 0);
+SIGNAL wire_func: RV32I_Op;
+SIGNAL wire_Data_to_wback: std_ulogic_vector(31 DOWNTO 0);
+BEGIN
+	Data_reg: ENTITY work.reg(mixed)
+	GENERIC MAP(width=>width)
+	PORT MAP(D=>Data,Q=>wire_data_reg, clk=>clk,enable=>not(mdelay),reset=>'0');
+	
+	Addr_reg: ENTITY work.reg(mixed)
+	GENERIC MAP(width=>width)
+	PORT MAP(D=>Address,Q=>wire_addr_reg, clk=>clk,enable=>not(mdelay),reset=>'0');
+	
+	Rd_reg: ENTITY work.reg(mixed)
+	GENERIC MAP(width=>width)
+	PORT MAP(D=>Rd_in,Q=>wire_rd, clk=>clk,enable=>not(mdelay),reset=>'0');
+	
+	Addr_reg: ENTITY work.reg(mixed)
+	PORT MAP(D=>FunC_in,Q=>wire_func, clk=>clk,enable=>not(mdelay));
+	
+	
+	peocess(wire_data_reg,wire_addr_reg,wire_func,Rd_in,LSin_arb)
+	begin
+		CASE FunC IS
+		
+		WHEN  LB | LH | LW | LBU | LHU =>
+			stall<='0';
+			Address_arb <= Address;
+			r<='1';
+			w<='0';
+			LSout_arb <=ZEROS_32;
+			if 		FunC = LW then Data <= LSin_arb;
+				elsif	FunC = LH then 
+					(15 downto 0)<=L(15 downto 0); 
+					Data(31 downto 16) <= (others=>L(15));   --XXX
+				elsif FunC = LHU then
+					Data(15 downto 0)<=L(15 downto 0); 
+					Data(31 downto 16) <= (others=>'0');   --XXX
+				elsif FunC = LB then
+					Data (7 downto 0) <=L(7 downto 0);  
+					Data (31 downto 8) <=(others=>L(7));
+					
+				else  --LBU
+					Data (7 downto 0) <=L(7 downto 0);  
+					Data (31 downto 8) <=(others=>'0');
+				end if;
+				
+		WHEN  SB| SH | SW  =>
+		end case;
+	end process;
+	
+	
+	-- process()
+	-- begin
+	
+	-- end process;
+END ARCHITECTURE struc;
+

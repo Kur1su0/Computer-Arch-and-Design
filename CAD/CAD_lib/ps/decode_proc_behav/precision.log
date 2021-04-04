@@ -1,0 +1,93 @@
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/HDS_2018.2/bin/precision.log
+//  Precision RTL Synthesis 64-bit 2018.1.0.19 (Production Release) Fri Aug 10 05:55:53 PDT 2018
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2018, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 W@DESKTOP-86TQKQ1  10.0.19041 x64
+//  
+//  Start time Mon Mar 22 01:50:03 2021
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/HDS_2018.2/bin/precision.log
+# COMMAND: source C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/hds/precision.tcl
+# Info: HDL Designer Synthesis run started
+# Info: [9577]: Input directory: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav
+# Info: [9572]: Moving session transcript to file C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/precision.log
+# Info: [9558]: Created project C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav.psp in folder C:/HDS/CAD/CAD_lib/ps/decode_proc_behav.
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1.
+# Info: [9557]: Created implementation decode_proc_behav_impl_1 in project C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav.psp.
+# Info: [9578]: The Results Directory has been set to: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1/
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation decode_proc_behav_impl_1 in project C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav.psp.
+new_impl -name decode_proc_behav_impl_1
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s50tq144".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.decode_proc(behav): Pre-processing...
+# Info: [44523]: Root Module CAD_lib.decode_proc(behav): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 94.
+# Info: [44835]: Total CPU time for compilation: 1.1 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1.
+# Info: [15002]: Optimizing design view:.cad_lib.decode_proc.behav
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1/decode_proc.edf.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1/decode_proc.ucf.
+# Info: ***********************************************
+# Info: Device Utilization for 3S50tq144
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               230     97      237.11%
+# Info: Global Buffers                    0       8         0.00%
+# Info: LUTs                              248     1536     16.15%
+# Info: CLB Slices                        124     768      16.15%
+# Info: Dffs or Latches                   0       1827      0.00%
+# Info: Block RAMs                        0       4         0.00%
+# Info: Block Multipliers                 0       4         0.00%
+# Info: Block Multiplier Dffs             0       144       0.00%
+# Info: ---------------------------------------------------------------
+# Warning: This design does not fit in the device specified!
+# Info: Recommending to try an alternate device 3S400fg456
+# Info: ***********************************************
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 2.2 s secs.
+# Info: [11020]: Overall running time for synthesis: 2.4 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/hds/precision.tcl
+# COMMAND: report_area C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1/decode_proc_area.rep -cell_usage
+report_area C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav_impl_1/decode_proc_area.rep -cell_usage
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation decode_proc_behav_impl_1.
+# Info: [9530]: Closed project: C:/HDS/CAD/CAD_lib/ps/decode_proc_behav/decode_proc_behav.psp.
+close_project -discard
+exit -force

@@ -1,0 +1,3 @@
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd" -2008 

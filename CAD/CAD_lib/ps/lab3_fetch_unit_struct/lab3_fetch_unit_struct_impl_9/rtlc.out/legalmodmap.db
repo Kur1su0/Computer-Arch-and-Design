@@ -1,0 +1,10 @@
+read_ctrl read_ctrl
+Increment-32 Increment_32
+lab2_counter-32 lab2_counter_32
+nop_ctrl nop_ctrl
+reg-32 reg_32
+lab3_fetch_unit lab3_fetch_unit
+or_gate or_gate
+mux_2_to_1-32 mux_2_to_1_32
+not_gate not_gate
+#LEGALIZEDMOD_COUNTER 0

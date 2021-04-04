@@ -1,0 +1,7 @@
+Inferred ROM
+------------
+  1. Instance: rtlc_new_reduced_rom_I2
+    File: C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd , Net: rtlc_Function_op_0n5ss1[5]
+    port 1  address width: 8
+    port 1  data width: 2
+

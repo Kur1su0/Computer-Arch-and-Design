@@ -1,0 +1,72 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/precision.log.suppressed
+# Info: [9552]: Activated implementation lab5_rv32i_decoder_behav_impl_21 in project C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav.psp.
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s50tq144".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab5_rv32i_decoder(behav): Pre-processing...
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 18: Input port instruction[1:0] has never been used.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 21: Output port RS2v has never been assigned a value.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 31: signal which_type has never been used.
+# Info: [44523]: Root Module CAD_lib.lab5_rv32i_decoder(behav): Compiling...
+# Info: [45252]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 55: Inferred rom instance 'rtlcI3' of type 'rom_2_8_256_2'.
+# Info: [45205]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Module CAD_lib.lab5_rv32i_decoder(behav), Net(s) Function_op[5]: Latch inferred.
+# Info: [45205]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Module CAD_lib.lab5_rv32i_decoder(behav), Net(s) Function_op[3:0]: Latch inferred.
+# Info: [45205]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Module CAD_lib.lab5_rv32i_decoder(behav), Net(s) RS1[4:0]: Latch inferred.
+# Info: [45205]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Module CAD_lib.lab5_rv32i_decoder(behav), Net(s) RS2[4:0]: Latch inferred.
+# Info: [45205]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Module CAD_lib.lab5_rv32i_decoder(behav), Net(s) RD[4:0]: Latch inferred.
+# Info: [45309]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Optimizing state bit(s) RS1v to constant 1
+# Info: [45309]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Optimizing state bit(s) RDv to constant 1
+# Info: [45309]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Optimizing state bit(s) Immediate[11:5] to constant 0
+# Info: [45309]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Optimizing state bit(s) Immediate[3:2] to constant 0
+# Info: [45205]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Module CAD_lib.lab5_rv32i_decoder(behav), Net(s) Immediate[31:12]: Latch inferred.
+# Info: [45205]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 34: Module CAD_lib.lab5_rv32i_decoder(behav), Net(s) Immediate[0]: Latch inferred.
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 96.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21.
+# Info: [20013]: Precision will use 2 processor(s).
+# Info: [15002]: Optimizing design view:.cad_lib.lab5_rv32i_decoder.behav
+# Warning: [1621]: Port RS2v is connected to a disabled tristate, possibly unconnected Port in design.
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8018]: Gated clock net:nx584 converted into clock net:nx588 and complex enable logic.
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/lab5_rv32i_decoder.edf.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/lab5_rv32i_decoder.ucf.
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.6 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.5 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/hds/precision.tcl
+# COMMAND: report_area C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/lab5_rv32i_decoder_area.rep -cell_usage
+report_area C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/lab5_rv32i_decoder_area.rep -cell_usage
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab5_rv32i_decoder_behav_impl_21.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_21/precision.log.suppressed
+# Info: [9552]: Activated implementation lab5_rv32i_decoder_behav_impl_21 in project C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav_impl_22.
+# Info: [9557]: Created implementation lab5_rv32i_decoder_behav_impl_22 in project C:/HDS/CAD/CAD_lib/ps/lab5_rv32i_decoder_behav/lab5_rv32i_decoder_behav.psp.

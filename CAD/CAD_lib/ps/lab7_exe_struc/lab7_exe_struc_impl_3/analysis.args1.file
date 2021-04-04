@@ -1,0 +1,11 @@
+8:-out_dir
+68:C:/HDS/CAD/CAD_lib/ps/lab7_exe_struc/lab7_exe_struc_impl_3//rtlc.out
+10:-pipe_flow
+4:-vhf
+79:C:/HDS/CAD/CAD_lib/ps/lab7_exe_struc/lab7_exe_struc_impl_3//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+68:C:/HDS/CAD/CAD_lib/ps/lab7_exe_struc/lab7_exe_struc_impl_3//.jaguarc
+7:-sv2009
+67:+incdir+C:/HDS/CAD/CAD_lib/hdl+C:/HDS/CAD/CAD_lib/ps/lab7_exe_struc
+17:+define+synthesis

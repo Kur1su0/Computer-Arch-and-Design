@@ -1,0 +1,1 @@
+CAD_lib.lab2_counter_tb(rtl){generic map (width => 8)}

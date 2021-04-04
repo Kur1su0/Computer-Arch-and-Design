@@ -1,0 +1,7 @@
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd" -2008 

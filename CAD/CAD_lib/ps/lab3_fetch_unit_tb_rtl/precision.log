@@ -1,0 +1,111 @@
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/HDS_2018.2/bin/precision.log
+//  Precision RTL Synthesis 64-bit 2018.1.0.19 (Production Release) Fri Aug 10 05:55:53 PDT 2018
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2018, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 W@DESKTOP-86TQKQ1  10.0.19041 x64
+//  
+//  Start time Mon Feb 22 23:50:59 2021
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file C:/MentorGraphics/HDS_2018.2/bin/precision.log
+# COMMAND: source C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/hds/precision.tcl
+# Info: HDL Designer Synthesis run started
+# Info: [9577]: Input directory: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl
+# Info: [9572]: Moving session transcript to file C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/precision.log
+# Info: [9558]: Created project C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl.psp in folder C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl.
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl_impl_1.
+# Info: [9557]: Created implementation lab3_fetch_unit_tb_rtl_impl_1 in project C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl.psp.
+# Info: [9578]: The Results Directory has been set to: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl_impl_1/
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation lab3_fetch_unit_tb_rtl_impl_1 in project C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl.psp.
+new_impl -name lab3_fetch_unit_tb_rtl_impl_1
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 91: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 93: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 96: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 97: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 100: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 101: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 103: No separator between number and identifier.
+# Warning: [40000]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 104: No separator between number and identifier.
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd" ...
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 91: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 91: Timeout expression in wait statement is not supported
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 93: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 93: Timeout expression in wait statement is not supported
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 96: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 96: Timeout expression in wait statement is not supported
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 97: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 97: Timeout expression in wait statement is not supported
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 100: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 100: Timeout expression in wait statement is not supported
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 101: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 101: Timeout expression in wait statement is not supported
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 103: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 103: Timeout expression in wait statement is not supported
+# Warning: [43112]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 104: No separator between number and identifier.
+# Warning: [43535]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd", line 104: Timeout expression in wait statement is not supported
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Error: [46292]: Module CAD_lib.lab3_fetch_unit_tb(rtl) cannot be compiled because it contains non-rtl constructs. Please check the log for warnings or errors about non-synthesizable constructs in this module.
+# Info: [44506]: Module CAD_lib.lab3_fetch_unit(struct){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.mux_2_to_1(mixed){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.not_gate(behave): Pre-processing...
+# Info: [44506]: Module CAD_lib.or_gate(behave): Pre-processing...
+# Info: [44506]: Module CAD_lib.lab2_counter(mixed){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.Increment(mixed){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.reg(mixed){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.read_ctrl(behav): Pre-processing...
+# Info: [44506]: Module CAD_lib.nop_ctrl(behav): Pre-processing...
+# Info: [44508]: Module CAD_lib.mux_2_to_1(mixed){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.not_gate(behave): Compiling...
+# Info: [44508]: Module CAD_lib.or_gate(behave): Compiling...
+# Info: [44508]: Module CAD_lib.Increment(mixed){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.reg(mixed){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.lab2_counter(mixed){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.read_ctrl(behav): Compiling...
+# Info: [44508]: Module CAD_lib.nop_ctrl(behav): Compiling...
+# Warning: [45784]: "C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd", line 26: Module CAD_lib.nop_ctrl(behav), Net(s) mdata[31:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Info: [44508]: Module CAD_lib.lab3_fetch_unit(struct){generic map (width => 32)}: Compiling...
+# Info: [44846]: Rebalanced Expression Tree...
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Error: [46259]: Design compilation failed, unsupported or non-rtl constructs detected in the following modules :
+# Info: [40000]: CAD_lib.lab3_fetch_unit_tb(rtl){generic map (width => 32)}
+# Info: [40000]: Please check the log for details pertaining to unsupported or non-rtl construct(s)
+# Error: [679]: Unable to elaborate design CAD_lib.lab3_fetch_unit_tb(rtl) in vhdl.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab3_fetch_unit_tb_rtl_impl_1.
+# Info: [9530]: Closed project: C:/HDS/CAD/CAD_lib/ps/lab3_fetch_unit_tb_rtl/lab3_fetch_unit_tb_rtl.psp.
+close_project -discard
+exit -force

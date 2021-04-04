@@ -1,0 +1,5 @@
+lab5_rv32i_decoder lab5_rv32i_decoder
+decode_proc decode_proc
+reg-32 reg_32
+lab6_decode_pipeline lab6_decode_pipeline
+#LEGALIZEDMOD_COUNTER 0

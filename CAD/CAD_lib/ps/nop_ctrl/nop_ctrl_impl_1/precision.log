@@ -1,0 +1,25 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation nop_ctrl_impl_1 in project C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl.psp.
+new_impl -name nop_ctrl_impl_1
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd" ...
+# Error: [42622]: "C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd", line 18: An index constraint may be applied only on an unconstrained array type
+# Error: [40008]: HDL analysis failed.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/nop_ctrl/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation nop_ctrl_impl_1.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl_impl_1/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation nop_ctrl_impl_1 in project C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl_impl_2.
+# Info: [9557]: Created implementation nop_ctrl_impl_2 in project C:/HDS/CAD/CAD_lib/ps/nop_ctrl/nop_ctrl.psp.

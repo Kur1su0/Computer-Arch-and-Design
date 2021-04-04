@@ -1,0 +1,5 @@
+vendor_name = exemplar
+source_file = 1, C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd
+design_name = or_gate
+instance =      comp,            Dout_obuf,            Dout_obuf,              or_gate,         1, 25:-1:25:
+instance =       net,                 Dout,                 Dout,              or_gate,         1, 25:-1:25:

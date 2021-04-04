@@ -1,0 +1,25 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_16/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_16/precision.log.suppressed
+# Info: [9552]: Activated implementation mem_behave_impl_16 in project C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave.psp.
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mdata_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd" ...
+# Error: [43094]: "C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd", line 52: Design Unit delay not found in logical library CAD_lib.
+# Error: [40008]: HDL analysis failed.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/mem_behave/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation mem_behave_impl_16.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_16/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_16/precision.log.suppressed
+# Info: [9552]: Activated implementation mem_behave_impl_16 in project C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_17.
+# Info: [9557]: Created implementation mem_behave_impl_17 in project C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave.psp.

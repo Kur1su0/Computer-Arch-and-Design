@@ -1,0 +1,57 @@
+(edif not_gate 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 02 22 22 03 44)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external maxv 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell NOT (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port IN1 (direction INPUT))
+     (port Y (direction OUTPUT)))))
+  (cell maxv_io (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port oe (direction INPUT))
+     (port padio (direction INOUT))
+     (port combout (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell not_gate (cellType GENERIC)
+   (view behave  (viewType NETLIST)
+    (interface 
+     (port Din (direction INPUT))
+     (port Dout (direction OUTPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance ix29995z1315 (viewRef NETLIST  (cellRef NOT (libraryRef maxv )))
+      (property area_report (string "0")))
+     (instance Din_ibuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Dout_obuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (net Din 
+      (joined 
+       (portRef Din )
+       (portRef padio (instanceRef Din_ibuf ))))
+     (net Din_int 
+      (joined 
+       (portRef combout (instanceRef Din_ibuf ))
+       (portRef IN1 (instanceRef ix29995z1315 ))))
+     (net Dout 
+      (joined 
+       (portRef Dout )
+       (portRef padio (instanceRef Dout_obuf ))))
+     (net Dout_dup_0 
+      (joined 
+       (portRef Y (instanceRef ix29995z1315 ))
+       (portRef datain (instanceRef Dout_obuf ))))))))
+ (design not_gate (cellRef not_gate (libraryRef cad_lib ))))

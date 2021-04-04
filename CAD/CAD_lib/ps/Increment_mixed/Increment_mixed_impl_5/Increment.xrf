@@ -1,0 +1,5 @@
+vendor_name = exemplar
+source_file = 1, C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd
+design_name = Increment
+instance =      comp,         ix5996z42621,         ix5996z42621,            Increment,         1, 19:-1:19:
+instance =       net,             nx5996z9,             nx5996z9,            Increment,         1, 19:-1:19:

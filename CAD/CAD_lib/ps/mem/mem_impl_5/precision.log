@@ -1,0 +1,50 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/precision.log.suppressed
+# Info: [9552]: Activated implementation mem_impl_5 in project C:/HDS/CAD/CAD_lib/ps/mem/mem.psp.
+# Info: [15300]: Setting up the design to use synthesis library "maxv.syn"
+# Info: [580]: The global max fanout is currently set to 1000 for Altera - MAX V .
+# Info: [15326]: Setting Part to: "5M2210ZF324A".
+# Info: [15327]: Setting Process to: "5".
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/maxv.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.mem(behave): Pre-processing...
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd", line 18: Input port Read has never been used.
+# Info: [44523]: Root Module CAD_lib.mem(behave): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 21.
+# Info: [44835]: Total CPU time for compilation: 0.2 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5.
+# Info: [15002]: Optimizing design view:.cad_lib.mem.behave
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/mem.edf.
+# Info: Info, Writing xrf file 'C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/mem.xrf'
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/mem.xrf.
+# Info: -- Writing file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/mem.tcl
+# Info: exq_pr_compile_project gen_vcf mem 1
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.1 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.2 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/mem/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation mem_impl_5.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_5/precision.log.suppressed
+# Info: [9552]: Activated implementation mem_impl_5 in project C:/HDS/CAD/CAD_lib/ps/mem/mem.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/mem/mem_impl_6.
+# Info: [9557]: Created implementation mem_impl_6 in project C:/HDS/CAD/CAD_lib/ps/mem/mem.psp.

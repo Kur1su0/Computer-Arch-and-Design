@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom rtl
+DEFAULT_FILE atom lab8_mem_stage_struc_tb_tb_rtl.vhd

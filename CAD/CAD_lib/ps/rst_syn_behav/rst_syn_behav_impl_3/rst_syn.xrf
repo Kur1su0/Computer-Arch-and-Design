@@ -1,0 +1,5 @@
+vendor_name = exemplar
+source_file = 1, C:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd
+design_name = rst_syn
+instance =      comp,        reg_out_reset,        reg_out_reset,              rst_syn,         1, 24:-1:24:
+instance =       net,      out_reset_dup_0,      out_reset_dup_0,              rst_syn,         1, 24:-1:24:

@@ -1,0 +1,11 @@
+8:-out_dir
+61:C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_11//rtlc.out
+10:-pipe_flow
+4:-vhf
+72:C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_11//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+61:C:/HDS/CAD/CAD_lib/ps/mem_behave/mem_behave_impl_11//.jaguarc
+7:-sv2009
+63:+incdir+C:/HDS/CAD/CAD_lib/hdl+C:/HDS/CAD/CAD_lib/ps/mem_behave
+17:+define+synthesis

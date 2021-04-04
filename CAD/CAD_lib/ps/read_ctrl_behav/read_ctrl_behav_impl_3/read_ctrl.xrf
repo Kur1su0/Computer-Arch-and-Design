@@ -1,0 +1,5 @@
+vendor_name = exemplar
+source_file = 1, C:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd
+design_name = read_ctrl
+instance =      comp,            Read_obuf,            Read_obuf,            read_ctrl,         1, 27:-1:27:
+instance =       net,                 Read,                 Read,            read_ctrl,         1, 27:-1:27:

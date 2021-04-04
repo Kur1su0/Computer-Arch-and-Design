@@ -1,0 +1,72 @@
+(edif pc_enable 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 02 27 01 18 53)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external xis3 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell LUT2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port I1 (direction INPUT))
+     (port O (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell pc_enable (cellType GENERIC)
+   (view behave  (viewType NETLIST)
+    (interface 
+     (port jmp_or_rst (direction INPUT))
+     (port Delay (direction INPUT))
+     (port Dout (direction OUTPUT)))
+    (property AREA (string "1.000000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "3s50tq144-4"))
+    (contents 
+     (instance Dout_obuf (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance Delay_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance jmp_or_rst_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance ix29995z1325 (viewRef NETLIST  (cellRef LUT2 (libraryRef xis3 )))
+      (property INIT (string "B")))
+     (net jmp_or_rst 
+      (joined 
+       (portRef jmp_or_rst )
+       (portRef I (instanceRef jmp_or_rst_ibuf ))))
+     (net Delay 
+      (joined 
+       (portRef Delay )
+       (portRef I (instanceRef Delay_ibuf ))))
+     (net jmp_or_rst_int 
+      (joined 
+       (portRef O (instanceRef jmp_or_rst_ibuf ))
+       (portRef I0 (instanceRef ix29995z1325 ))))
+     (net Delay_int 
+      (joined 
+       (portRef O (instanceRef Delay_ibuf ))
+       (portRef I1 (instanceRef ix29995z1325 ))))
+     (net Dout 
+      (joined 
+       (portRef Dout )
+       (portRef O (instanceRef Dout_obuf ))))
+     (net Dout_dup_0 
+      (joined 
+       (portRef O (instanceRef ix29995z1325 ))
+       (portRef I (instanceRef Dout_obuf ))))))))
+ (design pc_enable (cellRef pc_enable (libraryRef cad_lib ))
+  (property PART (string "3s50tq144-4"))))

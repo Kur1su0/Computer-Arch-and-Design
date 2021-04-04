@@ -1,0 +1,15 @@
+1614036516.504000
+*3086187407
+CAD_lib	C:\HDS\CAD\CAD_lib\ps\lab3_fetch_unit_struct\lab3_fetch_unit_struct_impl_5\rtlc_libs\CAD_lib	LAB2_COUNTER	LAB2_COUNTER	0	3269850259
+CAD_lib	C:\HDS\CAD\CAD_lib\ps\lab3_fetch_unit_struct\lab3_fetch_unit_struct_impl_5\rtlc_libs\CAD_lib	MUX_2_TO_1	MUX_2_TO_1	0	3272503793
+ieee	C:\MentorGraphics\PS2018.1_64-bit\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\MentorGraphics\PS2018.1_64-bit\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+CAD_lib	C:\HDS\CAD\CAD_lib\ps\lab3_fetch_unit_struct\lab3_fetch_unit_struct_impl_5\rtlc_libs\CAD_lib	MIXED	MUX_2_TO_1	1	812505065
+CAD_lib	C:\HDS\CAD\CAD_lib\ps\lab3_fetch_unit_struct\lab3_fetch_unit_struct_impl_5\rtlc_libs\CAD_lib	INCREMENT	INCREMENT	0	345432835
+ieee	C:\MentorGraphics\PS2018.1_64-bit\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\MentorGraphics\PS2018.1_64-bit\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+CAD_lib	C:\HDS\CAD\CAD_lib\ps\lab3_fetch_unit_struct\lab3_fetch_unit_struct_impl_5\rtlc_libs\CAD_lib	MIXED	INCREMENT	1	1492927013
+CAD_lib	C:\HDS\CAD\CAD_lib\ps\lab3_fetch_unit_struct\lab3_fetch_unit_struct_impl_5\rtlc_libs\CAD_lib	REG	REG	0	3895665972
+ieee	C:\MentorGraphics\PS2018.1_64-bit\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\MentorGraphics\PS2018.1_64-bit\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE_2008	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+CAD_lib	C:\HDS\CAD\CAD_lib\ps\lab3_fetch_unit_struct\lab3_fetch_unit_struct_impl_5\rtlc_libs\CAD_lib	MIXED	REG	1	2169238299

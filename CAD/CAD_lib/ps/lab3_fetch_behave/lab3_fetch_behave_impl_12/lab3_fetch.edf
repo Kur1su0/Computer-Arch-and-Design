@@ -1,0 +1,2394 @@
+(edif lab3_fetch 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 02 24 18 28 17)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external maxv 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell GND (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Y (direction OUTPUT)))))
+  (cell maxv_lcell (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port clk (direction INPUT))
+     (port dataa (direction INPUT))
+     (port datab (direction INPUT))
+     (port datac (direction INPUT))
+     (port datad (direction INPUT))
+     (port aclr (direction INPUT))
+     (port aload (direction INPUT))
+     (port sclr (direction INPUT))
+     (port sload (direction INPUT))
+     (port ena (direction INPUT))
+     (port cin (direction INPUT))
+     (port cin0 (direction INPUT))
+     (port cin1 (direction INPUT))
+     (port inverta (direction INPUT))
+     (port regcascin (direction INPUT))
+     (port devclrn (direction INPUT))
+     (port devpor (direction INPUT))
+     (port combout (direction OUTPUT))
+     (port regout (direction OUTPUT))
+     (port cout (direction OUTPUT))
+     (port cout0 (direction OUTPUT))
+     (port cout1 (direction OUTPUT)))))
+  (cell maxv_io (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port oe (direction INPUT))
+     (port padio (direction INOUT))
+     (port combout (direction OUTPUT))))))
+ (library OPERATORS 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell modgen_counter_30_0 (cellType GENERIC)
+   (property function (string "modgen_counter"))
+   (property size (string "30"))
+   (property tech (string "yeager"))
+   (property generics (string "modgen_counter_size30_0_0_sign0_2_up_rise_false_true_true_true_true_false_false_false_small"))
+   (view IMPLEMENTATION  (viewType NETLIST)
+    (interface 
+     (port clock (direction INPUT))
+     (port (array (rename q "q(31:2)") 30 )(direction OUTPUT))
+     (port clk_en (direction INPUT))
+     (port aclear (direction INPUT))
+     (port sload (direction INPUT))
+     (port (array (rename data "data(31:2)") 30 )(direction INPUT))
+     (port aset (direction INPUT))
+     (port sclear (direction INPUT))
+     (port updn (direction INPUT))
+     (port cnt_en (direction INPUT)))
+    (contents 
+     (instance ps_gnd (viewRef NETLIST  (cellRef GND (libraryRef maxv ))))
+     (instance reg_q_31_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5a5a"))
+      (property operation_mode (string "normal"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_30_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_29_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_28_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_27_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_26_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_25_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_24_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_23_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_22_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_21_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_20_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_19_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_18_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_17_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_16_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_15_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_14_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_13_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_12_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_11_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_10_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_9_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_8_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_7_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_6_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_5_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_4_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_3_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "5aa0"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on"))
+      (property sum_lutc_input (string "cin"))
+      (property cin_used (string "true")))
+     (instance reg_q_2_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property lut_mask (string "55aa"))
+      (property operation_mode (string "arithmetic"))
+      (property synch_mode (string "on")))
+     (net nx53265z2 
+      (joined 
+       (portRef Y (instanceRef ps_gnd ))
+       (portRef aclr (instanceRef reg_q_10_ ))
+       (portRef aclr (instanceRef reg_q_11_ ))
+       (portRef aclr (instanceRef reg_q_12_ ))
+       (portRef aclr (instanceRef reg_q_13_ ))
+       (portRef aclr (instanceRef reg_q_14_ ))
+       (portRef aclr (instanceRef reg_q_15_ ))
+       (portRef aclr (instanceRef reg_q_16_ ))
+       (portRef aclr (instanceRef reg_q_17_ ))
+       (portRef aclr (instanceRef reg_q_18_ ))
+       (portRef aclr (instanceRef reg_q_19_ ))
+       (portRef aclr (instanceRef reg_q_2_ ))
+       (portRef aclr (instanceRef reg_q_20_ ))
+       (portRef aclr (instanceRef reg_q_21_ ))
+       (portRef aclr (instanceRef reg_q_22_ ))
+       (portRef aclr (instanceRef reg_q_23_ ))
+       (portRef aclr (instanceRef reg_q_24_ ))
+       (portRef aclr (instanceRef reg_q_25_ ))
+       (portRef aclr (instanceRef reg_q_26_ ))
+       (portRef aclr (instanceRef reg_q_27_ ))
+       (portRef aclr (instanceRef reg_q_28_ ))
+       (portRef aclr (instanceRef reg_q_29_ ))
+       (portRef aclr (instanceRef reg_q_3_ ))
+       (portRef aclr (instanceRef reg_q_30_ ))
+       (portRef aclr (instanceRef reg_q_31_ ))
+       (portRef aclr (instanceRef reg_q_4_ ))
+       (portRef aclr (instanceRef reg_q_5_ ))
+       (portRef aclr (instanceRef reg_q_6_ ))
+       (portRef aclr (instanceRef reg_q_7_ ))
+       (portRef aclr (instanceRef reg_q_8_ ))
+       (portRef aclr (instanceRef reg_q_9_ ))))
+     (net sload 
+      (joined 
+       (portRef sload )
+       (portRef sload (instanceRef reg_q_10_ ))
+       (portRef sload (instanceRef reg_q_11_ ))
+       (portRef sload (instanceRef reg_q_12_ ))
+       (portRef sload (instanceRef reg_q_13_ ))
+       (portRef sload (instanceRef reg_q_14_ ))
+       (portRef sload (instanceRef reg_q_15_ ))
+       (portRef sload (instanceRef reg_q_16_ ))
+       (portRef sload (instanceRef reg_q_17_ ))
+       (portRef sload (instanceRef reg_q_18_ ))
+       (portRef sload (instanceRef reg_q_19_ ))
+       (portRef sload (instanceRef reg_q_2_ ))
+       (portRef sload (instanceRef reg_q_20_ ))
+       (portRef sload (instanceRef reg_q_21_ ))
+       (portRef sload (instanceRef reg_q_22_ ))
+       (portRef sload (instanceRef reg_q_23_ ))
+       (portRef sload (instanceRef reg_q_24_ ))
+       (portRef sload (instanceRef reg_q_25_ ))
+       (portRef sload (instanceRef reg_q_26_ ))
+       (portRef sload (instanceRef reg_q_27_ ))
+       (portRef sload (instanceRef reg_q_28_ ))
+       (portRef sload (instanceRef reg_q_29_ ))
+       (portRef sload (instanceRef reg_q_3_ ))
+       (portRef sload (instanceRef reg_q_30_ ))
+       (portRef sload (instanceRef reg_q_31_ ))
+       (portRef sload (instanceRef reg_q_4_ ))
+       (portRef sload (instanceRef reg_q_5_ ))
+       (portRef sload (instanceRef reg_q_6_ ))
+       (portRef sload (instanceRef reg_q_7_ ))
+       (portRef sload (instanceRef reg_q_8_ ))
+       (portRef sload (instanceRef reg_q_9_ ))))
+     (net sclear 
+      (joined 
+       (portRef sclear )
+       (portRef sclr (instanceRef reg_q_10_ ))
+       (portRef sclr (instanceRef reg_q_11_ ))
+       (portRef sclr (instanceRef reg_q_12_ ))
+       (portRef sclr (instanceRef reg_q_13_ ))
+       (portRef sclr (instanceRef reg_q_14_ ))
+       (portRef sclr (instanceRef reg_q_15_ ))
+       (portRef sclr (instanceRef reg_q_16_ ))
+       (portRef sclr (instanceRef reg_q_17_ ))
+       (portRef sclr (instanceRef reg_q_18_ ))
+       (portRef sclr (instanceRef reg_q_19_ ))
+       (portRef sclr (instanceRef reg_q_2_ ))
+       (portRef sclr (instanceRef reg_q_20_ ))
+       (portRef sclr (instanceRef reg_q_21_ ))
+       (portRef sclr (instanceRef reg_q_22_ ))
+       (portRef sclr (instanceRef reg_q_23_ ))
+       (portRef sclr (instanceRef reg_q_24_ ))
+       (portRef sclr (instanceRef reg_q_25_ ))
+       (portRef sclr (instanceRef reg_q_26_ ))
+       (portRef sclr (instanceRef reg_q_27_ ))
+       (portRef sclr (instanceRef reg_q_28_ ))
+       (portRef sclr (instanceRef reg_q_29_ ))
+       (portRef sclr (instanceRef reg_q_3_ ))
+       (portRef sclr (instanceRef reg_q_30_ ))
+       (portRef sclr (instanceRef reg_q_31_ ))
+       (portRef sclr (instanceRef reg_q_4_ ))
+       (portRef sclr (instanceRef reg_q_5_ ))
+       (portRef sclr (instanceRef reg_q_6_ ))
+       (portRef sclr (instanceRef reg_q_7_ ))
+       (portRef sclr (instanceRef reg_q_8_ ))
+       (portRef sclr (instanceRef reg_q_9_ ))))
+     (net clk 
+      (joined 
+       (portRef clock )
+       (portRef clk (instanceRef reg_q_10_ ))
+       (portRef clk (instanceRef reg_q_11_ ))
+       (portRef clk (instanceRef reg_q_12_ ))
+       (portRef clk (instanceRef reg_q_13_ ))
+       (portRef clk (instanceRef reg_q_14_ ))
+       (portRef clk (instanceRef reg_q_15_ ))
+       (portRef clk (instanceRef reg_q_16_ ))
+       (portRef clk (instanceRef reg_q_17_ ))
+       (portRef clk (instanceRef reg_q_18_ ))
+       (portRef clk (instanceRef reg_q_19_ ))
+       (portRef clk (instanceRef reg_q_2_ ))
+       (portRef clk (instanceRef reg_q_20_ ))
+       (portRef clk (instanceRef reg_q_21_ ))
+       (portRef clk (instanceRef reg_q_22_ ))
+       (portRef clk (instanceRef reg_q_23_ ))
+       (portRef clk (instanceRef reg_q_24_ ))
+       (portRef clk (instanceRef reg_q_25_ ))
+       (portRef clk (instanceRef reg_q_26_ ))
+       (portRef clk (instanceRef reg_q_27_ ))
+       (portRef clk (instanceRef reg_q_28_ ))
+       (portRef clk (instanceRef reg_q_29_ ))
+       (portRef clk (instanceRef reg_q_3_ ))
+       (portRef clk (instanceRef reg_q_30_ ))
+       (portRef clk (instanceRef reg_q_31_ ))
+       (portRef clk (instanceRef reg_q_4_ ))
+       (portRef clk (instanceRef reg_q_5_ ))
+       (portRef clk (instanceRef reg_q_6_ ))
+       (portRef clk (instanceRef reg_q_7_ ))
+       (portRef clk (instanceRef reg_q_8_ ))
+       (portRef clk (instanceRef reg_q_9_ ))))
+     (net ce 
+      (joined 
+       (portRef clk_en )
+       (portRef ena (instanceRef reg_q_10_ ))
+       (portRef ena (instanceRef reg_q_11_ ))
+       (portRef ena (instanceRef reg_q_12_ ))
+       (portRef ena (instanceRef reg_q_13_ ))
+       (portRef ena (instanceRef reg_q_14_ ))
+       (portRef ena (instanceRef reg_q_15_ ))
+       (portRef ena (instanceRef reg_q_16_ ))
+       (portRef ena (instanceRef reg_q_17_ ))
+       (portRef ena (instanceRef reg_q_18_ ))
+       (portRef ena (instanceRef reg_q_19_ ))
+       (portRef ena (instanceRef reg_q_2_ ))
+       (portRef ena (instanceRef reg_q_20_ ))
+       (portRef ena (instanceRef reg_q_21_ ))
+       (portRef ena (instanceRef reg_q_22_ ))
+       (portRef ena (instanceRef reg_q_23_ ))
+       (portRef ena (instanceRef reg_q_24_ ))
+       (portRef ena (instanceRef reg_q_25_ ))
+       (portRef ena (instanceRef reg_q_26_ ))
+       (portRef ena (instanceRef reg_q_27_ ))
+       (portRef ena (instanceRef reg_q_28_ ))
+       (portRef ena (instanceRef reg_q_29_ ))
+       (portRef ena (instanceRef reg_q_3_ ))
+       (portRef ena (instanceRef reg_q_30_ ))
+       (portRef ena (instanceRef reg_q_31_ ))
+       (portRef ena (instanceRef reg_q_4_ ))
+       (portRef ena (instanceRef reg_q_5_ ))
+       (portRef ena (instanceRef reg_q_6_ ))
+       (portRef ena (instanceRef reg_q_7_ ))
+       (portRef ena (instanceRef reg_q_8_ ))
+       (portRef ena (instanceRef reg_q_9_ ))))
+     (net nx53265z1 
+      (joined 
+       (portRef (member data 29))
+       (portRef datac (instanceRef reg_q_2_ ))))
+     (net nx54262z2 
+      (joined 
+       (portRef (member data 28))
+       (portRef datac (instanceRef reg_q_3_ ))))
+     (net nx55259z3 
+      (joined 
+       (portRef (member data 27))
+       (portRef datac (instanceRef reg_q_4_ ))))
+     (net nx56256z3 
+      (joined 
+       (portRef (member data 26))
+       (portRef datac (instanceRef reg_q_5_ ))))
+     (net nx57253z3 
+      (joined 
+       (portRef (member data 25))
+       (portRef datac (instanceRef reg_q_6_ ))))
+     (net nx58250z3 
+      (joined 
+       (portRef (member data 24))
+       (portRef datac (instanceRef reg_q_7_ ))))
+     (net nx59247z3 
+      (joined 
+       (portRef (member data 23))
+       (portRef datac (instanceRef reg_q_8_ ))))
+     (net nx60244z3 
+      (joined 
+       (portRef (member data 22))
+       (portRef datac (instanceRef reg_q_9_ ))))
+     (net nx17096z3 
+      (joined 
+       (portRef (member data 21))
+       (portRef datac (instanceRef reg_q_10_ ))))
+     (net nx18093z3 
+      (joined 
+       (portRef (member data 20))
+       (portRef datac (instanceRef reg_q_11_ ))))
+     (net nx19090z3 
+      (joined 
+       (portRef (member data 19))
+       (portRef datac (instanceRef reg_q_12_ ))))
+     (net nx20087z3 
+      (joined 
+       (portRef (member data 18))
+       (portRef datac (instanceRef reg_q_13_ ))))
+     (net nx21084z3 
+      (joined 
+       (portRef (member data 17))
+       (portRef datac (instanceRef reg_q_14_ ))))
+     (net nx22081z3 
+      (joined 
+       (portRef (member data 16))
+       (portRef datac (instanceRef reg_q_15_ ))))
+     (net nx23078z3 
+      (joined 
+       (portRef (member data 15))
+       (portRef datac (instanceRef reg_q_16_ ))))
+     (net nx24075z3 
+      (joined 
+       (portRef (member data 14))
+       (portRef datac (instanceRef reg_q_17_ ))))
+     (net nx25072z3 
+      (joined 
+       (portRef (member data 13))
+       (portRef datac (instanceRef reg_q_18_ ))))
+     (net nx26069z3 
+      (joined 
+       (portRef (member data 12))
+       (portRef datac (instanceRef reg_q_19_ ))))
+     (net nx28065z3 
+      (joined 
+       (portRef (member data 11))
+       (portRef datac (instanceRef reg_q_20_ ))))
+     (net nx29062z3 
+      (joined 
+       (portRef (member data 10))
+       (portRef datac (instanceRef reg_q_21_ ))))
+     (net nx30059z3 
+      (joined 
+       (portRef (member data 9))
+       (portRef datac (instanceRef reg_q_22_ ))))
+     (net nx31056z3 
+      (joined 
+       (portRef (member data 8))
+       (portRef datac (instanceRef reg_q_23_ ))))
+     (net nx32053z3 
+      (joined 
+       (portRef (member data 7))
+       (portRef datac (instanceRef reg_q_24_ ))))
+     (net nx33050z3 
+      (joined 
+       (portRef (member data 6))
+       (portRef datac (instanceRef reg_q_25_ ))))
+     (net nx34047z3 
+      (joined 
+       (portRef (member data 5))
+       (portRef datac (instanceRef reg_q_26_ ))))
+     (net nx35044z3 
+      (joined 
+       (portRef (member data 4))
+       (portRef datac (instanceRef reg_q_27_ ))))
+     (net nx36041z3 
+      (joined 
+       (portRef (member data 3))
+       (portRef datac (instanceRef reg_q_28_ ))))
+     (net nx37038z3 
+      (joined 
+       (portRef (member data 2))
+       (portRef datac (instanceRef reg_q_29_ ))))
+     (net nx39034z3 
+      (joined 
+       (portRef (member data 1))
+       (portRef datac (instanceRef reg_q_30_ ))))
+     (net nx40031z2 
+      (joined 
+       (portRef (member data 0))
+       (portRef datac (instanceRef reg_q_31_ ))))
+     (net q_0_ 
+      (joined 
+       (portRef (member q 29))
+       (portRef regout (instanceRef reg_q_2_ ))
+       (portRef dataa (instanceRef reg_q_2_ ))))
+     (net q_1_ 
+      (joined 
+       (portRef (member q 28))
+       (portRef regout (instanceRef reg_q_3_ ))
+       (portRef dataa (instanceRef reg_q_3_ ))))
+     (net nx55259z2 
+      (joined 
+       (portRef (member q 27))
+       (portRef regout (instanceRef reg_q_4_ ))
+       (portRef dataa (instanceRef reg_q_4_ ))))
+     (net nx56256z2 
+      (joined 
+       (portRef (member q 26))
+       (portRef regout (instanceRef reg_q_5_ ))
+       (portRef dataa (instanceRef reg_q_5_ ))))
+     (net nx57253z2 
+      (joined 
+       (portRef (member q 25))
+       (portRef regout (instanceRef reg_q_6_ ))
+       (portRef dataa (instanceRef reg_q_6_ ))))
+     (net nx58250z2 
+      (joined 
+       (portRef (member q 24))
+       (portRef regout (instanceRef reg_q_7_ ))
+       (portRef dataa (instanceRef reg_q_7_ ))))
+     (net nx59247z2 
+      (joined 
+       (portRef (member q 23))
+       (portRef regout (instanceRef reg_q_8_ ))
+       (portRef dataa (instanceRef reg_q_8_ ))))
+     (net nx60244z2 
+      (joined 
+       (portRef (member q 22))
+       (portRef regout (instanceRef reg_q_9_ ))
+       (portRef dataa (instanceRef reg_q_9_ ))))
+     (net nx17096z2 
+      (joined 
+       (portRef (member q 21))
+       (portRef regout (instanceRef reg_q_10_ ))
+       (portRef dataa (instanceRef reg_q_10_ ))))
+     (net nx18093z2 
+      (joined 
+       (portRef (member q 20))
+       (portRef regout (instanceRef reg_q_11_ ))
+       (portRef dataa (instanceRef reg_q_11_ ))))
+     (net nx19090z2 
+      (joined 
+       (portRef (member q 19))
+       (portRef regout (instanceRef reg_q_12_ ))
+       (portRef dataa (instanceRef reg_q_12_ ))))
+     (net nx20087z2 
+      (joined 
+       (portRef (member q 18))
+       (portRef regout (instanceRef reg_q_13_ ))
+       (portRef dataa (instanceRef reg_q_13_ ))))
+     (net nx21084z2 
+      (joined 
+       (portRef (member q 17))
+       (portRef regout (instanceRef reg_q_14_ ))
+       (portRef dataa (instanceRef reg_q_14_ ))))
+     (net nx22081z2 
+      (joined 
+       (portRef (member q 16))
+       (portRef regout (instanceRef reg_q_15_ ))
+       (portRef dataa (instanceRef reg_q_15_ ))))
+     (net nx23078z2 
+      (joined 
+       (portRef (member q 15))
+       (portRef regout (instanceRef reg_q_16_ ))
+       (portRef dataa (instanceRef reg_q_16_ ))))
+     (net nx24075z2 
+      (joined 
+       (portRef (member q 14))
+       (portRef regout (instanceRef reg_q_17_ ))
+       (portRef dataa (instanceRef reg_q_17_ ))))
+     (net nx25072z2 
+      (joined 
+       (portRef (member q 13))
+       (portRef regout (instanceRef reg_q_18_ ))
+       (portRef dataa (instanceRef reg_q_18_ ))))
+     (net nx26069z2 
+      (joined 
+       (portRef (member q 12))
+       (portRef regout (instanceRef reg_q_19_ ))
+       (portRef dataa (instanceRef reg_q_19_ ))))
+     (net nx28065z2 
+      (joined 
+       (portRef (member q 11))
+       (portRef regout (instanceRef reg_q_20_ ))
+       (portRef dataa (instanceRef reg_q_20_ ))))
+     (net nx29062z2 
+      (joined 
+       (portRef (member q 10))
+       (portRef regout (instanceRef reg_q_21_ ))
+       (portRef dataa (instanceRef reg_q_21_ ))))
+     (net nx30059z2 
+      (joined 
+       (portRef (member q 9))
+       (portRef regout (instanceRef reg_q_22_ ))
+       (portRef dataa (instanceRef reg_q_22_ ))))
+     (net nx31056z2 
+      (joined 
+       (portRef (member q 8))
+       (portRef regout (instanceRef reg_q_23_ ))
+       (portRef dataa (instanceRef reg_q_23_ ))))
+     (net nx32053z2 
+      (joined 
+       (portRef (member q 7))
+       (portRef regout (instanceRef reg_q_24_ ))
+       (portRef dataa (instanceRef reg_q_24_ ))))
+     (net nx33050z2 
+      (joined 
+       (portRef (member q 6))
+       (portRef regout (instanceRef reg_q_25_ ))
+       (portRef dataa (instanceRef reg_q_25_ ))))
+     (net nx34047z2 
+      (joined 
+       (portRef (member q 5))
+       (portRef regout (instanceRef reg_q_26_ ))
+       (portRef dataa (instanceRef reg_q_26_ ))))
+     (net nx35044z2 
+      (joined 
+       (portRef (member q 4))
+       (portRef regout (instanceRef reg_q_27_ ))
+       (portRef dataa (instanceRef reg_q_27_ ))))
+     (net nx36041z2 
+      (joined 
+       (portRef (member q 3))
+       (portRef regout (instanceRef reg_q_28_ ))
+       (portRef dataa (instanceRef reg_q_28_ ))))
+     (net nx37038z2 
+      (joined 
+       (portRef (member q 2))
+       (portRef regout (instanceRef reg_q_29_ ))
+       (portRef dataa (instanceRef reg_q_29_ ))))
+     (net nx39034z2 
+      (joined 
+       (portRef (member q 1))
+       (portRef regout (instanceRef reg_q_30_ ))
+       (portRef dataa (instanceRef reg_q_30_ ))))
+     (net nx46558z1 
+      (joined 
+       (portRef (member q 0))
+       (portRef regout (instanceRef reg_q_31_ ))
+       (portRef dataa (instanceRef reg_q_31_ ))))
+     (net nx54262z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_2_ ))
+       (portRef cin (instanceRef reg_q_3_ ))))
+     (net nx55259z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_3_ ))
+       (portRef cin (instanceRef reg_q_4_ ))))
+     (net nx56256z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_4_ ))
+       (portRef cin (instanceRef reg_q_5_ ))))
+     (net nx57253z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_5_ ))
+       (portRef cin (instanceRef reg_q_6_ ))))
+     (net nx58250z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_6_ ))
+       (portRef cin (instanceRef reg_q_7_ ))))
+     (net nx59247z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_7_ ))
+       (portRef cin (instanceRef reg_q_8_ ))))
+     (net nx60244z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_8_ ))
+       (portRef cin (instanceRef reg_q_9_ ))))
+     (net nx17096z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_9_ ))
+       (portRef cin (instanceRef reg_q_10_ ))))
+     (net nx18093z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_10_ ))
+       (portRef cin (instanceRef reg_q_11_ ))))
+     (net nx19090z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_11_ ))
+       (portRef cin (instanceRef reg_q_12_ ))))
+     (net nx20087z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_12_ ))
+       (portRef cin (instanceRef reg_q_13_ ))))
+     (net nx21084z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_13_ ))
+       (portRef cin (instanceRef reg_q_14_ ))))
+     (net nx22081z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_14_ ))
+       (portRef cin (instanceRef reg_q_15_ ))))
+     (net nx23078z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_15_ ))
+       (portRef cin (instanceRef reg_q_16_ ))))
+     (net nx24075z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_16_ ))
+       (portRef cin (instanceRef reg_q_17_ ))))
+     (net nx25072z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_17_ ))
+       (portRef cin (instanceRef reg_q_18_ ))))
+     (net nx26069z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_18_ ))
+       (portRef cin (instanceRef reg_q_19_ ))))
+     (net nx28065z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_19_ ))
+       (portRef cin (instanceRef reg_q_20_ ))))
+     (net nx29062z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_20_ ))
+       (portRef cin (instanceRef reg_q_21_ ))))
+     (net nx30059z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_21_ ))
+       (portRef cin (instanceRef reg_q_22_ ))))
+     (net nx31056z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_22_ ))
+       (portRef cin (instanceRef reg_q_23_ ))))
+     (net nx32053z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_23_ ))
+       (portRef cin (instanceRef reg_q_24_ ))))
+     (net nx33050z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_24_ ))
+       (portRef cin (instanceRef reg_q_25_ ))))
+     (net nx34047z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_25_ ))
+       (portRef cin (instanceRef reg_q_26_ ))))
+     (net nx35044z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_26_ ))
+       (portRef cin (instanceRef reg_q_27_ ))))
+     (net nx36041z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_27_ ))
+       (portRef cin (instanceRef reg_q_28_ ))))
+     (net nx37038z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_28_ ))
+       (portRef cin (instanceRef reg_q_29_ ))))
+     (net nx39034z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_29_ ))
+       (portRef cin (instanceRef reg_q_30_ ))))
+     (net nx40031z1 
+      (joined 
+       (portRef cout (instanceRef reg_q_30_ ))
+       (portRef cin (instanceRef reg_q_31_ ))))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell lab3_fetch (cellType GENERIC)
+   (view behave  (viewType NETLIST)
+    (interface 
+     (port (array (rename Jaddr "Jaddr(31:0)") 32 )(direction INPUT))
+     (port (array (rename Mdata "Mdata(31:0)") 32 )(direction INPUT))
+     (port clk (direction INPUT)
+      (property INFF (string "FALSE")))
+     (port Jmp (direction INPUT))
+     (port Reset (direction INPUT))
+     (port Delay (direction INPUT))
+     (port (array (rename Addr "Addr(31:0)") 32 )(direction OUTPUT))
+     (port (array (rename Inst "Inst(31:0)") 32 )(direction OUTPUT))
+     (port Read (direction OUTPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance modgen_counter_Addr (viewRef IMPLEMENTATION  (cellRef modgen_counter_30_0 (libraryRef OPERATORS ))))
+     (instance reg_internal_pc_0_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property synch_mode (string "on"))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "aaaa")))
+     (instance reg_internal_pc_1_ (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property synch_mode (string "on"))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "aaaa")))
+     (instance GND (viewRef NETLIST  (cellRef GND (libraryRef maxv ))))
+     (instance Jaddr_ibuf_31_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_30_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_29_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_28_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_27_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_26_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_25_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_24_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_23_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_22_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_21_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_20_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_19_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_18_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_17_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_16_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_15_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_14_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_13_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_12_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_11_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_10_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_9_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_8_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jaddr_ibuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_31_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_30_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_29_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_28_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_27_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_26_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_25_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_24_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_23_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_22_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_21_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_20_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_19_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_18_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_17_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_16_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_15_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_14_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_13_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_12_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_11_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_10_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_9_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_8_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Mdata_ibuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance clk_ibuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Jmp_ibuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Reset_ibuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Delay_ibuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "input")))
+     (instance Addr_obuf_31_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_30_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_29_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_28_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_27_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_26_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_25_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_24_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_23_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_22_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_21_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_20_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_19_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_18_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_17_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_16_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_15_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_14_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_13_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_12_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_11_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_10_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_9_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_8_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Addr_obuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_31_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_30_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_29_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_28_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_27_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_26_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_25_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_24_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_23_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_22_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_21_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_20_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_19_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_18_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_17_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_16_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_15_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_14_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_13_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_12_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_11_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_10_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_9_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_8_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_7_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_6_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_5_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_4_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_3_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_2_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_1_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Inst_obuf_0_ (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance Read_obuf (viewRef NETLIST  (cellRef maxv_io (libraryRef maxv )))
+      (property operation_mode (string "output")))
+     (instance ix27490z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix26493z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix24497z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix23500z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix22503z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix21506z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix20509z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix19512z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix18515z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix17518z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix16521z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix15524z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix13528z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix12531z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix11534z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix10537z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix9540z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix8543z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix7546z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix6549z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix5552z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix4555z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix5147z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix4150z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix3153z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix2156z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix1159z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix162z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "fffe")))
+     (instance ix64701z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix63704z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0002")))
+     (instance ix62707z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "fffe")))
+     (instance ix61710z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "fffe")))
+     (instance ix57715z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "1111")))
+     (instance ix11017z42613 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "fefe")))
+     (instance ix11017z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "efef")))
+     (instance ix13974z42612 (viewRef NETLIST  (cellRef maxv_lcell (libraryRef maxv )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "eeee")))
+     (net Jaddr_31_ 
+      (joined 
+       (portRef (member Jaddr 0))
+       (portRef padio (instanceRef Jaddr_ibuf_31_ ))))
+     (net Jaddr_30_ 
+      (joined 
+       (portRef (member Jaddr 1))
+       (portRef padio (instanceRef Jaddr_ibuf_30_ ))))
+     (net Jaddr_29_ 
+      (joined 
+       (portRef (member Jaddr 2))
+       (portRef padio (instanceRef Jaddr_ibuf_29_ ))))
+     (net Jaddr_28_ 
+      (joined 
+       (portRef (member Jaddr 3))
+       (portRef padio (instanceRef Jaddr_ibuf_28_ ))))
+     (net Jaddr_27_ 
+      (joined 
+       (portRef (member Jaddr 4))
+       (portRef padio (instanceRef Jaddr_ibuf_27_ ))))
+     (net Jaddr_26_ 
+      (joined 
+       (portRef (member Jaddr 5))
+       (portRef padio (instanceRef Jaddr_ibuf_26_ ))))
+     (net Jaddr_25_ 
+      (joined 
+       (portRef (member Jaddr 6))
+       (portRef padio (instanceRef Jaddr_ibuf_25_ ))))
+     (net Jaddr_24_ 
+      (joined 
+       (portRef (member Jaddr 7))
+       (portRef padio (instanceRef Jaddr_ibuf_24_ ))))
+     (net Jaddr_23_ 
+      (joined 
+       (portRef (member Jaddr 8))
+       (portRef padio (instanceRef Jaddr_ibuf_23_ ))))
+     (net Jaddr_22_ 
+      (joined 
+       (portRef (member Jaddr 9))
+       (portRef padio (instanceRef Jaddr_ibuf_22_ ))))
+     (net Jaddr_21_ 
+      (joined 
+       (portRef (member Jaddr 10))
+       (portRef padio (instanceRef Jaddr_ibuf_21_ ))))
+     (net Jaddr_20_ 
+      (joined 
+       (portRef (member Jaddr 11))
+       (portRef padio (instanceRef Jaddr_ibuf_20_ ))))
+     (net Jaddr_19_ 
+      (joined 
+       (portRef (member Jaddr 12))
+       (portRef padio (instanceRef Jaddr_ibuf_19_ ))))
+     (net Jaddr_18_ 
+      (joined 
+       (portRef (member Jaddr 13))
+       (portRef padio (instanceRef Jaddr_ibuf_18_ ))))
+     (net Jaddr_17_ 
+      (joined 
+       (portRef (member Jaddr 14))
+       (portRef padio (instanceRef Jaddr_ibuf_17_ ))))
+     (net Jaddr_16_ 
+      (joined 
+       (portRef (member Jaddr 15))
+       (portRef padio (instanceRef Jaddr_ibuf_16_ ))))
+     (net Jaddr_15_ 
+      (joined 
+       (portRef (member Jaddr 16))
+       (portRef padio (instanceRef Jaddr_ibuf_15_ ))))
+     (net Jaddr_14_ 
+      (joined 
+       (portRef (member Jaddr 17))
+       (portRef padio (instanceRef Jaddr_ibuf_14_ ))))
+     (net Jaddr_13_ 
+      (joined 
+       (portRef (member Jaddr 18))
+       (portRef padio (instanceRef Jaddr_ibuf_13_ ))))
+     (net Jaddr_12_ 
+      (joined 
+       (portRef (member Jaddr 19))
+       (portRef padio (instanceRef Jaddr_ibuf_12_ ))))
+     (net Jaddr_11_ 
+      (joined 
+       (portRef (member Jaddr 20))
+       (portRef padio (instanceRef Jaddr_ibuf_11_ ))))
+     (net Jaddr_10_ 
+      (joined 
+       (portRef (member Jaddr 21))
+       (portRef padio (instanceRef Jaddr_ibuf_10_ ))))
+     (net Jaddr_9_ 
+      (joined 
+       (portRef (member Jaddr 22))
+       (portRef padio (instanceRef Jaddr_ibuf_9_ ))))
+     (net Jaddr_8_ 
+      (joined 
+       (portRef (member Jaddr 23))
+       (portRef padio (instanceRef Jaddr_ibuf_8_ ))))
+     (net Jaddr_7_ 
+      (joined 
+       (portRef (member Jaddr 24))
+       (portRef padio (instanceRef Jaddr_ibuf_7_ ))))
+     (net Jaddr_6_ 
+      (joined 
+       (portRef (member Jaddr 25))
+       (portRef padio (instanceRef Jaddr_ibuf_6_ ))))
+     (net Jaddr_5_ 
+      (joined 
+       (portRef (member Jaddr 26))
+       (portRef padio (instanceRef Jaddr_ibuf_5_ ))))
+     (net Jaddr_4_ 
+      (joined 
+       (portRef (member Jaddr 27))
+       (portRef padio (instanceRef Jaddr_ibuf_4_ ))))
+     (net Jaddr_3_ 
+      (joined 
+       (portRef (member Jaddr 28))
+       (portRef padio (instanceRef Jaddr_ibuf_3_ ))))
+     (net Jaddr_2_ 
+      (joined 
+       (portRef (member Jaddr 29))
+       (portRef padio (instanceRef Jaddr_ibuf_2_ ))))
+     (net Jaddr_1_ 
+      (joined 
+       (portRef (member Jaddr 30))
+       (portRef padio (instanceRef Jaddr_ibuf_1_ ))))
+     (net Jaddr_0_ 
+      (joined 
+       (portRef (member Jaddr 31))
+       (portRef padio (instanceRef Jaddr_ibuf_0_ ))))
+     (net Mdata_31_ 
+      (joined 
+       (portRef (member Mdata 0))
+       (portRef padio (instanceRef Mdata_ibuf_31_ ))))
+     (net Mdata_30_ 
+      (joined 
+       (portRef (member Mdata 1))
+       (portRef padio (instanceRef Mdata_ibuf_30_ ))))
+     (net Mdata_29_ 
+      (joined 
+       (portRef (member Mdata 2))
+       (portRef padio (instanceRef Mdata_ibuf_29_ ))))
+     (net Mdata_28_ 
+      (joined 
+       (portRef (member Mdata 3))
+       (portRef padio (instanceRef Mdata_ibuf_28_ ))))
+     (net Mdata_27_ 
+      (joined 
+       (portRef (member Mdata 4))
+       (portRef padio (instanceRef Mdata_ibuf_27_ ))))
+     (net Mdata_26_ 
+      (joined 
+       (portRef (member Mdata 5))
+       (portRef padio (instanceRef Mdata_ibuf_26_ ))))
+     (net Mdata_25_ 
+      (joined 
+       (portRef (member Mdata 6))
+       (portRef padio (instanceRef Mdata_ibuf_25_ ))))
+     (net Mdata_24_ 
+      (joined 
+       (portRef (member Mdata 7))
+       (portRef padio (instanceRef Mdata_ibuf_24_ ))))
+     (net Mdata_23_ 
+      (joined 
+       (portRef (member Mdata 8))
+       (portRef padio (instanceRef Mdata_ibuf_23_ ))))
+     (net Mdata_22_ 
+      (joined 
+       (portRef (member Mdata 9))
+       (portRef padio (instanceRef Mdata_ibuf_22_ ))))
+     (net Mdata_21_ 
+      (joined 
+       (portRef (member Mdata 10))
+       (portRef padio (instanceRef Mdata_ibuf_21_ ))))
+     (net Mdata_20_ 
+      (joined 
+       (portRef (member Mdata 11))
+       (portRef padio (instanceRef Mdata_ibuf_20_ ))))
+     (net Mdata_19_ 
+      (joined 
+       (portRef (member Mdata 12))
+       (portRef padio (instanceRef Mdata_ibuf_19_ ))))
+     (net Mdata_18_ 
+      (joined 
+       (portRef (member Mdata 13))
+       (portRef padio (instanceRef Mdata_ibuf_18_ ))))
+     (net Mdata_17_ 
+      (joined 
+       (portRef (member Mdata 14))
+       (portRef padio (instanceRef Mdata_ibuf_17_ ))))
+     (net Mdata_16_ 
+      (joined 
+       (portRef (member Mdata 15))
+       (portRef padio (instanceRef Mdata_ibuf_16_ ))))
+     (net Mdata_15_ 
+      (joined 
+       (portRef (member Mdata 16))
+       (portRef padio (instanceRef Mdata_ibuf_15_ ))))
+     (net Mdata_14_ 
+      (joined 
+       (portRef (member Mdata 17))
+       (portRef padio (instanceRef Mdata_ibuf_14_ ))))
+     (net Mdata_13_ 
+      (joined 
+       (portRef (member Mdata 18))
+       (portRef padio (instanceRef Mdata_ibuf_13_ ))))
+     (net Mdata_12_ 
+      (joined 
+       (portRef (member Mdata 19))
+       (portRef padio (instanceRef Mdata_ibuf_12_ ))))
+     (net Mdata_11_ 
+      (joined 
+       (portRef (member Mdata 20))
+       (portRef padio (instanceRef Mdata_ibuf_11_ ))))
+     (net Mdata_10_ 
+      (joined 
+       (portRef (member Mdata 21))
+       (portRef padio (instanceRef Mdata_ibuf_10_ ))))
+     (net Mdata_9_ 
+      (joined 
+       (portRef (member Mdata 22))
+       (portRef padio (instanceRef Mdata_ibuf_9_ ))))
+     (net Mdata_8_ 
+      (joined 
+       (portRef (member Mdata 23))
+       (portRef padio (instanceRef Mdata_ibuf_8_ ))))
+     (net Mdata_7_ 
+      (joined 
+       (portRef (member Mdata 24))
+       (portRef padio (instanceRef Mdata_ibuf_7_ ))))
+     (net Mdata_6_ 
+      (joined 
+       (portRef (member Mdata 25))
+       (portRef padio (instanceRef Mdata_ibuf_6_ ))))
+     (net Mdata_5_ 
+      (joined 
+       (portRef (member Mdata 26))
+       (portRef padio (instanceRef Mdata_ibuf_5_ ))))
+     (net Mdata_4_ 
+      (joined 
+       (portRef (member Mdata 27))
+       (portRef padio (instanceRef Mdata_ibuf_4_ ))))
+     (net Mdata_3_ 
+      (joined 
+       (portRef (member Mdata 28))
+       (portRef padio (instanceRef Mdata_ibuf_3_ ))))
+     (net Mdata_2_ 
+      (joined 
+       (portRef (member Mdata 29))
+       (portRef padio (instanceRef Mdata_ibuf_2_ ))))
+     (net Mdata_1_ 
+      (joined 
+       (portRef (member Mdata 30))
+       (portRef padio (instanceRef Mdata_ibuf_1_ ))))
+     (net Mdata_0_ 
+      (joined 
+       (portRef (member Mdata 31))
+       (portRef padio (instanceRef Mdata_ibuf_0_ ))))
+     (net clk 
+      (joined 
+       (portRef clk )
+       (portRef padio (instanceRef clk_ibuf ))))
+     (net Jmp 
+      (joined 
+       (portRef Jmp )
+       (portRef padio (instanceRef Jmp_ibuf ))))
+     (net Reset 
+      (joined 
+       (portRef Reset )
+       (portRef padio (instanceRef Reset_ibuf ))))
+     (net Delay 
+      (joined 
+       (portRef Delay )
+       (portRef padio (instanceRef Delay_ibuf ))))
+     (net Addr_dup_0_31_ 
+      (joined 
+       (portRef (member q 0)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_31_ ))))
+     (net Addr_dup_0_30_ 
+      (joined 
+       (portRef (member q 1)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_30_ ))))
+     (net Addr_dup_0_29_ 
+      (joined 
+       (portRef (member q 2)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_29_ ))))
+     (net Addr_dup_0_28_ 
+      (joined 
+       (portRef (member q 3)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_28_ ))))
+     (net Addr_dup_0_27_ 
+      (joined 
+       (portRef (member q 4)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_27_ ))))
+     (net Addr_dup_0_26_ 
+      (joined 
+       (portRef (member q 5)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_26_ ))))
+     (net Addr_dup_0_25_ 
+      (joined 
+       (portRef (member q 6)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_25_ ))))
+     (net Addr_dup_0_24_ 
+      (joined 
+       (portRef (member q 7)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_24_ ))))
+     (net Addr_dup_0_23_ 
+      (joined 
+       (portRef (member q 8)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_23_ ))))
+     (net Addr_dup_0_22_ 
+      (joined 
+       (portRef (member q 9)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_22_ ))))
+     (net Addr_dup_0_21_ 
+      (joined 
+       (portRef (member q 10)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_21_ ))))
+     (net Addr_dup_0_20_ 
+      (joined 
+       (portRef (member q 11)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_20_ ))))
+     (net Addr_dup_0_19_ 
+      (joined 
+       (portRef (member q 12)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_19_ ))))
+     (net Addr_dup_0_18_ 
+      (joined 
+       (portRef (member q 13)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_18_ ))))
+     (net Addr_dup_0_17_ 
+      (joined 
+       (portRef (member q 14)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_17_ ))))
+     (net Addr_dup_0_16_ 
+      (joined 
+       (portRef (member q 15)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_16_ ))))
+     (net Addr_dup_0_15_ 
+      (joined 
+       (portRef (member q 16)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_15_ ))))
+     (net Addr_dup_0_14_ 
+      (joined 
+       (portRef (member q 17)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_14_ ))))
+     (net Addr_dup_0_13_ 
+      (joined 
+       (portRef (member q 18)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_13_ ))))
+     (net Addr_dup_0_12_ 
+      (joined 
+       (portRef (member q 19)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_12_ ))))
+     (net Addr_dup_0_11_ 
+      (joined 
+       (portRef (member q 20)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_11_ ))))
+     (net Addr_dup_0_10_ 
+      (joined 
+       (portRef (member q 21)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_10_ ))))
+     (net Addr_dup_0_9_ 
+      (joined 
+       (portRef (member q 22)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_9_ ))))
+     (net Addr_dup_0_8_ 
+      (joined 
+       (portRef (member q 23)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_8_ ))))
+     (net Addr_dup_0_7_ 
+      (joined 
+       (portRef (member q 24)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_7_ ))))
+     (net Addr_dup_0_6_ 
+      (joined 
+       (portRef (member q 25)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_6_ ))))
+     (net Addr_dup_0_5_ 
+      (joined 
+       (portRef (member q 26)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_5_ ))))
+     (net Addr_dup_0_4_ 
+      (joined 
+       (portRef (member q 27)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_4_ ))))
+     (net Addr_dup_0_3_ 
+      (joined 
+       (portRef (member q 28)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_3_ ))))
+     (net Addr_dup_0_2_ 
+      (joined 
+       (portRef (member q 29)(instanceRef modgen_counter_Addr ))
+       (portRef datain (instanceRef Addr_obuf_2_ ))))
+     (net Addr_dup_0_1_ 
+      (joined 
+       (portRef regout (instanceRef reg_internal_pc_1_ ))
+       (portRef datain (instanceRef Addr_obuf_1_ ))))
+     (net Addr_dup_0_0_ 
+      (joined 
+       (portRef regout (instanceRef reg_internal_pc_0_ ))
+       (portRef datain (instanceRef Addr_obuf_0_ ))))
+     (net Jaddr_int_31_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_31_ ))
+       (portRef (member data 0)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_30_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_30_ ))
+       (portRef (member data 1)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_29_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_29_ ))
+       (portRef (member data 2)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_28_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_28_ ))
+       (portRef (member data 3)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_27_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_27_ ))
+       (portRef (member data 4)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_26_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_26_ ))
+       (portRef (member data 5)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_25_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_25_ ))
+       (portRef (member data 6)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_24_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_24_ ))
+       (portRef (member data 7)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_23_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_23_ ))
+       (portRef (member data 8)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_22_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_22_ ))
+       (portRef (member data 9)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_21_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_21_ ))
+       (portRef (member data 10)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_20_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_20_ ))
+       (portRef (member data 11)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_19_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_19_ ))
+       (portRef (member data 12)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_18_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_18_ ))
+       (portRef (member data 13)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_17_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_17_ ))
+       (portRef (member data 14)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_16_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_16_ ))
+       (portRef (member data 15)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_15_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_15_ ))
+       (portRef (member data 16)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_14_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_14_ ))
+       (portRef (member data 17)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_13_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_13_ ))
+       (portRef (member data 18)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_12_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_12_ ))
+       (portRef (member data 19)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_11_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_11_ ))
+       (portRef (member data 20)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_10_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_10_ ))
+       (portRef (member data 21)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_9_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_9_ ))
+       (portRef (member data 22)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_8_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_8_ ))
+       (portRef (member data 23)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_7_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_7_ ))
+       (portRef (member data 24)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_6_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_6_ ))
+       (portRef (member data 25)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_5_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_5_ ))
+       (portRef (member data 26)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_4_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_4_ ))
+       (portRef (member data 27)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_3_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_3_ ))
+       (portRef (member data 28)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_2_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_2_ ))
+       (portRef (member data 29)(instanceRef modgen_counter_Addr ))))
+     (net Jaddr_int_1_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_1_ ))
+       (portRef dataa (instanceRef reg_internal_pc_1_ ))))
+     (net Jaddr_int_0_ 
+      (joined 
+       (portRef combout (instanceRef Jaddr_ibuf_0_ ))
+       (portRef dataa (instanceRef reg_internal_pc_0_ ))))
+     (net Mdata_int_31_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_31_ ))
+       (portRef dataa (instanceRef ix27490z42612 ))))
+     (net Mdata_int_30_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_30_ ))
+       (portRef dataa (instanceRef ix26493z42612 ))))
+     (net Mdata_int_29_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_29_ ))
+       (portRef dataa (instanceRef ix24497z42612 ))))
+     (net Mdata_int_28_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_28_ ))
+       (portRef dataa (instanceRef ix23500z42612 ))))
+     (net Mdata_int_27_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_27_ ))
+       (portRef dataa (instanceRef ix22503z42612 ))))
+     (net Mdata_int_26_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_26_ ))
+       (portRef dataa (instanceRef ix21506z42612 ))))
+     (net Mdata_int_25_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_25_ ))
+       (portRef dataa (instanceRef ix20509z42612 ))))
+     (net Mdata_int_24_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_24_ ))
+       (portRef dataa (instanceRef ix19512z42612 ))))
+     (net Mdata_int_23_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_23_ ))
+       (portRef dataa (instanceRef ix18515z42612 ))))
+     (net Mdata_int_22_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_22_ ))
+       (portRef dataa (instanceRef ix17518z42612 ))))
+     (net Mdata_int_21_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_21_ ))
+       (portRef dataa (instanceRef ix16521z42612 ))))
+     (net Mdata_int_20_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_20_ ))
+       (portRef dataa (instanceRef ix15524z42612 ))))
+     (net Mdata_int_19_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_19_ ))
+       (portRef dataa (instanceRef ix13528z42612 ))))
+     (net Mdata_int_18_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_18_ ))
+       (portRef dataa (instanceRef ix12531z42612 ))))
+     (net Mdata_int_17_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_17_ ))
+       (portRef dataa (instanceRef ix11534z42612 ))))
+     (net Mdata_int_16_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_16_ ))
+       (portRef dataa (instanceRef ix10537z42612 ))))
+     (net Mdata_int_15_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_15_ ))
+       (portRef dataa (instanceRef ix9540z42612 ))))
+     (net Mdata_int_14_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_14_ ))
+       (portRef dataa (instanceRef ix8543z42612 ))))
+     (net Mdata_int_13_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_13_ ))
+       (portRef dataa (instanceRef ix7546z42612 ))))
+     (net Mdata_int_12_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_12_ ))
+       (portRef dataa (instanceRef ix6549z42612 ))))
+     (net Mdata_int_11_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_11_ ))
+       (portRef dataa (instanceRef ix5552z42612 ))))
+     (net Mdata_int_10_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_10_ ))
+       (portRef dataa (instanceRef ix4555z42612 ))))
+     (net Mdata_int_9_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_9_ ))
+       (portRef dataa (instanceRef ix5147z42612 ))))
+     (net Mdata_int_8_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_8_ ))
+       (portRef dataa (instanceRef ix4150z42612 ))))
+     (net Mdata_int_7_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_7_ ))
+       (portRef dataa (instanceRef ix3153z42612 ))))
+     (net Mdata_int_6_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_6_ ))
+       (portRef dataa (instanceRef ix2156z42612 ))))
+     (net Mdata_int_5_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_5_ ))
+       (portRef dataa (instanceRef ix1159z42612 ))))
+     (net Mdata_int_4_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_4_ ))
+       (portRef dataa (instanceRef ix162z42612 ))))
+     (net Mdata_int_3_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_3_ ))
+       (portRef dataa (instanceRef ix64701z42612 ))))
+     (net Mdata_int_2_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_2_ ))
+       (portRef dataa (instanceRef ix63704z42612 ))))
+     (net Mdata_int_1_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_1_ ))
+       (portRef dataa (instanceRef ix62707z42612 ))))
+     (net Mdata_int_0_ 
+      (joined 
+       (portRef combout (instanceRef Mdata_ibuf_0_ ))
+       (portRef dataa (instanceRef ix61710z42612 ))))
+     (net clk_int 
+      (joined 
+       (portRef combout (instanceRef clk_ibuf ))
+       (portRef clock (instanceRef modgen_counter_Addr ))
+       (portRef clk (instanceRef reg_internal_pc_0_ ))
+       (portRef clk (instanceRef reg_internal_pc_1_ ))))
+     (net Jmp_int 
+      (joined 
+       (portRef combout (instanceRef Jmp_ibuf ))
+       (portRef datab (instanceRef ix27490z42612 ))
+       (portRef datab (instanceRef ix26493z42612 ))
+       (portRef datab (instanceRef ix24497z42612 ))
+       (portRef datab (instanceRef ix23500z42612 ))
+       (portRef datab (instanceRef ix22503z42612 ))
+       (portRef datab (instanceRef ix21506z42612 ))
+       (portRef datab (instanceRef ix20509z42612 ))
+       (portRef datab (instanceRef ix19512z42612 ))
+       (portRef datab (instanceRef ix18515z42612 ))
+       (portRef datab (instanceRef ix17518z42612 ))
+       (portRef datab (instanceRef ix16521z42612 ))
+       (portRef datab (instanceRef ix15524z42612 ))
+       (portRef datab (instanceRef ix13528z42612 ))
+       (portRef datab (instanceRef ix12531z42612 ))
+       (portRef datab (instanceRef ix11534z42612 ))
+       (portRef datab (instanceRef ix10537z42612 ))
+       (portRef datab (instanceRef ix9540z42612 ))
+       (portRef datab (instanceRef ix8543z42612 ))
+       (portRef datab (instanceRef ix7546z42612 ))
+       (portRef datab (instanceRef ix6549z42612 ))
+       (portRef datab (instanceRef ix5552z42612 ))
+       (portRef datab (instanceRef ix4555z42612 ))
+       (portRef datab (instanceRef ix5147z42612 ))
+       (portRef datab (instanceRef ix4150z42612 ))
+       (portRef datab (instanceRef ix3153z42612 ))
+       (portRef datab (instanceRef ix2156z42612 ))
+       (portRef datab (instanceRef ix1159z42612 ))
+       (portRef datab (instanceRef ix162z42612 ))
+       (portRef datab (instanceRef ix64701z42612 ))
+       (portRef datab (instanceRef ix63704z42612 ))
+       (portRef datab (instanceRef ix62707z42612 ))
+       (portRef datab (instanceRef ix61710z42612 ))
+       (portRef dataa (instanceRef ix57715z42612 ))
+       (portRef dataa (instanceRef ix11017z42613 ))
+       (portRef dataa (instanceRef ix11017z42612 ))
+       (portRef dataa (instanceRef ix13974z42612 ))))
+     (net Reset_int 
+      (joined 
+       (portRef combout (instanceRef Reset_ibuf ))
+       (portRef sclear (instanceRef modgen_counter_Addr ))
+       (portRef sclr (instanceRef reg_internal_pc_0_ ))
+       (portRef sclr (instanceRef reg_internal_pc_1_ ))
+       (portRef datac (instanceRef ix27490z42612 ))
+       (portRef datac (instanceRef ix26493z42612 ))
+       (portRef datac (instanceRef ix24497z42612 ))
+       (portRef datac (instanceRef ix23500z42612 ))
+       (portRef datac (instanceRef ix22503z42612 ))
+       (portRef datac (instanceRef ix21506z42612 ))
+       (portRef datac (instanceRef ix20509z42612 ))
+       (portRef datac (instanceRef ix19512z42612 ))
+       (portRef datac (instanceRef ix18515z42612 ))
+       (portRef datac (instanceRef ix17518z42612 ))
+       (portRef datac (instanceRef ix16521z42612 ))
+       (portRef datac (instanceRef ix15524z42612 ))
+       (portRef datac (instanceRef ix13528z42612 ))
+       (portRef datac (instanceRef ix12531z42612 ))
+       (portRef datac (instanceRef ix11534z42612 ))
+       (portRef datac (instanceRef ix10537z42612 ))
+       (portRef datac (instanceRef ix9540z42612 ))
+       (portRef datac (instanceRef ix8543z42612 ))
+       (portRef datac (instanceRef ix7546z42612 ))
+       (portRef datac (instanceRef ix6549z42612 ))
+       (portRef datac (instanceRef ix5552z42612 ))
+       (portRef datac (instanceRef ix4555z42612 ))
+       (portRef datac (instanceRef ix5147z42612 ))
+       (portRef datac (instanceRef ix4150z42612 ))
+       (portRef datac (instanceRef ix3153z42612 ))
+       (portRef datac (instanceRef ix2156z42612 ))
+       (portRef datac (instanceRef ix1159z42612 ))
+       (portRef datac (instanceRef ix162z42612 ))
+       (portRef datac (instanceRef ix64701z42612 ))
+       (portRef datac (instanceRef ix63704z42612 ))
+       (portRef datac (instanceRef ix62707z42612 ))
+       (portRef datac (instanceRef ix61710z42612 ))
+       (portRef datab (instanceRef ix57715z42612 ))
+       (portRef datab (instanceRef ix11017z42613 ))
+       (portRef datab (instanceRef ix11017z42612 ))
+       (portRef datab (instanceRef ix13974z42612 ))))
+     (net Delay_int 
+      (joined 
+       (portRef combout (instanceRef Delay_ibuf ))
+       (portRef datad (instanceRef ix27490z42612 ))
+       (portRef datad (instanceRef ix26493z42612 ))
+       (portRef datad (instanceRef ix24497z42612 ))
+       (portRef datad (instanceRef ix23500z42612 ))
+       (portRef datad (instanceRef ix22503z42612 ))
+       (portRef datad (instanceRef ix21506z42612 ))
+       (portRef datad (instanceRef ix20509z42612 ))
+       (portRef datad (instanceRef ix19512z42612 ))
+       (portRef datad (instanceRef ix18515z42612 ))
+       (portRef datad (instanceRef ix17518z42612 ))
+       (portRef datad (instanceRef ix16521z42612 ))
+       (portRef datad (instanceRef ix15524z42612 ))
+       (portRef datad (instanceRef ix13528z42612 ))
+       (portRef datad (instanceRef ix12531z42612 ))
+       (portRef datad (instanceRef ix11534z42612 ))
+       (portRef datad (instanceRef ix10537z42612 ))
+       (portRef datad (instanceRef ix9540z42612 ))
+       (portRef datad (instanceRef ix8543z42612 ))
+       (portRef datad (instanceRef ix7546z42612 ))
+       (portRef datad (instanceRef ix6549z42612 ))
+       (portRef datad (instanceRef ix5552z42612 ))
+       (portRef datad (instanceRef ix4555z42612 ))
+       (portRef datad (instanceRef ix5147z42612 ))
+       (portRef datad (instanceRef ix4150z42612 ))
+       (portRef datad (instanceRef ix3153z42612 ))
+       (portRef datad (instanceRef ix2156z42612 ))
+       (portRef datad (instanceRef ix1159z42612 ))
+       (portRef datad (instanceRef ix162z42612 ))
+       (portRef datad (instanceRef ix64701z42612 ))
+       (portRef datad (instanceRef ix63704z42612 ))
+       (portRef datad (instanceRef ix62707z42612 ))
+       (portRef datad (instanceRef ix61710z42612 ))
+       (portRef datac (instanceRef ix11017z42613 ))
+       (portRef datac (instanceRef ix11017z42612 ))))
+     (net Addr_31_ 
+      (joined 
+       (portRef (member Addr 0))
+       (portRef padio (instanceRef Addr_obuf_31_ ))))
+     (net Addr_30_ 
+      (joined 
+       (portRef (member Addr 1))
+       (portRef padio (instanceRef Addr_obuf_30_ ))))
+     (net Addr_29_ 
+      (joined 
+       (portRef (member Addr 2))
+       (portRef padio (instanceRef Addr_obuf_29_ ))))
+     (net Addr_28_ 
+      (joined 
+       (portRef (member Addr 3))
+       (portRef padio (instanceRef Addr_obuf_28_ ))))
+     (net Addr_27_ 
+      (joined 
+       (portRef (member Addr 4))
+       (portRef padio (instanceRef Addr_obuf_27_ ))))
+     (net Addr_26_ 
+      (joined 
+       (portRef (member Addr 5))
+       (portRef padio (instanceRef Addr_obuf_26_ ))))
+     (net Addr_25_ 
+      (joined 
+       (portRef (member Addr 6))
+       (portRef padio (instanceRef Addr_obuf_25_ ))))
+     (net Addr_24_ 
+      (joined 
+       (portRef (member Addr 7))
+       (portRef padio (instanceRef Addr_obuf_24_ ))))
+     (net Addr_23_ 
+      (joined 
+       (portRef (member Addr 8))
+       (portRef padio (instanceRef Addr_obuf_23_ ))))
+     (net Addr_22_ 
+      (joined 
+       (portRef (member Addr 9))
+       (portRef padio (instanceRef Addr_obuf_22_ ))))
+     (net Addr_21_ 
+      (joined 
+       (portRef (member Addr 10))
+       (portRef padio (instanceRef Addr_obuf_21_ ))))
+     (net Addr_20_ 
+      (joined 
+       (portRef (member Addr 11))
+       (portRef padio (instanceRef Addr_obuf_20_ ))))
+     (net Addr_19_ 
+      (joined 
+       (portRef (member Addr 12))
+       (portRef padio (instanceRef Addr_obuf_19_ ))))
+     (net Addr_18_ 
+      (joined 
+       (portRef (member Addr 13))
+       (portRef padio (instanceRef Addr_obuf_18_ ))))
+     (net Addr_17_ 
+      (joined 
+       (portRef (member Addr 14))
+       (portRef padio (instanceRef Addr_obuf_17_ ))))
+     (net Addr_16_ 
+      (joined 
+       (portRef (member Addr 15))
+       (portRef padio (instanceRef Addr_obuf_16_ ))))
+     (net Addr_15_ 
+      (joined 
+       (portRef (member Addr 16))
+       (portRef padio (instanceRef Addr_obuf_15_ ))))
+     (net Addr_14_ 
+      (joined 
+       (portRef (member Addr 17))
+       (portRef padio (instanceRef Addr_obuf_14_ ))))
+     (net Addr_13_ 
+      (joined 
+       (portRef (member Addr 18))
+       (portRef padio (instanceRef Addr_obuf_13_ ))))
+     (net Addr_12_ 
+      (joined 
+       (portRef (member Addr 19))
+       (portRef padio (instanceRef Addr_obuf_12_ ))))
+     (net Addr_11_ 
+      (joined 
+       (portRef (member Addr 20))
+       (portRef padio (instanceRef Addr_obuf_11_ ))))
+     (net Addr_10_ 
+      (joined 
+       (portRef (member Addr 21))
+       (portRef padio (instanceRef Addr_obuf_10_ ))))
+     (net Addr_9_ 
+      (joined 
+       (portRef (member Addr 22))
+       (portRef padio (instanceRef Addr_obuf_9_ ))))
+     (net Addr_8_ 
+      (joined 
+       (portRef (member Addr 23))
+       (portRef padio (instanceRef Addr_obuf_8_ ))))
+     (net Addr_7_ 
+      (joined 
+       (portRef (member Addr 24))
+       (portRef padio (instanceRef Addr_obuf_7_ ))))
+     (net Addr_6_ 
+      (joined 
+       (portRef (member Addr 25))
+       (portRef padio (instanceRef Addr_obuf_6_ ))))
+     (net Addr_5_ 
+      (joined 
+       (portRef (member Addr 26))
+       (portRef padio (instanceRef Addr_obuf_5_ ))))
+     (net Addr_4_ 
+      (joined 
+       (portRef (member Addr 27))
+       (portRef padio (instanceRef Addr_obuf_4_ ))))
+     (net Addr_3_ 
+      (joined 
+       (portRef (member Addr 28))
+       (portRef padio (instanceRef Addr_obuf_3_ ))))
+     (net Addr_2_ 
+      (joined 
+       (portRef (member Addr 29))
+       (portRef padio (instanceRef Addr_obuf_2_ ))))
+     (net Addr_1_ 
+      (joined 
+       (portRef (member Addr 30))
+       (portRef padio (instanceRef Addr_obuf_1_ ))))
+     (net Addr_0_ 
+      (joined 
+       (portRef (member Addr 31))
+       (portRef padio (instanceRef Addr_obuf_0_ ))))
+     (net Inst_31_ 
+      (joined 
+       (portRef (member Inst 0))
+       (portRef padio (instanceRef Inst_obuf_31_ ))))
+     (net Inst_30_ 
+      (joined 
+       (portRef (member Inst 1))
+       (portRef padio (instanceRef Inst_obuf_30_ ))))
+     (net Inst_29_ 
+      (joined 
+       (portRef (member Inst 2))
+       (portRef padio (instanceRef Inst_obuf_29_ ))))
+     (net Inst_28_ 
+      (joined 
+       (portRef (member Inst 3))
+       (portRef padio (instanceRef Inst_obuf_28_ ))))
+     (net Inst_27_ 
+      (joined 
+       (portRef (member Inst 4))
+       (portRef padio (instanceRef Inst_obuf_27_ ))))
+     (net Inst_26_ 
+      (joined 
+       (portRef (member Inst 5))
+       (portRef padio (instanceRef Inst_obuf_26_ ))))
+     (net Inst_25_ 
+      (joined 
+       (portRef (member Inst 6))
+       (portRef padio (instanceRef Inst_obuf_25_ ))))
+     (net Inst_24_ 
+      (joined 
+       (portRef (member Inst 7))
+       (portRef padio (instanceRef Inst_obuf_24_ ))))
+     (net Inst_23_ 
+      (joined 
+       (portRef (member Inst 8))
+       (portRef padio (instanceRef Inst_obuf_23_ ))))
+     (net Inst_22_ 
+      (joined 
+       (portRef (member Inst 9))
+       (portRef padio (instanceRef Inst_obuf_22_ ))))
+     (net Inst_21_ 
+      (joined 
+       (portRef (member Inst 10))
+       (portRef padio (instanceRef Inst_obuf_21_ ))))
+     (net Inst_20_ 
+      (joined 
+       (portRef (member Inst 11))
+       (portRef padio (instanceRef Inst_obuf_20_ ))))
+     (net Inst_19_ 
+      (joined 
+       (portRef (member Inst 12))
+       (portRef padio (instanceRef Inst_obuf_19_ ))))
+     (net Inst_18_ 
+      (joined 
+       (portRef (member Inst 13))
+       (portRef padio (instanceRef Inst_obuf_18_ ))))
+     (net Inst_17_ 
+      (joined 
+       (portRef (member Inst 14))
+       (portRef padio (instanceRef Inst_obuf_17_ ))))
+     (net Inst_16_ 
+      (joined 
+       (portRef (member Inst 15))
+       (portRef padio (instanceRef Inst_obuf_16_ ))))
+     (net Inst_15_ 
+      (joined 
+       (portRef (member Inst 16))
+       (portRef padio (instanceRef Inst_obuf_15_ ))))
+     (net Inst_14_ 
+      (joined 
+       (portRef (member Inst 17))
+       (portRef padio (instanceRef Inst_obuf_14_ ))))
+     (net Inst_13_ 
+      (joined 
+       (portRef (member Inst 18))
+       (portRef padio (instanceRef Inst_obuf_13_ ))))
+     (net Inst_12_ 
+      (joined 
+       (portRef (member Inst 19))
+       (portRef padio (instanceRef Inst_obuf_12_ ))))
+     (net Inst_11_ 
+      (joined 
+       (portRef (member Inst 20))
+       (portRef padio (instanceRef Inst_obuf_11_ ))))
+     (net Inst_10_ 
+      (joined 
+       (portRef (member Inst 21))
+       (portRef padio (instanceRef Inst_obuf_10_ ))))
+     (net Inst_9_ 
+      (joined 
+       (portRef (member Inst 22))
+       (portRef padio (instanceRef Inst_obuf_9_ ))))
+     (net Inst_8_ 
+      (joined 
+       (portRef (member Inst 23))
+       (portRef padio (instanceRef Inst_obuf_8_ ))))
+     (net Inst_7_ 
+      (joined 
+       (portRef (member Inst 24))
+       (portRef padio (instanceRef Inst_obuf_7_ ))))
+     (net Inst_6_ 
+      (joined 
+       (portRef (member Inst 25))
+       (portRef padio (instanceRef Inst_obuf_6_ ))))
+     (net Inst_5_ 
+      (joined 
+       (portRef (member Inst 26))
+       (portRef padio (instanceRef Inst_obuf_5_ ))))
+     (net Inst_4_ 
+      (joined 
+       (portRef (member Inst 27))
+       (portRef padio (instanceRef Inst_obuf_4_ ))))
+     (net Inst_3_ 
+      (joined 
+       (portRef (member Inst 28))
+       (portRef padio (instanceRef Inst_obuf_3_ ))))
+     (net Inst_2_ 
+      (joined 
+       (portRef (member Inst 29))
+       (portRef padio (instanceRef Inst_obuf_2_ ))))
+     (net Inst_1_ 
+      (joined 
+       (portRef (member Inst 30))
+       (portRef padio (instanceRef Inst_obuf_1_ ))))
+     (net Inst_0_ 
+      (joined 
+       (portRef (member Inst 31))
+       (portRef padio (instanceRef Inst_obuf_0_ ))))
+     (net Read 
+      (joined 
+       (portRef Read )
+       (portRef padio (instanceRef Read_obuf ))))
+     (net Inst_dup_0_31_ 
+      (joined 
+       (portRef combout (instanceRef ix27490z42612 ))
+       (portRef datain (instanceRef Inst_obuf_31_ ))))
+     (net Inst_dup_0_30_ 
+      (joined 
+       (portRef combout (instanceRef ix26493z42612 ))
+       (portRef datain (instanceRef Inst_obuf_30_ ))))
+     (net Inst_dup_0_29_ 
+      (joined 
+       (portRef combout (instanceRef ix24497z42612 ))
+       (portRef datain (instanceRef Inst_obuf_29_ ))))
+     (net Inst_dup_0_28_ 
+      (joined 
+       (portRef combout (instanceRef ix23500z42612 ))
+       (portRef datain (instanceRef Inst_obuf_28_ ))))
+     (net Inst_dup_0_27_ 
+      (joined 
+       (portRef combout (instanceRef ix22503z42612 ))
+       (portRef datain (instanceRef Inst_obuf_27_ ))))
+     (net Inst_dup_0_26_ 
+      (joined 
+       (portRef combout (instanceRef ix21506z42612 ))
+       (portRef datain (instanceRef Inst_obuf_26_ ))))
+     (net Inst_dup_0_25_ 
+      (joined 
+       (portRef combout (instanceRef ix20509z42612 ))
+       (portRef datain (instanceRef Inst_obuf_25_ ))))
+     (net Inst_dup_0_24_ 
+      (joined 
+       (portRef combout (instanceRef ix19512z42612 ))
+       (portRef datain (instanceRef Inst_obuf_24_ ))))
+     (net Inst_dup_0_23_ 
+      (joined 
+       (portRef combout (instanceRef ix18515z42612 ))
+       (portRef datain (instanceRef Inst_obuf_23_ ))))
+     (net Inst_dup_0_22_ 
+      (joined 
+       (portRef combout (instanceRef ix17518z42612 ))
+       (portRef datain (instanceRef Inst_obuf_22_ ))))
+     (net Inst_dup_0_21_ 
+      (joined 
+       (portRef combout (instanceRef ix16521z42612 ))
+       (portRef datain (instanceRef Inst_obuf_21_ ))))
+     (net Inst_dup_0_20_ 
+      (joined 
+       (portRef combout (instanceRef ix15524z42612 ))
+       (portRef datain (instanceRef Inst_obuf_20_ ))))
+     (net Inst_dup_0_19_ 
+      (joined 
+       (portRef combout (instanceRef ix13528z42612 ))
+       (portRef datain (instanceRef Inst_obuf_19_ ))))
+     (net Inst_dup_0_18_ 
+      (joined 
+       (portRef combout (instanceRef ix12531z42612 ))
+       (portRef datain (instanceRef Inst_obuf_18_ ))))
+     (net Inst_dup_0_17_ 
+      (joined 
+       (portRef combout (instanceRef ix11534z42612 ))
+       (portRef datain (instanceRef Inst_obuf_17_ ))))
+     (net Inst_dup_0_16_ 
+      (joined 
+       (portRef combout (instanceRef ix10537z42612 ))
+       (portRef datain (instanceRef Inst_obuf_16_ ))))
+     (net Inst_dup_0_15_ 
+      (joined 
+       (portRef combout (instanceRef ix9540z42612 ))
+       (portRef datain (instanceRef Inst_obuf_15_ ))))
+     (net Inst_dup_0_14_ 
+      (joined 
+       (portRef combout (instanceRef ix8543z42612 ))
+       (portRef datain (instanceRef Inst_obuf_14_ ))))
+     (net Inst_dup_0_13_ 
+      (joined 
+       (portRef combout (instanceRef ix7546z42612 ))
+       (portRef datain (instanceRef Inst_obuf_13_ ))))
+     (net Inst_dup_0_12_ 
+      (joined 
+       (portRef combout (instanceRef ix6549z42612 ))
+       (portRef datain (instanceRef Inst_obuf_12_ ))))
+     (net Inst_dup_0_11_ 
+      (joined 
+       (portRef combout (instanceRef ix5552z42612 ))
+       (portRef datain (instanceRef Inst_obuf_11_ ))))
+     (net Inst_dup_0_10_ 
+      (joined 
+       (portRef combout (instanceRef ix4555z42612 ))
+       (portRef datain (instanceRef Inst_obuf_10_ ))))
+     (net Inst_dup_0_9_ 
+      (joined 
+       (portRef combout (instanceRef ix5147z42612 ))
+       (portRef datain (instanceRef Inst_obuf_9_ ))))
+     (net Inst_dup_0_8_ 
+      (joined 
+       (portRef combout (instanceRef ix4150z42612 ))
+       (portRef datain (instanceRef Inst_obuf_8_ ))))
+     (net Inst_dup_0_7_ 
+      (joined 
+       (portRef combout (instanceRef ix3153z42612 ))
+       (portRef datain (instanceRef Inst_obuf_7_ ))))
+     (net Inst_dup_0_6_ 
+      (joined 
+       (portRef combout (instanceRef ix2156z42612 ))
+       (portRef datain (instanceRef Inst_obuf_6_ ))))
+     (net Inst_dup_0_5_ 
+      (joined 
+       (portRef combout (instanceRef ix1159z42612 ))
+       (portRef datain (instanceRef Inst_obuf_5_ ))))
+     (net Inst_dup_0_4_ 
+      (joined 
+       (portRef combout (instanceRef ix162z42612 ))
+       (portRef datain (instanceRef Inst_obuf_4_ ))))
+     (net Inst_dup_0_3_ 
+      (joined 
+       (portRef combout (instanceRef ix64701z42612 ))
+       (portRef datain (instanceRef Inst_obuf_3_ ))))
+     (net Inst_dup_0_2_ 
+      (joined 
+       (portRef combout (instanceRef ix63704z42612 ))
+       (portRef datain (instanceRef Inst_obuf_2_ ))))
+     (net Inst_dup_0_1_ 
+      (joined 
+       (portRef combout (instanceRef ix62707z42612 ))
+       (portRef datain (instanceRef Inst_obuf_1_ ))))
+     (net Inst_dup_0_0_ 
+      (joined 
+       (portRef combout (instanceRef ix61710z42612 ))
+       (portRef datain (instanceRef Inst_obuf_0_ ))))
+     (net GND 
+      (joined 
+       (portRef Y (instanceRef GND ))
+       (portRef datac (instanceRef reg_internal_pc_0_ ))
+       (portRef sload (instanceRef reg_internal_pc_0_ ))
+       (portRef datac (instanceRef reg_internal_pc_1_ ))
+       (portRef sload (instanceRef reg_internal_pc_1_ ))))
+     (net nx57715z1 
+      (joined 
+       (portRef combout (instanceRef ix57715z42612 ))
+       (portRef datain (instanceRef Read_obuf ))))
+     (net nx11017z2 
+      (joined 
+       (portRef combout (instanceRef ix11017z42613 ))
+       (portRef sload (instanceRef modgen_counter_Addr ))))
+     (net nx11017z1 
+      (joined 
+       (portRef combout (instanceRef ix11017z42612 ))
+       (portRef clk_en (instanceRef modgen_counter_Addr ))))
+     (net nx13974z1 
+      (joined 
+       (portRef combout (instanceRef ix13974z42612 ))
+       (portRef ena (instanceRef reg_internal_pc_0_ ))
+       (portRef ena (instanceRef reg_internal_pc_1_ ))))))))
+ (design lab3_fetch (cellRef lab3_fetch (libraryRef cad_lib ))))

@@ -1,0 +1,263 @@
+#
+#
+# Precision RTL Synthesis 64-bit 2018.1.0.19 (Production Release) Fri Aug 10 05:55:53 PDT 2018
+# 
+# Copyright (c) Mentor Graphics Corporation, 1996-2018, All Rights Reserved.
+#            Portions copyright 1991-2008 Compuware Corporation
+#                      UNPUBLISHED, LICENSED SOFTWARE.
+#           CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+#         PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# 
+# Running on Windows 10 W@DESKTOP-86TQKQ1  10.0.19041 x64
+# 
+#                                  NOTICE
+#
+# This source code belongs to Mentor Graphics Corporation.  It is considered
+# trade secret and is not to be divulged or used by parties who have not
+# received written authorization from the owner.
+#
+#
+# Date : Fri Feb 26 21:05:14 2021
+# Designer : W
+#
+#<PROJFILE format='0'>
+error "Error: This file can only be used with Precision version 2003c or later." "load_project failed" E_NEW_PROJECT
+#</PROJFILE>
+#<OBJ name='project' version='0'>
+#  <PROP key='defimpl' type='ESVT_STRING' value='lab3_fetch_behave_impl_39' />
+#  <PROP key='usetempdir' type='ESVT_BOOL' value='false' />
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_1' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_2' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_3' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_4' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_5' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_6' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_7' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_8' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_9' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_10' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_11' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_12' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_13' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_14' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_15' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_16' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_17' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_18' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_19' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_20' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_21' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_22' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_23' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_24' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_25' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_26' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_27' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_28' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_29' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_30' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_31' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_32' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_33' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_34' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_35' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_36' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_37' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_38' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab3_fetch_behave_impl_39' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#</OBJ>

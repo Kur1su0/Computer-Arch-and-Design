@@ -1,0 +1,108 @@
+//  Precision RTL Synthesis 64-bit 2018.1.0.19 (Production Release) Fri Aug 10 05:55:53 PDT 2018
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2018, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 10 W@DESKTOP-86TQKQ1  10.0.19041 x64
+//  
+//  Start time Wed Feb 24 14:59:59 2021
+
+***************************************************************
+Device Utilization for 3S50tq144
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               21      97       21.65%
+Global Buffers                    1       8        12.50%
+LUTs                              11      1536      0.72%
+CLB Slices                        6       768       0.78%
+Dffs or Latches                   8       1827      0.44%
+Block RAMs                        0       4         0.00%
+Block Multipliers                 0       4         0.00%
+Block Multiplier Dffs             0       144       0.00%
+---------------------------------------------------------------
+
+*****************************************************
+
+Library: cad_lib    Cell: lab2_counter    View: mixed
+
+*****************************************************
+
+  Cell      Library  References     Total Area
+
+ BUFGP      xis3     1 x
+ FDE        xis3     8 x      1      8 Dffs or Latches
+ GND        xis3     1 x
+ IBUF       xis3    12 x
+ LUT3       xis3    11 x      1     11 LUTs
+ MUXCY_L    xis3     7 x      1      7 MUX CARRYs
+ OBUF       xis3     8 x
+ XORCY      xis3     8 x
+
+ Number of ports :                           21
+ Number of nets :                            69
+ Number of instances :                       56
+ Number of references to this view :          0
+
+Total accumulated area : 
+ Number of Dffs or Latches :                  8
+ Number of LUTs :                            11
+ Number of MUX CARRYs :                       7
+ Number of gates :                           11
+ Number of accumulated instances :           56
+
+
+*****************************
+ IO Register Mapping Report
+*****************************
+Design: cad_lib.lab2_counter.mixed
+
++---------------+-----------+----------+----------+----------+
+| Port          | Direction |   INFF   |  OUTFF   |  TRIFF   |
++---------------+-----------+----------+----------+----------+
+| D(7)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| D(6)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| D(5)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| D(4)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| D(3)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| D(2)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| D(1)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| D(0)          | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Inc_val(1)    | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Inc_val(0)    | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(7)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(6)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(5)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(4)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(3)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(2)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(1)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Q(0)          | Output    |          |          |          |
++---------------+-----------+----------+----------+----------+
+| Clock         | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| enable        | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+| reset         | Input     |          |          |          |
++---------------+-----------+----------+----------+----------+
+Total registers mapped: 0
