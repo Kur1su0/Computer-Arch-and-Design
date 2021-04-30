@@ -1,22 +1,348 @@
 # vsim -f hds_args.tmp -foreign "hdsInit C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll" -pli ""C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll"" 
-# Start time: 02:44:17 on Apr 04,2021
+# Start time: 16:17:24 on Apr 30,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.rv32i(body)
 # Loading ieee.numeric_std(body)
-# Loading work.lab8_mem_stage_struc_tb(rtl)#1
+# Loading work.rv32i(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.lab8_mem_stage_struc(struc)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lab10_combine(struc)#1
+# Loading work.lab10_whole_syst(struct)#1
+# Loading work.lab8_arbiter(behav)#1
+# Loading work.lab3_fetch(behave)#1
+# Loading work.lab6_decode_pipeline(struc)#1
 # Loading work.reg(mixed)#1
+# Loading work.lab5_rv32i_decoder(behav)#1
+# Loading work.decode_proc(behav)#1
+# Loading work.lab7_exe(struc)#1
 # Loading work.reg(mixed)#2
 # Loading work.func_reg(behav)#1
+# Loading work.exe_proc(behav)#1
+# Loading work.lab8_mem_stage_struc(struc)#1
 # Loading work.lab8_mem_stage_proc(behav)#1
+# Loading work.lab8_writeback(mixed)#1
+# Loading work.lab9_reg_tracker(behav)#1
+# Loading work.lab9_regfile(struc)#1
+# Loading work.lab9_register_decoder(behav)#1
+# Loading work.lab9_regreadwrite(mixed)#1
+# Loading work.memorysystem(behavior)#1
 # Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
-add wave -position insertpoint sim:/lab8_mem_stage_struc_tb/*
-run -all
+add wave -position insertpoint sim:/lab10_combine/*
+force -freeze sim:/lab10_combine/rst 1 0
+force -freeze sim:/lab10_combine/clk 1 0, 0 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
 # 0
 # 
-# The connection to HDS has been closed
+force -freeze sim:/lab10_combine/rst 0 0
+run -all
+# ** Note: Writing 00000000000000000000000000000000 to address 00000000000000000000000000000000
+#    Time: 20700 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+add wave -position end  sim:/lab10_combine/processor/reg_file/RegArray(28)/RegI/Qval
+add wave -position end  sim:/lab10_combine/processor/reg_file/RegArray(11)/RegI/Qval
+add wave -position end  sim:/lab10_combine/processor/reg_file/RegArray(10)/RegI/Qval
+# hds_restart
+restart -force
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rv32i(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lab10_combine(struc)#1
+# Loading work.lab10_whole_syst(struct)#1
+# Loading work.lab8_arbiter(behav)#1
+# Loading work.lab3_fetch(behave)#1
+# Loading work.lab6_decode_pipeline(struc)#1
+# Loading work.reg(mixed)#1
+# Loading work.lab5_rv32i_decoder(behav)#1
+# Loading work.decode_proc(behav)#1
+# Loading work.lab7_exe(struc)#1
+# Loading work.reg(mixed)#2
+# Loading work.func_reg(behav)#1
+# Loading work.exe_proc(behav)#1
+# Loading work.lab8_mem_stage_struc(struc)#1
+# Loading work.lab8_mem_stage_proc(behav)#1
+# Loading work.lab8_writeback(mixed)#1
+# Loading work.lab9_reg_tracker(behav)#1
+# Loading work.lab9_regfile(struc)#1
+# Loading work.lab9_register_decoder(behav)#1
+# Loading work.lab9_regreadwrite(mixed)#1
+# Loading work.memorysystem(behavior)#1
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
+force -freeze sim:/lab10_combine/rst 1 0
+force -freeze sim:/lab10_combine/clk 1 0, 0 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
+force -freeze sim:/lab10_combine/rst 0 0
+run -all
+# ** Note: Writing 00000000000000000000000000000000 to address 00000000000000000000000000000000
+#    Time: 34100 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+add wave -position end  sim:/lab10_combine/processor/reg_file/RegArray(7)/RegI/Qval
+add wave -position end  sim:/lab10_combine/processor/reg_file/RegArray(6)/RegI/Qval
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt14
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
+force -freeze sim:/lab10_combine/rst 1 0
+force -freeze sim:/lab10_combine/clk 0 0, 1 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
+force -freeze sim:/lab10_combine/rst 0 0
+run
+# 0
+# 
+run -all
+# ** Note: Writing 00000000000000000000000000000000 to address 00000000000000000000000000000000
+#    Time: 34050 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+add wave -position insertpoint sim:/lab10_combine/processor/exe/*
+restart -force
+# ** Note: (vsim-8009) Loading existing optimized design _opt14
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
+force -freeze sim:/lab10_combine/rst 1 0
+noforce sim:/lab10_combine/clk
+force -freeze sim:/lab10_combine/clk 1 0, 0 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
+# 0
+# 
+force -freeze sim:/lab10_combine/rst 0 0
+run -all
+# ** Note: Writing 00000000000000000000000000000000 to address 00000000000000000000000000000000
+#    Time: 34100 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+# hds_restart
+restart -force
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rv32i(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lab10_combine(struc)#1
+# Loading work.lab10_whole_syst(struct)#1
+# Loading work.lab8_arbiter(behav)#1
+# Loading work.lab3_fetch(behave)#1
+# Loading work.lab6_decode_pipeline(struc)#1
+# Loading work.reg(mixed)#1
+# Loading work.lab5_rv32i_decoder(behav)#1
+# Loading work.decode_proc(behav)#1
+# Loading work.lab7_exe(struc)#1
+# Loading work.reg(mixed)#2
+# Loading work.func_reg(behav)#1
+# Loading work.exe_proc(behav)#1
+# Loading work.lab8_mem_stage_struc(struc)#1
+# Loading work.lab8_mem_stage_proc(behav)#1
+# Loading work.lab8_writeback(mixed)#1
+# Loading work.lab9_reg_tracker(behav)#1
+# Loading work.lab9_regfile(struc)#1
+# Loading work.lab9_register_decoder(behav)#1
+# Loading work.lab9_regreadwrite(mixed)#1
+# Loading work.memorysystem(behavior)#1
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
+force -freeze sim:/lab10_combine/rst 1 0
+force -freeze sim:/lab10_combine/clk 1 0, 0 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
+# 0
+# 
+force -freeze sim:/lab10_combine/rst 0 0
+run -all
+# ** Note: Writing 00000000000000000000000000000000 to address 00000000000000000000000000000000
+#    Time: 34100 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+add wave -position insertpoint sim:/lab10_combine/mem_syst/*
+add wave -position insertpoint sim:/lab10_combine/processor/mem_stage/*
+# hds_restart
+restart -force
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rv32i(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lab10_combine(struc)#1
+# Loading work.lab10_whole_syst(struct)#1
+# Loading work.lab8_arbiter(behav)#1
+# Loading work.lab3_fetch(behave)#1
+# Loading work.lab6_decode_pipeline(struc)#1
+# Loading work.reg(mixed)#1
+# Loading work.lab5_rv32i_decoder(behav)#1
+# Loading work.decode_proc(behav)#1
+# Loading work.lab7_exe(struc)#1
+# Loading work.reg(mixed)#2
+# Loading work.func_reg(behav)#1
+# Loading work.exe_proc(behav)#1
+# Loading work.lab8_mem_stage_struc(struc)#1
+# Loading work.lab8_mem_stage_proc(behav)#1
+# Loading work.lab8_writeback(mixed)#1
+# Loading work.lab9_reg_tracker(behav)#1
+# Loading work.lab9_regfile(struc)#1
+# Loading work.lab9_register_decoder(behav)#1
+# Loading work.lab9_regreadwrite(mixed)#1
+# Loading work.memorysystem(behavior)#1
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
+force -freeze sim:/lab10_combine/rst 1 0
+force -freeze sim:/lab10_combine/clk 1 0, 0 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
+# 0
+# 
+force -freeze sim:/lab10_combine/rst 0 0
+run -all
+# ** Note: Writing 00000000000000000000000000000000 to address 00000000000000000000000000000000
+#    Time: 34100 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+# hds_restart
+restart -force
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rv32i(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lab10_combine(struc)#1
+# Loading work.lab10_whole_syst(struct)#1
+# Loading work.lab8_arbiter(behav)#1
+# Loading work.lab3_fetch(behave)#1
+# Loading work.lab6_decode_pipeline(struc)#1
+# Loading work.reg(mixed)#1
+# Loading work.lab5_rv32i_decoder(behav)#1
+# Loading work.decode_proc(behav)#1
+# Loading work.lab7_exe(struc)#1
+# Loading work.reg(mixed)#2
+# Loading work.func_reg(behav)#1
+# Loading work.exe_proc(behav)#1
+# Loading work.lab8_mem_stage_struc(struc)#1
+# Loading work.lab8_mem_stage_proc(behav)#1
+# Loading work.lab8_writeback(mixed)#1
+# Loading work.lab9_reg_tracker(behav)#1
+# Loading work.lab9_regfile(struc)#1
+# Loading work.lab9_register_decoder(behav)#1
+# Loading work.lab9_regreadwrite(mixed)#1
+# Loading work.memorysystem(behavior)#1
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
+force -freeze sim:/lab10_combine/rst 1 0
+force -freeze sim:/lab10_combine/clk 1 0, 0 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
+# 0
+# 
+force -freeze sim:/lab10_combine/rst 0 0
+run -all
+# ** Note: Writing 00000000000000000000000000001010 to address 00000000000000000000000000000000
+#    Time: 33700 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+add wave -position insertpoint sim:/lab10_combine/processor/arb/*
+# hds_restart
+restart -force
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rv32i(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lab10_combine(struc)#1
+# Loading work.lab10_whole_syst(struct)#1
+# Loading work.lab8_arbiter(behav)#1
+# Loading work.lab3_fetch(behave)#1
+# Loading work.lab6_decode_pipeline(struc)#1
+# Loading work.reg(mixed)#1
+# Loading work.lab5_rv32i_decoder(behav)#1
+# Loading work.decode_proc(behav)#1
+# Loading work.lab7_exe(struc)#1
+# Loading work.reg(mixed)#2
+# Loading work.func_reg(behav)#1
+# Loading work.exe_proc(behav)#1
+# Loading work.lab8_mem_stage_struc(struc)#1
+# Loading work.lab8_mem_stage_proc(behav)#1
+# Loading work.lab8_writeback(mixed)#1
+# Loading work.lab9_reg_tracker(behav)#1
+# Loading work.lab9_regfile(struc)#1
+# Loading work.lab9_register_decoder(behav)#1
+# Loading work.lab9_regreadwrite(mixed)#1
+# Loading work.memorysystem(behavior)#1
+# Loading C:/MentorGraphics/HDS_2018.2/resources/downstream/modelsim/ModelSim_64Bit.dll
+force -freeze sim:/lab10_combine/rst 1 0
+force -freeze sim:/lab10_combine/clk 1 0, 0 {50 ns} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /lab10_combine/processor/reg_file/ReadDecode1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /lab10_combine/processor/reg_file/WriteDecode
+# 0
+# 
+force -freeze sim:/lab10_combine/rst 0 0
+run
+# 0
+# 
+run -all
+# ** Note: Writing 00000000000000000000000000001010 to address 00000000000000000000000001101000
+#    Time: 33700 ns  Iteration: 0  Instance: /lab10_combine/mem_syst
+# 0
+# 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/HDS/CAD/CAD_lib/work/wave.do

@@ -19,7 +19,8 @@ PORT(
 	--clk 			: IN std_ulogic;
 	--mDelay :IN std_ulogic;
 	
-	r,w,stall 			: OUT std_ulogic;
+	r,w 			: OUT std_ulogic;
+	--stall         : OUT std_ulogic;
 	Dout,Data_out_wback,Address_out_arb	:OUT  std_ulogic_vector(31 DOWNTO 0)
 	--Rd_out : OUT std_ulogic_vector(4 DOWNTO 0)
 	--data_size : OUT std_ulogic_vector(1 downto 0)
@@ -36,7 +37,7 @@ process(Data,Address,Din,FunC)
 		CASE FunC IS
 		
 		WHEN  LB | LH | LW | LBU | LHU =>
-			stall<='1';
+			--stall<='1';
 			Address_out_arb <= Address;
 			r<='1';
 			w<='0';
@@ -59,7 +60,7 @@ process(Data,Address,Din,FunC)
 			end if;
 				
 		WHEN  SB| SH | SW  =>
-			stall<='1';
+			--stall<='1';
 			Address_out_arb <= Address;
 			r<='0';
 			w<='1';
@@ -74,7 +75,7 @@ process(Data,Address,Din,FunC)
 					Dout (31 downto 8) <=(others=>Data(7));
 			end if;
 		WHEN others =>
-			stall<='0';
+			--stall<='0';
 			Address_out_arb <= ZEROS_32;
 			r<='0';
 			w<='0';

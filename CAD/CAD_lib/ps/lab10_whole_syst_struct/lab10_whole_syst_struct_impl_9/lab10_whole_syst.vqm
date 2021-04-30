@@ -1,0 +1,160 @@
+//
+// Verilog description for cell lab10_whole_syst, 
+// 04/20/21 17:05:18
+//
+// Precision RTL Synthesis, 64-bit 2018.1.0.19//
+
+
+module lab10_whole_syst ( mdelay, DataOut, clk, MemSyst_Dout, MemSyst_Addr, 
+                          MemSyst_read, MemSyst_we ) ;
+
+    input mdelay ;
+    input [31:0]DataOut ;
+    input clk ;
+    output [31:0]MemSyst_Dout ;
+    output [31:0]MemSyst_Addr ;
+    output MemSyst_read ;
+    output MemSyst_we ;
+
+    wire [31:31]wire_Jaddr;
+    wire MemSyst_read_dup_0;
+    wire [2375:0] xmplr_dummy ;
+
+
+
+
+    assign wire_Jaddr[31] = 1'b0 ;
+    assign MemSyst_read_dup_0 = 1'b1 ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_31_ (.o (MemSyst_Dout[31]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_30_ (.o (MemSyst_Dout[30]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_29_ (.o (MemSyst_Dout[29]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_28_ (.o (MemSyst_Dout[28]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_27_ (.o (MemSyst_Dout[27]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_26_ (.o (MemSyst_Dout[26]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_25_ (.o (MemSyst_Dout[25]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_24_ (.o (MemSyst_Dout[24]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_23_ (.o (MemSyst_Dout[23]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_22_ (.o (MemSyst_Dout[22]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_21_ (.o (MemSyst_Dout[21]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_20_ (.o (MemSyst_Dout[20]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_19_ (.o (MemSyst_Dout[19]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_18_ (.o (MemSyst_Dout[18]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_17_ (.o (MemSyst_Dout[17]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_16_ (.o (MemSyst_Dout[16]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_15_ (.o (MemSyst_Dout[15]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_14_ (.o (MemSyst_Dout[14]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_13_ (.o (MemSyst_Dout[13]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_12_ (.o (MemSyst_Dout[12]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_11_ (.o (MemSyst_Dout[11]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_10_ (.o (MemSyst_Dout[10]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_9_ (.o (MemSyst_Dout[9]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_8_ (.o (MemSyst_Dout[8]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_7_ (.o (MemSyst_Dout[7]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_6_ (.o (MemSyst_Dout[6]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_5_ (.o (MemSyst_Dout[5]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_4_ (.o (MemSyst_Dout[4]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_3_ (.o (MemSyst_Dout[3]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_2_ (.o (MemSyst_Dout[2]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_1_ (.o (MemSyst_Dout[1]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Dout_obuf_0_ (.o (MemSyst_Dout[0]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_31_ (.o (MemSyst_Addr[31]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_30_ (.o (MemSyst_Addr[30]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_29_ (.o (MemSyst_Addr[29]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_28_ (.o (MemSyst_Addr[28]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_27_ (.o (MemSyst_Addr[27]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_26_ (.o (MemSyst_Addr[26]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_25_ (.o (MemSyst_Addr[25]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_24_ (.o (MemSyst_Addr[24]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_23_ (.o (MemSyst_Addr[23]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_22_ (.o (MemSyst_Addr[22]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_21_ (.o (MemSyst_Addr[21]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_20_ (.o (MemSyst_Addr[20]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_19_ (.o (MemSyst_Addr[19]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_18_ (.o (MemSyst_Addr[18]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_17_ (.o (MemSyst_Addr[17]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_16_ (.o (MemSyst_Addr[16]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_15_ (.o (MemSyst_Addr[15]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_14_ (.o (MemSyst_Addr[14]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_13_ (.o (MemSyst_Addr[13]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_12_ (.o (MemSyst_Addr[12]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_11_ (.o (MemSyst_Addr[11]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_10_ (.o (MemSyst_Addr[10]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_9_ (.o (MemSyst_Addr[9]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_8_ (.o (MemSyst_Addr[8]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_7_ (.o (MemSyst_Addr[7]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_6_ (.o (MemSyst_Addr[6]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_5_ (.o (MemSyst_Addr[5]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_4_ (.o (MemSyst_Addr[4]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_3_ (.o (MemSyst_Addr[3]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_2_ (.o (MemSyst_Addr[2]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_1_ (.o (MemSyst_Addr[1]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_Addr_obuf_0_ (.o (MemSyst_Addr[0]), .i (
+                     wire_Jaddr[31])) ;
+    cyclonev_io_obuf MemSyst_read_obuf (.o (MemSyst_read), .i (
+                     MemSyst_read_dup_0)) ;
+    cyclonev_io_obuf MemSyst_we_obuf (.o (MemSyst_we), .i (wire_Jaddr[31])) ;
+endmodule
+

@@ -16,7 +16,7 @@ ENTITY func_reg IS
   PORT( 
     D : IN RV32I_Op;
     Q : OUT RV32I_Op;
-    clk,enable : IN std_ulogic
+    clk,enable,reset : IN std_ulogic
     );
     
     
@@ -31,9 +31,12 @@ ENTITY func_reg IS
     --          Q<=D;  
     --      end if;
     --      
-    process(clk,enable,D)
+    process(clk,enable,D,reset)
     begin
-      if (rising_edge(clk) and enable='1' )then
+      if (reset='1'  ) then
+       
+      Q<=NOP;
+      elsif (rising_edge(clk) and enable='1' )then
       Q<=D;  
     end if;
     

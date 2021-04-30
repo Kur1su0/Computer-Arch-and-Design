@@ -25,13 +25,13 @@ END ENTITY lab3_fetch;
 
 --
 ARCHITECTURE behave OF lab3_fetch IS
-  signal internal_pc : std_ulogic_vector(31 downto 0);
+  --signal internal_pc : std_ulogic_vector(31 downto 0);
   
   
 BEGIN
   --process(clk,Jaddr,Jmp,Reset,Delay)
-    process(clk)
-    VARIABLE get_sum : UNSIGNED(31 DOWNTO 0);
+counter: process(clk)
+    VARIABLE get_sum : UNSIGNED(31 DOWNTO 0):=(others=>'0');
     begin
       
       if rising_edge(clk) then
@@ -82,6 +82,33 @@ BEGIN
     end if;
   end process;
   
+  -- process(Jmp,Delay,Reset,Mdata)
+  -- begin
+	-- if Reset='1' then
+		-- Inst(31 downto 5)<=(others=>'0');
+		-- Inst(4 downto 0)<="10011";
+		-- Read <='0';
+	-- elsif Reset='0' then
+	
+	
+		-- if Jmp='1' then
+			-- Read<='0';
+			-- Inst(31 downto 5)<=(others=>'0');
+			-- Inst(4 downto 0)<="10011";
+		-- elsif Delay='0' then
+			-- Read<='1';
+			-- Inst<=Mdata;
+		-- else
+			-- Read<='1';
+			-- Inst(31 downto 5)<=(others=>'0');
+			-- Inst(4 downto 0)<="10011";
+		-- end if;
+	
+	
+	-- end if;
+  
+  
+  --end process;
 
 
   

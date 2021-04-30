@@ -1,0 +1,230 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/precision.log.suppressed
+# Info: [9552]: Activated implementation lab10_whole_syst_struct_impl_11 in project C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct.psp.
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s50tq144".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab9_regReadWrite.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab8_writeback_mixed.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab10_whole_syst(struct): Pre-processing...
+# Info: [44506]: Module CAD_lib.lab8_arbiter(behav): Pre-processing...
+# Info: [44506]: Module CAD_lib.lab3_fetch(behave){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.lab6_decode_pipeline(struc){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.reg(mixed){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.lab5_rv32i_decoder(behav): Pre-processing...
+# Info: [44506]: Module CAD_lib.decode_proc(behav): Pre-processing...
+# Info: [44506]: Module CAD_lib.lab7_exe(struc){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.reg(mixed){generic map (width => 5)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.func_reg(behav): Pre-processing...
+# Info: [44506]: Module CAD_lib.exe_proc(behav): Pre-processing...
+# Warning: [45531]: ".\auxi\packages\IEEE\IEEE_2008\numeric_std.vhdl", line 1128: Incorrect usage of built-in pragma inside function TO_INTEGER.
+# Warning: [45531]: ".\auxi\packages\IEEE\IEEE_2008\numeric_std.vhdl", line 1128: Incorrect usage of built-in pragma inside function TO_INTEGER.
+# Warning: [45531]: ".\auxi\packages\IEEE\IEEE_2008\numeric_std.vhdl", line 1128: Incorrect usage of built-in pragma inside function TO_INTEGER.
+# Info: [44506]: Module CAD_lib.lab8_mem_stage_struc(struc){generic map (width => 32)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.lab8_mem_stage_proc(behav): Pre-processing...
+# Info: [44506]: Module CAD_lib.lab8_writeback(mixed): Pre-processing...
+# Info: [44506]: Module CAD_lib.lab9_reg_tracker(behav): Pre-processing...
+# Info: [44506]: Module CAD_lib.lab9_regFile(struc){generic map (RegWidth => 32 RegSel => 5)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.lab9_register_decoder(behav){generic map (InBits => 5)}: Pre-processing...
+# Warning: [45540]: "C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_behav.vhd", line 36: Index value might be out of prefix index constraints
+# Info: [44506]: Module CAD_lib.lab9_regReadWrite(mixed){generic map (size => 32)}: Pre-processing...
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd", line 28: signal internal_pc has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd", line 27: signal bits_check has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd", line 28: signal data_bit has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd", line 39: signal wire_Data_to_wback has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd", line 27: signal wire_MemSyst_DataOut has never been used.
+# Warning: [45730]: "C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd", line 29: signal wire_Fetch_addr_to_arb[31:0] has no drivers, will be treated as don't care.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd", line 30: signal wire_Fetch_r has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd", line 45: signal wire_EXE_Jaddr has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd", line 46: signal wire_overf_junk has never been used.
+# Info: [44508]: Module CAD_lib.lab8_arbiter(behav): Compiling...
+# Warning: [45784]: "C:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_behav.vhd", line 28: Module CAD_lib.lab8_arbiter(behav), Net(s) Fetch_addr[31:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Info: [44508]: Module CAD_lib.lab3_fetch(behave){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.reg(mixed){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.lab5_rv32i_decoder(behav): Compiling...
+# Info: [44508]: Module CAD_lib.decode_proc(behav): Compiling...
+# Info: [44508]: Module CAD_lib.lab6_decode_pipeline(struc){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.reg(mixed){generic map (width => 5)}: Compiling...
+# Info: [44508]: Module CAD_lib.func_reg(behav): Compiling...
+# Info: [44508]: Module CAD_lib.exe_proc(behav): Compiling...
+# Info: [44508]: Module CAD_lib.lab7_exe(struc){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.lab8_mem_stage_proc(behav): Compiling...
+# Info: [44508]: Module CAD_lib.lab8_mem_stage_struc(struc){generic map (width => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.lab8_writeback(mixed): Compiling...
+# Info: [44508]: Module CAD_lib.lab9_reg_tracker(behav): Compiling...
+# Warning: [45784]: "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd", line 30: Module CAD_lib.lab9_reg_tracker(behav), Net(s) tracker[31:0]: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45702]: "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd", line 27: Initial value for tracker[31:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd", line 30: Initial value for stall_flag is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Info: [44508]: Module CAD_lib.lab9_register_decoder(behav){generic map (InBits => 5)}: Compiling...
+# Info: [44508]: Module CAD_lib.lab9_regReadWrite(mixed){generic map (size => 32)}: Compiling...
+# Info: [44508]: Module CAD_lib.lab9_regFile(struc){generic map (RegWidth => 32 RegSel => 5)}: Compiling...
+# Info: [44523]: Root Module CAD_lib.lab10_whole_syst(struct): Compiling...
+# Info: [45252]: "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd", line 175: Inferred rom instance 'rtlcI4' of type 'rom_2_7_128_49'.
+# Info: [45307]: "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd", line 79: The driving logic for the net r has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd", line 80: The driving logic for the net w has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45307]: "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd", line 77: The driving logic for the net stall has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45252]: "C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd", line 77: Inferred rom instance 'rtlcI5' of type 'rom_3_6_64_50'.
+# Info: [45307]: "C:/HDS/CAD/CAD_lib/hdl/lab8_writeback_mixed.vhd", line 60: The driving logic for the net w has been moved across hierarchy due to cross-hierarchy optimization
+# Info: [45252]: "C:/HDS/CAD/CAD_lib/hdl/lab8_writeback_mixed.vhd", line 60: Inferred rom instance 'rtlcI6' of type 'rom_1_6_64_51'.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[0]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[1]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[2]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[3]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[4]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[5]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[6]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[7]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[8]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[9]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[10]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[11]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[12]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[13]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[14]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[15]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[16]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[17]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[18]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[19]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[20]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[21]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[22]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[23]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[24]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[25]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[26]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[27]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[28]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[29]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[30]: This input has no drivers, driving zero.
+# Warning: [45438]: Module CAD_lib.lab10_whole_syst(struct), Instance arb, Net(s) Fetch_addr[31]: This input has no drivers, driving zero.
+# Info: [44846]: Rebalanced Expression Tree...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 2380.
+# Info: [44835]: Total CPU time for compilation: 3.0 secs.
+# Info: [44513]: Overall running time for compilation: 4.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11.
+# Info: [4557]: 2 Instances are flattened in hierarchical block .cad_lib.lab6_decode_pipeline_32.struc.
+# Info: [4557]: 4 Instances are flattened in hierarchical block .cad_lib.lab7_exe_32.struc_unfold_1841.
+# Info: [4557]: 2 Instances are flattened in hierarchical block .cad_lib.lab8_mem_stage_struc_32.struc.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab8_writeback.mixed_unfolded0_unfold_2992.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_1.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_2.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_3.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_4.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_5.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_6.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_7.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_8.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_9.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_10.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_11.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_12.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_13.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_14.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_15.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_16.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_17.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_18.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_19.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_20.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_21.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_22.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_23.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_24.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_25.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_26.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_27.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_28.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_29.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_30.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed_unfold_31.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab9_regReadWrite_32_notri.mixed.
+# Info: [4557]: 35 Instances are flattened in hierarchical block .cad_lib.lab9_regFile_32_5.struc.
+# Info: [4557]: 1 Instances are flattened in hierarchical block .cad_lib.lab10_whole_syst.struct.
+# Info: [20013]: Precision will use 12 processor(s).
+# Info: [15002]: Optimizing design view:.cad_lib.lab8_arbiter.behav_unfold_1785
+# Info: [15002]: Optimizing design view:.cad_lib.lab7_exe_32.struc_unfold_1841
+# Info: [15002]: Optimizing design view:.cad_lib.lab9_reg_tracker.behav_unfolded0
+# Info: [15002]: Optimizing design view:.cad_lib.lab8_mem_stage_struc_32.struc
+# Info: [15002]: Optimizing design view:.cad_lib.lab8_writeback.mixed_unfolded0_unfold_2992
+# Info: [15002]: Optimizing design view:.cad_lib.lab6_decode_pipeline_32.struc
+# Info: [15002]: Optimizing design view:.cad_lib.lab8_mem_stage_proc.behav_unfolded0
+# Info: [15002]: Optimizing design view:.cad_lib.decode_proc.behav
+# Info: [15002]: Optimizing design view:.cad_lib.lab10_whole_syst.struct
+# Info: [15002]: Optimizing design view:.cad_lib.lab5_rv32i_decoder.behav_unfolded0
+# Info: [15002]: Optimizing design view:.cad_lib.lab9_regFile_32_5.struc
+# Info: [15002]: Optimizing design view:.cad_lib.exe_proc.behav_unfold_1669
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:clk
+# Info: [4539]: Tristates converted to muxed logic.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/lab10_whole_syst.edf.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/lab10_whole_syst.ucf.
+# Info: ***********************************************
+# Info: Device Utilization for 3S50tq144
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               100     97      103.09%
+# Info: Global Buffers                    1       8        12.50%
+# Info: LUTs                              3409    1536    221.94%
+# Info: CLB Slices                        1705    768     222.01%
+# Info: Dffs or Latches                   1378    1827     75.42%
+# Info: Block RAMs                        0       4         0.00%
+# Info: Block Multipliers                 0       4         0.00%
+# Info: Block Multiplier Dffs             0       144       0.00%
+# Info: ---------------------------------------------------------------
+# Warning: This design does not fit in the device specified!
+# Info: Recommending to try an alternate device 3S200ft256
+# Info: ***********************************************
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 22.2 s secs.
+# Info: [11020]: Overall running time for synthesis: 38.8 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/hds/precision.tcl
+# COMMAND: report_area C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/lab10_whole_syst_area.rep -cell_usage
+report_area C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/lab10_whole_syst_area.rep -cell_usage
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab10_whole_syst_struct_impl_11.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_11/precision.log.suppressed
+# Info: [9552]: Activated implementation lab10_whole_syst_struct_impl_11 in project C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_12.
+# Info: [9557]: Created implementation lab10_whole_syst_struct_impl_12 in project C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct.psp.

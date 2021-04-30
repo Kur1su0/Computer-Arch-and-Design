@@ -1,0 +1,24 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/func_reg_behav/func_reg_behav_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/func_reg_behav/func_reg_behav_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation func_reg_behav_impl_1 in project C:/HDS/CAD/CAD_lib/ps/func_reg_behav/func_reg_behav.psp.
+new_impl -name func_reg_behav_impl_1
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s200ft256".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd" ...
+# Error: [42512]: "C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd", line 36: Use of undeclared identifier 'reset'
+# Error: [40008]: HDL analysis failed.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/func_reg_behav/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation func_reg_behav_impl_1.

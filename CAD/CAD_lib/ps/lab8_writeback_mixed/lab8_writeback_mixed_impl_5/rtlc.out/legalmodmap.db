@@ -1,0 +1,4 @@
+reg-32 reg_32
+lab8_writeback lab8_writeback
+reg-5 reg_5
+#LEGALIZEDMOD_COUNTER 0

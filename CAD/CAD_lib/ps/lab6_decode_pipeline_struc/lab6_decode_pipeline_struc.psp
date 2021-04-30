@@ -17,14 +17,14 @@
 # received written authorization from the owner.
 #
 #
-# Date : Wed Mar 24 12:58:27 2021
+# Date : Wed Apr 21 22:54:54 2021
 # Designer : W
 #
 #<PROJFILE format='0'>
 error "Error: This file can only be used with Precision version 2003c or later." "load_project failed" E_NEW_PROJECT
 #</PROJFILE>
 #<OBJ name='project' version='0'>
-#  <PROP key='defimpl' type='ESVT_STRING' value='lab6_decode_pipeline_struc_impl_3' />
+#  <PROP key='defimpl' type='ESVT_STRING' value='lab6_decode_pipeline_struc_impl_6' />
 #  <PROP key='usetempdir' type='ESVT_BOOL' value='false' />
 #  <OBJ name='impl' version='0'>
 #    <PROP key='name' type='ESVT_STRING' value='lab6_decode_pipeline_struc_impl_1' />
@@ -40,6 +40,24 @@ error "Error: This file can only be used with Precision version 2003c or later."
 #  </OBJ>
 #  <OBJ name='impl' version='0'>
 #    <PROP key='name' type='ESVT_STRING' value='lab6_decode_pipeline_struc_impl_3' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab6_decode_pipeline_struc_impl_4' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab6_decode_pipeline_struc_impl_5' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab6_decode_pipeline_struc_impl_6' />
 #    <PROP key='comment' type='ESVT_STRING' value='' />
 #    <PROP key='basename' type='ESVT_STRING' value='' />
 #    <PROP key='impltype' type='ESVT_STRING' value='default' />

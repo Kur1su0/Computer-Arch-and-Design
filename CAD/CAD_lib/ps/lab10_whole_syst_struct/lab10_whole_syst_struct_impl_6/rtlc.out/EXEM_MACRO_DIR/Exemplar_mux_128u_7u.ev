@@ -1,0 +1,12 @@
+module mux_128u_7u (a, b, d);
+input [127 : 0] a;
+input [6 : 0] b;
+output d;
+
+// pragma attribute mux_128u_7u ikos_rtlc$GENERIC mux
+// pragma attribute mux_128u_7u ikos_rtlc$size 128
+// pragma attribute mux_128u_7u ikos_rtlc$signed false
+
+
+endmodule
+

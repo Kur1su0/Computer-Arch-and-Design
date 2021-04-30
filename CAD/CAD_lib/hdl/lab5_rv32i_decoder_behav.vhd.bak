@@ -52,7 +52,7 @@ ENTITY lab5_rv32i_decoder IS
         if not(instruction(1 downto 0)="11") then
           Immediate<=ZEROS_32;
           Function_op<=BAD;
-        RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X');
+        RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0');
         RDv<='0'; RS1v<='0'; RS2v<='0';
       else
         
@@ -64,7 +64,7 @@ ENTITY lab5_rv32i_decoder IS
           RD<=RD_val;
           Immediate(31 downto 12)<=instruction(31 DOWNTO 12);
           Immediate(11 downto 0) <= (others=>'0');
-          RD<=RD_val;RS1<=(others=>'X'); RS2<=(others=>'X');
+          RD<=RD_val;RS1<=(others=>'0'); RS2<=(others=>'0');
           RDv<='1'; RS1v<='0'; RS2v<='0';
           if(OpCode=RV32I_OP_LUI) then Function_op<=LUI; else Function_op<=AUIPC;
           end if;
@@ -75,14 +75,14 @@ ENTITY lab5_rv32i_decoder IS
           Immediate(31 downto 20)<=(others=>instruction(31));
           Immediate(19 downto 0)<=instruction(19 downto 12) & instruction(20) &instruction(30 downto 25)& instruction(24 downto 21) &'0';
           RDv<='1'; RS1v<='0'; RS2v<='0';
-          RD<=RD_val;RS1<=(others=>'X'); RS2<=(others=>'X');
+          RD<=RD_val;RS1<=(others=>'0'); RS2<=(others=>'0');
           Function_op<=JAL;
           
           
         WHEN RV32I_OP_JALR =>
           --which_type<=I;
           RDv<='1'; RS1v<='1'; RS2v<='0';
-          RD<=RD_val;RS1<=RS1_val; RS2<=(others=>'X');
+          RD<=RD_val;RS1<=RS1_val; RS2<=(others=>'0');
           Immediate(31 downto 11)<=(others=>instruction(31));
           Immediate(10 downto 0)<=instruction(30 downto 25) & instruction(24 downto 21) & instruction(20);
           Function_op<=JALR;
@@ -91,7 +91,7 @@ ENTITY lab5_rv32i_decoder IS
         WHEN RV32I_OP_BRANCH =>
           --which_type<=SB;
           RDv<='0'; RS1v<='1'; RS2v<='1';
-          RD<=(others=>'X');RS1<=RS1_val; RS2<=RS2_val;
+          RD<=(others=>'0');RS1<=RS1_val; RS2<=RS2_val;
           Immediate(31 downto 12)<=(others=>instruction(31));
           Immediate(11 downto 0)<=instruction(7)&instruction(30 downto 25)&instruction(11 downto 8)&'0';
           CASE FN3 IS
@@ -101,7 +101,7 @@ ENTITY lab5_rv32i_decoder IS
           WHEN RV32I_FN3_BRANCH_GE => Function_op <=BGE;
           WHEN RV32I_FN3_BRANCH_LTU =>Function_op <=BLTU;
           WHEN RV32I_FN3_BRANCH_GEU =>Function_op <=BGEU;
-          WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
+          WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
           END CASE;
           
           
@@ -109,7 +109,7 @@ ENTITY lab5_rv32i_decoder IS
         WHEN RV32I_OP_LOAD =>
           --which_type<=I;
           RDv<='1'; RS1v<='1'; RS2v<='0';
-          RD<=RD_val;RS1<=RS1_val; RS2<=(others=>'X');
+          RD<=RD_val;RS1<=RS1_val; RS2<=(others=>'0');
           Immediate(31 downto 11)<=(others=>instruction(31));
           Immediate(10 downto 0)<=instruction(30 downto 25) & instruction(24 downto 21) & instruction(20);
           CASE FN3 IS
@@ -118,7 +118,7 @@ ENTITY lab5_rv32i_decoder IS
           when RV32I_FN3_LOAD_W =>Function_op <=LW;
           when RV32I_FN3_LOAD_BU =>Function_op <=LBU;
           when RV32I_FN3_LOAD_HU =>Function_op <=LHU;
-          WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
+          WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
           END CASE;
           
           
@@ -126,14 +126,14 @@ ENTITY lab5_rv32i_decoder IS
         WHEN RV32I_OP_STORE =>
           -- which_type<=S;
           RDv<='0'; RS1v<='1'; RS2v<='1';
-          RD<=(others=>'X');RS1<=RS1_val; RS2<=RS2_val;
+          RD<=(others=>'0');RS1<=RS1_val; RS2<=RS2_val;
           Immediate(31 downto 11)<=(others=>instruction(31));
           Immediate(10 downto 0)<=instruction(30 downto 25) & instruction(11 downto 8)&instruction(7);
           CASE FN3 IS
           when RV32I_FN3_STORE_B => Function_op <= SB;
           when RV32I_FN3_STORE_H => Function_op <= SH;
           when RV32I_FN3_STORE_W => Function_op <= SW;
-          WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
+          WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
           END CASE;
           
           
@@ -143,13 +143,13 @@ ENTITY lab5_rv32i_decoder IS
         WHEN RV32I_OP_ALUI =>
           if instruction=NOP_inst then
             RDv<='0'; RS1v<='0';RS2v<='0';
-            RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X');
+            RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0');
             Function_op <=NOP;
             Immediate<=ZEROS_32;
           else
             --shamt;
             RDv<='1'; RS1v<='1';RS2v<='0';
-            RD<=RD_val;RS1<=RS1_val; RS2<=(others=>'X');
+            RD<=RD_val;RS1<=RS1_val; RS2<=(others=>'0');
             --Immediate(31 downto 5)<=(others=>'0'); Immediate(4 downto 0)<=instruction(24 downto 20);
             Immediate(31 downto 11)<=(others=>instruction(31));
             Immediate(10 downto 0)<=instruction(30 downto 25) & instruction(24 downto 21) & instruction(20);
@@ -167,7 +167,7 @@ ENTITY lab5_rv32i_decoder IS
                 Function_op <=SLLI; 
                 Immediate(31 downto 5)<=(others=>'0'); Immediate(4 downto 0)<=instruction(24 downto 20);
               else
-                Function_op <=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
+                Function_op <=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
                 Immediate<=ZEROS_32;
               end if;
             when RV32I_FN3_ALU_SRL =>
@@ -177,10 +177,10 @@ ENTITY lab5_rv32i_decoder IS
               elsif FN7 =  "0000000" then
                 Function_op <=SRLI;
               else
-                Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
+                Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
                 Immediate<=ZEROS_32;
               end if;
-            WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
+            WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
               
               
               
@@ -200,48 +200,58 @@ ENTITY lab5_rv32i_decoder IS
             else Function_op<=BAD;
             end if;             
           WHEN RV32I_FN3_ALU_SLT => 
-            if FN7=RV32I_FN7_ALU then Function_op <=SLTr; else Function_op<=BAD; RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0'; end if;
-            WHEN RV32I_FN3_ALU_SLTU => 
-              if FN7=RV32I_FN7_ALU then Function_op <=SLTUr; else Function_op<=BAD; RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0'; end if;
-              WHEN RV32I_FN3_ALU_XOR => 
-                if FN7=RV32I_FN7_ALU then  Function_op <=XORr; else Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0'; end if;
-                  
-                WHEN RV32I_FN3_ALU_OR =>
-                  if FN7=RV32I_FN7_ALU then  Function_op <=ORr; else Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0'; end if;
-                    
-                  WHEN RV32I_FN3_ALU_AND => 
-                    if FN7=RV32I_FN7_ALU then  Function_op <=ANDr;else Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0'; end if;
-                      
-                    WHEN RV32I_FN3_ALU_SLL => 
-                      if FN7=RV32I_FN7_ALU then Function_op <=SLLr; else Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0'; end if;
-                        
-                      WHEN RV32I_FN3_ALU_SRL =>
-                        if FN7=RV32I_FN7_ALU_SA then Function_op<=SRAr;
-                        elsif FN7=RV32I_FN7_ALU then Function_op<=SRLr;
-                        else Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
-                        end if;
-                      WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X'); RDv<='0'; RS1v<='0'; RS2v<='0';
-                        
-                      END CASE;
-                      
-                      
-                    WHEN OTHERS => 
-                      Immediate<=ZEROS_32;
-                      Function_op<=BAD;
-                      RD<=(others=>'X');RS1<=(others=>'X'); RS2<=(others=>'X');
-                      RDv<='0'; RS1v<='0'; RS2v<='0';
-                      
-                      
-                    END CASE;
-                    
-                  end if;
-                end process;
-                
-                
-                
-              END ARCHITECTURE behav;
-              
-              
-              
-              
-              
+            if FN7=RV32I_FN7_ALU then Function_op <=SLTr; else Function_op<=BAD; RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
+            end if;
+          WHEN RV32I_FN3_ALU_SLTU => 
+            if FN7=RV32I_FN7_ALU then Function_op <=SLTUr; else Function_op<=BAD; RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0'; 
+            end if;
+          WHEN RV32I_FN3_ALU_XOR => 
+            if FN7=RV32I_FN7_ALU then  Function_op <=XORr; else Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0'; 
+            end if;
+            
+          WHEN RV32I_FN3_ALU_OR =>
+            if FN7=RV32I_FN7_ALU then  Function_op <=ORr; else Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0'; 
+            end if;
+            
+          WHEN RV32I_FN3_ALU_AND => 
+            if FN7=RV32I_FN7_ALU then  Function_op <=ANDr;else Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0'; 
+            end if;
+            
+          WHEN RV32I_FN3_ALU_SLL => 
+            if FN7=RV32I_FN7_ALU then Function_op <=SLLr; else Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0'; 
+            end if;
+            
+          WHEN RV32I_FN3_ALU_SRL =>
+            if FN7=RV32I_FN7_ALU_SA then Function_op<=SRAr;
+            elsif FN7=RV32I_FN7_ALU then Function_op<=SRLr;
+            else Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
+            end if;
+          WHEN OTHERS => Function_op<=BAD;  RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0'); RDv<='0'; RS1v<='0'; RS2v<='0';
+            
+          END CASE;
+          
+          
+        WHEN OTHERS => 
+          Immediate<=ZEROS_32;
+          Function_op<=BAD;
+          RD<=(others=>'0');RS1<=(others=>'0'); RS2<=(others=>'0');
+          RDv<='0'; RS1v<='0'; RS2v<='0';
+          
+          
+        END CASE;
+        
+      end if;
+    end process;
+    
+    
+    
+  END ARCHITECTURE behav;
+  
+  
+  
+  
+  
+  
+  
+  
+  

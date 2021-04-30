@@ -1,0 +1,79 @@
+(edif lab9_reg_tracker 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 04 13 14 35 24)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external xis3 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell LUT2 (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I0 (direction INPUT))
+     (port I1 (direction INPUT))
+     (port O (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell lab9_reg_tracker (cellType GENERIC)
+   (view behav  (viewType NETLIST)
+    (interface 
+     (port (array (rename read1 "read1(4:0)") 5 )(direction INPUT))
+     (port (array (rename read2 "read2(4:0)") 5 )(direction INPUT))
+     (port (array (rename write_from_dec "write_from_dec(4:0)") 5 )(direction INPUT))
+     (port (array (rename write_from_wback "write_from_wback(4:0)") 5 )(direction INPUT))
+     (port read1_valid (direction INPUT))
+     (port read2_valid (direction INPUT))
+     (port reserve (direction INPUT))
+     (port free (direction INPUT))
+     (port clk (direction INPUT))
+     (port stall (direction OUTPUT)))
+    (property AREA (string "1.000000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "3s50tq144-4"))
+    (contents 
+     (instance stall_obuf (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance read2_valid_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance read1_valid_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance ix18411z1328 (viewRef NETLIST  (cellRef LUT2 (libraryRef xis3 )))
+      (property INIT (string "E")))
+     (net read1_valid 
+      (joined 
+       (portRef read1_valid )
+       (portRef I (instanceRef read1_valid_ibuf ))))
+     (net read2_valid 
+      (joined 
+       (portRef read2_valid )
+       (portRef I (instanceRef read2_valid_ibuf ))))
+     (net read1_valid_int 
+      (joined 
+       (portRef O (instanceRef read1_valid_ibuf ))
+       (portRef I0 (instanceRef ix18411z1328 ))))
+     (net read2_valid_int 
+      (joined 
+       (portRef O (instanceRef read2_valid_ibuf ))
+       (portRef I1 (instanceRef ix18411z1328 ))))
+     (net stall 
+      (joined 
+       (portRef stall )
+       (portRef O (instanceRef stall_obuf ))))
+     (net stall_dup_0 
+      (joined 
+       (portRef O (instanceRef ix18411z1328 ))
+       (portRef I (instanceRef stall_obuf ))))))))
+ (design lab9_reg_tracker (cellRef lab9_reg_tracker (libraryRef cad_lib ))
+  (property PART (string "3s50tq144-4"))))

@@ -30,7 +30,7 @@ BEGIN
   
 	PROCESS (L,R,Extra,FunC)
 	variable bits_check :std_ulogic_vector(2 downto 0);
-	variable data_bit :std_ulogic;
+	--variable data_bit :std_ulogic;
 	variable data_var : std_ulogic_vector(31 downto 0);
 	BEGIN
 	
@@ -58,35 +58,36 @@ BEGIN
 			
 			WHEN BEQ =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				if L = R then Data<= Extra; Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				if L = R then Jaddr<= Extra; Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 				
 			WHEN BNE =>
 				overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				if L /= R then Data<= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF L(0)='X' or L(0)='U' or R(0)='X' or R(0)='U' then Jaddr<= Extra;
+				if L /= R then Jaddr<= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 			WHEN BLT =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF SIGNED(L) < SIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF SIGNED(L) < SIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 			WHEN BLTU =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF UNSIGNED(L) < UNSIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF UNSIGNED(L) < UNSIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 			WHEN BGE =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF SIGNED(L) >= SIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF SIGNED(L) >= SIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 			WHEN BGEU =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF UNSIGNED(L) >= UNSIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF UNSIGNED(L) >= UNSIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 				
 				
 			
@@ -182,15 +183,15 @@ BEGIN
 			WHEN SLLI | SLLr=>
 				overflow<='0';
 				Address <= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				Data <=std_ulogic_vector( shift_left(UNSIGNED(L),  to_integer(UNSIGNED(R))) );
+				Data <=std_ulogic_vector( shift_left(UNSIGNED(L),  to_integer(UNSIGNED(R(4 downto 0)))) );
 			WHEN SRAI | SRAr=>
 				overflow<='0';
 				Address <= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				Data <=std_ulogic_vector( shift_right(SIGNED(L),  to_integer(UNSIGNED(R))) );
+				Data <=std_ulogic_vector( shift_right(SIGNED(L),  to_integer(UNSIGNED(R(4 downto 0)))) );
 			WHEN SRLI | SRLr =>
 				overflow<='0';
 			  Address <= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				Data <=std_ulogic_vector( shift_right(UNSIGNED(L),  to_integer(UNSIGNED(R))) );
+				Data <=std_ulogic_vector( shift_right(UNSIGNED(L),  to_integer(UNSIGNED(R(4 downto 0)))) );
 			
 			
 			

@@ -11,7 +11,7 @@ if {[string length [info commands new_project]]} {
 
 ## Implementation settings
 MGS_Gui::notify_gui lock
-setup_design -manufacturer "Xilinx" -family "SPARTAN3" -part "3s50tq144" -speed "4" 
+setup_design -manufacturer "Xilinx" -family "SPARTAN3" -part "3s200ft256" -speed "4" 
 
 ## Design Settings
 setup_design -addio=true

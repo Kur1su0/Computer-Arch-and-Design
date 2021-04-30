@@ -1,0 +1,9 @@
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_behav.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd" -2008 
+CAD_lib "C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd" -2008 

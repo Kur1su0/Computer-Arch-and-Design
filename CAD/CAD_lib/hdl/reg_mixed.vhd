@@ -23,15 +23,19 @@ END ENTITY reg;
 
 --
 ARCHITECTURE mixed OF reg IS
+
 BEGIN
 
   process(clk,reset,enable,D)
+  variable X_s : std_ulogic_vector(width-1 downto 0):=(others=>'X');
   begin
     if (reset='1'  ) then
        
       Q<=(others=>'0');
     elsif (rising_edge(clk) and enable='1' )then
-       Q<=D;  
+		if D /=X_s then
+		  Q<=D;
+		end if;
     end if;
      
       

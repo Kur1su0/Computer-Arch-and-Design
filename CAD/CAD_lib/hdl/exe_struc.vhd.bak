@@ -22,7 +22,8 @@ PORT(
    Func_out: OUT RV32I_Op;
    Rd_out: OUT std_ulogic_vector(4 DOWNTO 0);
    Address,Data,Jaddr: OUT std_ulogic_vector(31 DOWNTO 0);
-   Jump,overflow: OUT std_ulogic
+   Jump,overflow: OUT std_ulogic;
+   delay : IN std_ulogic
    
 );
 END ENTITY lab7_exe;
@@ -50,7 +51,7 @@ BEGIN
   PORT MAP(D=>Rd_in,Q=>wire_rd_to_out, clk=>clk,enable=>'1',reset=>'0');
   
   func_reg: ENTITY work.func_reg(behav)
-  PORT MAP(D=>FunC_in,Q=>wire_funC, clk=>clk);
+  PORT MAP(D=>FunC_in,Q=>wire_funC, clk=>clk,enable=>'1');
   
   
   EXE_ALU_PROC: ENTITY work.exe_proc(behav) 

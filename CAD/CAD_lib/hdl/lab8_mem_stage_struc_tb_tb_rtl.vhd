@@ -12,7 +12,8 @@ USE CAD_lib.RV32I.ALL;
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
-
+USE work.RV32I.ALL;
+USE std.textio.all;
 
 ENTITY lab8_mem_stage_struc_tb IS
    GENERIC (
@@ -28,24 +29,24 @@ USE CAD_lib.ALL;
 ARCHITECTURE rtl OF lab8_mem_stage_struc_tb IS
 
    -- Architecture declarations
-
+   FILE test_vectors : text OPEN read_mode IS "lab8_mem_stg_vec.txt";
    -- Internal signal declarations
-   SIGNAL Data            : std_ulogic_vector(31 DOWNTO 0);
-   SIGNAL Din             : std_ulogic_vector(31 DOWNTO 0);
-   SIGNAL Address         : std_ulogic_vector(31 DOWNTO 0);
-   SIGNAL Rd_in           : std_ulogic_vector(4 DOWNTO 0);
-   SIGNAL FunC_in         : RV32I_Op;
-   SIGNAL mDelay          : std_ulogic;
-   SIGNAL clk             : std_ulogic;
-   SIGNAL r               : std_ulogic;
-   SIGNAL w               : std_ulogic;
-   SIGNAL stall           : std_ulogic;
-   SIGNAL Dout            : std_ulogic_vector(31 DOWNTO 0);
-   SIGNAL Data_out_wback  : std_ulogic_vector(31 DOWNTO 0);
-   SIGNAL Address_out_arb : std_ulogic_vector(31 DOWNTO 0);
-   SIGNAL Rd_out          : std_ulogic_vector(4 DOWNTO 0);
-   SIGNAL FunC_out        : RV32I_Op;
-
+   SIGNAL Data           						: std_ulogic_vector(31 DOWNTO 0);
+   SIGNAL Din             						: std_ulogic_vector(31 DOWNTO 0);
+   SIGNAL Address         						: std_ulogic_vector(31 DOWNTO 0);
+   SIGNAL Rd_in           						: std_ulogic_vector(4 DOWNTO 0);
+   SIGNAL FunC_in         						: RV32I_Op;
+   SIGNAL mDelay          						: std_ulogic;
+   SIGNAL clk             						: std_ulogic;
+   SIGNAL r,r_valid               				: std_ulogic;
+   SIGNAL w,w_valid               				: std_ulogic;
+   SIGNAL stall,stall_valid         			: std_ulogic;
+   SIGNAL Dout,Dout_valid           			: std_ulogic_vector(31 DOWNTO 0);
+   SIGNAL Data_out_wback,Data_out_wback_valid   : std_ulogic_vector(31 DOWNTO 0);
+   SIGNAL Address_out_arb,Address_out_arb_valid : std_ulogic_vector(31 DOWNTO 0);
+   SIGNAL Rd_out,Rd_out_valid          			: std_ulogic_vector(4 DOWNTO 0);
+   SIGNAL FunC_out,FunC_out_valid        		: RV32I_Op;
+   SIGNAL vecno : NATURAL := 0;
 
    -- Component declarations
    COMPONENT lab8_mem_stage_struc
@@ -100,31 +101,125 @@ BEGIN
                FunC_out        => FunC_out
             );
 
-process
+stimu : process
+	VARIABLE L 											: LINE;
+	VARIABLE v_Data,v_Din,v_Address						: std_ulogic_vector(31 DOWNTO 0);
+	VARIABLE v_Rd_in,v_Rd_out_valid 					: std_ulogic_vector(4 DOWNTO 0);
+	VARIABLE v_FunC_in,v_FunC_out_valid 	: Func_Name;
+
+	VARIABLE v_mDelay,v_r_valid,v_w_valid,v_stall_valid 	:std_ulogic;
+	VARIABLE v_Dout_valid,v_Data_out_wback_valid,v_Address_out_arb_valid	: std_ulogic_vector(31 DOWNTO 0);		
+	
+	
+	VARIABLE space:string(1 DOWNTO 1);
+	
+	
+	
 begin
-         Data  <=x"00000003";     
-         Din  <=x"80000001";          
-         Address   <=x"00000001" ;           
-         Rd_in  <="00010";          
-         FunC_in <=LB;       
-         mDelay   <='1';       
-         clk      <='0';     wait for 100ns;
-        clk      <='1';     wait  for 100ns;
-         
-         
-         Din  <=x"8000008f";
-         Address   <=x"0000000f" ; 
-         mDelay   <='0';       
-         clk      <='0';     wait for 100ns;
-        clk      <='1';     wait  for 100ns;
-        
-         clk      <='0';     wait for 100ns;
-        clk      <='1';     wait  for 100ns;
-        
-         clk      <='0';     wait for 100ns;
-        clk      <='1';     wait  for 100ns;
-        wait; 
+	readline(test_vectors,L);
+	WHILE NOT endfile(test_vectors) LOOP
   
-  
+		readline(test_vectors,L); 
+		hread(L,v_Data);  		Data<=v_Data;
+		hread(L,v_Din);   		Din<=v_Din;
+		hread(L,v_Address);   	Address<=v_Address;
+		read(L,v_Rd_in);		Rd_in<=v_Rd_in;
+		read(L,space); 
+		read(L,v_FunC_in);		FunC_in<=Ftype(v_FunC_in);
+		read(L,v_mDelay);		mDelay<=v_mDelay;
+		
+		
+		
+		
+		clk<='0'; wait for 100ns;
+		read(L,v_r_valid);						r_valid<=v_r_valid;
+		read(L,v_w_valid);						w_valid<=v_w_valid;
+		read(L,v_stall_valid);					stall_valid<=v_stall_valid;
+		hread(L,v_Dout_valid);					Dout_valid<=v_Dout_valid;
+		hread(L,v_Data_out_wback_valid);		Data_out_wback_valid<=v_Data_out_wback_valid;
+		hread(L,v_Address_out_arb_valid);		Address_out_arb_valid<=v_Address_out_arb_valid;
+		read(L,v_Rd_out_valid);					Rd_out_valid<=v_Rd_out_valid;
+		read(L,space); 
+		read(L,v_Func_out_valid);       		Func_out_valid<=Ftype(v_Func_out_valid);
+		clk<='1'; wait for 100ns;
+		
+		
+
+	End Loop;
+	report "END of TB";
+	wait;
+
 end process;
+
+check: process(clk)
+begin
+  if falling_edge(clk) then
+        vecno <= vecno + 1;
+        
+        
+        ASSERT r=r_valid
+        REPORT "ERROR: r " & to_string(vecno)
+        SEVERITY WARNING; 
+        
+        ASSERT w=w_valid
+        REPORT "ERROR: w " & to_string(vecno)
+        SEVERITY WARNING;
+        
+        ASSERT stall=stall_valid
+        REPORT "ERROR: stall " & to_string(vecno)
+        SEVERITY WARNING;
+        
+        ASSERT Dout=Dout_valid
+        REPORT "ERROR: Dout " & to_string(vecno)
+        SEVERITY WARNING;
+        
+        ASSERT Data_out_wback=Data_out_wback_valid
+        REPORT "ERROR: Data_out_wback " & to_string(vecno)
+        SEVERITY WARNING;
+        
+        
+        ASSERT Address_out_arb=Address_out_arb_valid
+        REPORT "ERROR: Address_out_arb " & to_string(vecno)
+        SEVERITY WARNING;
+        
+        ASSERT Rd_out=Rd_out_valid
+        REPORT "ERROR: Rd_out " & to_string(vecno)
+        SEVERITY WARNING;
+		
+		ASSERT Func_out=Func_out_valid
+        REPORT "ERROR: Func_out " & to_string(vecno)
+        SEVERITY WARNING;
+        
+        
+  end if;
+end process;
+
+
+-- process
+-- begin
+         -- Data  <=x"00000003";     
+         -- Din  <=x"80000001";          
+         -- Address   <=x"00000001" ;           
+         -- Rd_in  <="00010";          
+         -- FunC_in <=LB;       
+         -- mDelay   <='1';       
+         -- clk      <='0';     wait for 100ns;
+        -- clk      <='1';     wait  for 100ns;
+         
+         
+         -- Din  <=x"8000008f";
+         -- Address   <=x"0000000f" ; 
+         -- mDelay   <='0';       
+         -- clk      <='0';     wait for 100ns;
+        -- clk      <='1';     wait  for 100ns;
+        
+         -- clk      <='0';     wait for 100ns;
+        -- clk      <='1';     wait  for 100ns;
+        
+         -- clk      <='0';     wait for 100ns;
+        -- clk      <='1';     wait  for 100ns;
+        -- wait; 
+  
+  
+-- end process;
 END rtl;

@@ -1,0 +1,96 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation lab9_regFile_struc_impl_1 in project C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc.psp.
+new_impl -name lab9_regFile_struc_impl_1
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s50tq144".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_behav.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab9_regFile(struc){generic map (RegWidth => 32 RegSel => 5)}: Pre-processing...
+# Info: [44506]: Module CAD_lib.lab9_register_decoder(behav){generic map (InBits => 5)}: Pre-processing...
+# Warning: [45540]: "C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_behav.vhd", line 36: Index value might be out of prefix index constraints
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 19: Input port D has never been used.
+# Warning: [45731]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 20: Output port Q has never been assigned a value.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 21: Input port WriteSel has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 22: Input port Clock has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 22: Input port Load has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 29: signal ReadDC1 has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 29: signal ReadDC2 has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 29: signal WriteDC has never been used.
+# Warning: [45729]: "C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd", line 30: signal RegOut has never been used.
+# Info: [44508]: Module CAD_lib.lab9_register_decoder(behav){generic map (InBits => 5)}: Compiling...
+# Info: [44523]: Root Module CAD_lib.lab9_regFile(struc){generic map (RegWidth => 32 RegSel => 5)}: Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 84.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1.
+# Info: [15332]: Doing rtl optimizations.
+# Info: [665]: Finished compiling design.
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1.
+# Info: [15002]: Optimizing design view:.cad_lib.lab9_regFile.struc
+# Warning: [1621]: Port Q(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(8) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(9) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(10) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(11) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(12) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(13) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(14) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(15) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(16) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(17) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(18) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(19) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(20) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(21) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(22) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(23) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(24) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(25) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(26) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(27) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(28) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(29) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(30) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port Q(31) is connected to a disabled tristate, possibly unconnected Port in design.
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1/lab9_regFile.edf.
+# Info: [3027]: Writing file: C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1/lab9_regFile.ucf.
+# Info: [665]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.1 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.2 s secs.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab9_regFile_struc_impl_1.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation lab9_regFile_struc_impl_1 in project C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc_impl_2.
+# Info: [9557]: Created implementation lab9_regFile_struc_impl_2 in project C:/HDS/CAD/CAD_lib/ps/lab9_regFile_struc/lab9_regFile_struc.psp.

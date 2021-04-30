@@ -1,0 +1,216 @@
+(edif func_reg 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 04 21 19 47 38)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external xis3 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell IBUF (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell FDPE (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port C (direction INPUT))
+     (port CE (direction INPUT))
+     (port D (direction INPUT))
+     (port PRE (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell FDCE (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port C (direction INPUT))
+     (port CE (direction INPUT))
+     (port CLR (direction INPUT))
+     (port D (direction INPUT))
+     (port Q (direction OUTPUT)))))
+  (cell BUFGP (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port O (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell func_reg (cellType GENERIC)
+   (view behav  (viewType NETLIST)
+    (interface 
+     (port (array (rename D "D(5:0)") 6 )(direction INPUT))
+     (port (array (rename Q "Q(5:0)") 6 )(direction OUTPUT))
+     (port clk (direction INPUT))
+     (port enable (direction INPUT))
+     (port reset (direction INPUT)))
+    (property AREA (string "0.000000"))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "3s200ft256-4"))
+    (contents 
+     (instance (rename Q_obuf_0_ "Q_obuf(0)") (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance (rename Q_obuf_1_ "Q_obuf(1)") (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance (rename Q_obuf_2_ "Q_obuf(2)") (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance (rename Q_obuf_3_ "Q_obuf(3)") (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance (rename Q_obuf_4_ "Q_obuf(4)") (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance (rename Q_obuf_5_ "Q_obuf(5)") (viewRef NETLIST  (cellRef OBUF (libraryRef xis3 ))))
+     (instance reset_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance enable_ibuf (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance (rename D_ibuf_0_ "D_ibuf(0)") (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance (rename D_ibuf_1_ "D_ibuf(1)") (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance (rename D_ibuf_2_ "D_ibuf(2)") (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance (rename D_ibuf_3_ "D_ibuf(3)") (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance (rename D_ibuf_4_ "D_ibuf(4)") (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance (rename D_ibuf_5_ "D_ibuf(5)") (viewRef NETLIST  (cellRef IBUF (libraryRef xis3 ))))
+     (instance (rename reg_Q_5_ "reg_Q(5)") (viewRef NETLIST  (cellRef FDPE (libraryRef xis3 ))))
+     (instance (rename reg_Q_4_ "reg_Q(4)") (viewRef NETLIST  (cellRef FDCE (libraryRef xis3 ))))
+     (instance (rename reg_Q_3_ "reg_Q(3)") (viewRef NETLIST  (cellRef FDCE (libraryRef xis3 ))))
+     (instance (rename reg_Q_2_ "reg_Q(2)") (viewRef NETLIST  (cellRef FDPE (libraryRef xis3 ))))
+     (instance (rename reg_Q_1_ "reg_Q(1)") (viewRef NETLIST  (cellRef FDCE (libraryRef xis3 ))))
+     (instance (rename reg_Q_0_ "reg_Q(0)") (viewRef NETLIST  (cellRef FDPE (libraryRef xis3 ))))
+     (instance clk_ibuf (viewRef NETLIST  (cellRef BUFGP (libraryRef xis3 ))))
+     (net (rename D_5_ "D(5)") 
+      (joined 
+       (portRef (member D 0))
+       (portRef I (instanceRef D_ibuf_5_ ))))
+     (net (rename D_4_ "D(4)") 
+      (joined 
+       (portRef (member D 1))
+       (portRef I (instanceRef D_ibuf_4_ ))))
+     (net (rename D_3_ "D(3)") 
+      (joined 
+       (portRef (member D 2))
+       (portRef I (instanceRef D_ibuf_3_ ))))
+     (net (rename D_2_ "D(2)") 
+      (joined 
+       (portRef (member D 3))
+       (portRef I (instanceRef D_ibuf_2_ ))))
+     (net (rename D_1_ "D(1)") 
+      (joined 
+       (portRef (member D 4))
+       (portRef I (instanceRef D_ibuf_1_ ))))
+     (net (rename D_0_ "D(0)") 
+      (joined 
+       (portRef (member D 5))
+       (portRef I (instanceRef D_ibuf_0_ ))))
+     (net (rename Q_dup_0_5_ "Q_dup_0(5)") 
+      (joined 
+       (portRef Q (instanceRef reg_Q_5_ ))
+       (portRef I (instanceRef Q_obuf_5_ ))))
+     (net (rename Q_dup_0_4_ "Q_dup_0(4)") 
+      (joined 
+       (portRef Q (instanceRef reg_Q_4_ ))
+       (portRef I (instanceRef Q_obuf_4_ ))))
+     (net (rename Q_dup_0_3_ "Q_dup_0(3)") 
+      (joined 
+       (portRef Q (instanceRef reg_Q_3_ ))
+       (portRef I (instanceRef Q_obuf_3_ ))))
+     (net (rename Q_dup_0_2_ "Q_dup_0(2)") 
+      (joined 
+       (portRef Q (instanceRef reg_Q_2_ ))
+       (portRef I (instanceRef Q_obuf_2_ ))))
+     (net (rename Q_dup_0_1_ "Q_dup_0(1)") 
+      (joined 
+       (portRef Q (instanceRef reg_Q_1_ ))
+       (portRef I (instanceRef Q_obuf_1_ ))))
+     (net (rename Q_dup_0_0_ "Q_dup_0(0)") 
+      (joined 
+       (portRef Q (instanceRef reg_Q_0_ ))
+       (portRef I (instanceRef Q_obuf_0_ ))))
+     (net clk 
+      (joined 
+       (portRef clk )
+       (portRef I (instanceRef clk_ibuf ))))
+     (net enable 
+      (joined 
+       (portRef enable )
+       (portRef I (instanceRef enable_ibuf ))))
+     (net reset 
+      (joined 
+       (portRef reset )
+       (portRef I (instanceRef reset_ibuf ))))
+     (net (rename D_int_5_ "D_int(5)") 
+      (joined 
+       (portRef O (instanceRef D_ibuf_5_ ))
+       (portRef D (instanceRef reg_Q_5_ ))))
+     (net (rename D_int_4_ "D_int(4)") 
+      (joined 
+       (portRef O (instanceRef D_ibuf_4_ ))
+       (portRef D (instanceRef reg_Q_4_ ))))
+     (net (rename D_int_3_ "D_int(3)") 
+      (joined 
+       (portRef O (instanceRef D_ibuf_3_ ))
+       (portRef D (instanceRef reg_Q_3_ ))))
+     (net (rename D_int_2_ "D_int(2)") 
+      (joined 
+       (portRef O (instanceRef D_ibuf_2_ ))
+       (portRef D (instanceRef reg_Q_2_ ))))
+     (net (rename D_int_1_ "D_int(1)") 
+      (joined 
+       (portRef O (instanceRef D_ibuf_1_ ))
+       (portRef D (instanceRef reg_Q_1_ ))))
+     (net (rename D_int_0_ "D_int(0)") 
+      (joined 
+       (portRef O (instanceRef D_ibuf_0_ ))
+       (portRef D (instanceRef reg_Q_0_ ))))
+     (net clk_int 
+      (joined 
+       (portRef O (instanceRef clk_ibuf ))
+       (portRef C (instanceRef reg_Q_0_ ))
+       (portRef C (instanceRef reg_Q_1_ ))
+       (portRef C (instanceRef reg_Q_2_ ))
+       (portRef C (instanceRef reg_Q_3_ ))
+       (portRef C (instanceRef reg_Q_4_ ))
+       (portRef C (instanceRef reg_Q_5_ ))))
+     (net enable_int 
+      (joined 
+       (portRef O (instanceRef enable_ibuf ))
+       (portRef CE (instanceRef reg_Q_0_ ))
+       (portRef CE (instanceRef reg_Q_1_ ))
+       (portRef CE (instanceRef reg_Q_2_ ))
+       (portRef CE (instanceRef reg_Q_3_ ))
+       (portRef CE (instanceRef reg_Q_4_ ))
+       (portRef CE (instanceRef reg_Q_5_ ))))
+     (net reset_int 
+      (joined 
+       (portRef O (instanceRef reset_ibuf ))
+       (portRef PRE (instanceRef reg_Q_0_ ))
+       (portRef CLR (instanceRef reg_Q_1_ ))
+       (portRef PRE (instanceRef reg_Q_2_ ))
+       (portRef CLR (instanceRef reg_Q_3_ ))
+       (portRef CLR (instanceRef reg_Q_4_ ))
+       (portRef PRE (instanceRef reg_Q_5_ ))))
+     (net (rename Q_0_ "Q(0)") 
+      (joined 
+       (portRef (member Q 5))
+       (portRef O (instanceRef Q_obuf_0_ ))))
+     (net (rename Q_1_ "Q(1)") 
+      (joined 
+       (portRef (member Q 4))
+       (portRef O (instanceRef Q_obuf_1_ ))))
+     (net (rename Q_2_ "Q(2)") 
+      (joined 
+       (portRef (member Q 3))
+       (portRef O (instanceRef Q_obuf_2_ ))))
+     (net (rename Q_3_ "Q(3)") 
+      (joined 
+       (portRef (member Q 2))
+       (portRef O (instanceRef Q_obuf_3_ ))))
+     (net (rename Q_4_ "Q(4)") 
+      (joined 
+       (portRef (member Q 1))
+       (portRef O (instanceRef Q_obuf_4_ ))))
+     (net (rename Q_5_ "Q(5)") 
+      (joined 
+       (portRef (member Q 0))
+       (portRef O (instanceRef Q_obuf_5_ ))))))))
+ (design func_reg (cellRef func_reg (libraryRef cad_lib ))
+  (property PART (string "3s200ft256-4"))))

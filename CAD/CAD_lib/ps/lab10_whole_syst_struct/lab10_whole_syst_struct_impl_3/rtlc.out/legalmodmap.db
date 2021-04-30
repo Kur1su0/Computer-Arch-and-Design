@@ -1,0 +1,12 @@
+lab5_rv32i_decoder lab5_rv32i_decoder
+lab10_whole_syst lab10_whole_syst
+decode_proc decode_proc
+lab6_decode_pipeline-32 lab6_decode_pipeline_32
+lab3_fetch-32 lab3_fetch_32
+lab7_exe-32 lab7_exe_32
+reg-32 reg_32
+lab8_arbiter lab8_arbiter
+reg-5 reg_5
+func_reg func_reg
+exe_proc exe_proc
+#LEGALIZEDMOD_COUNTER 0

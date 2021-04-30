@@ -56,7 +56,7 @@ BEGIN
 		L(0)<='0';
 		R<=std_ulogic_vector( UNSIGNED(Address) +4); --to Rd.
 		Extra<=ZEROS_32;
-	
+		
 	
 	WHEN BEQ|BNE|BLT |BGE |BLTU | BGEU =>
 	--type branch
@@ -88,7 +88,8 @@ BEGIN
 	-- type shamt
 	WHEN SLLI | SRAI | SRLI =>
 		L <=DataA; --rs1
-		R <=Immediate; 
+		R(31 downto 5)<=(others=>'0');
+		R(4 downto 0) <=Immediate(4 downto 0); 
 		Extra <= ZEROS_32 ;
 	--type R
 	WHEN SLTr|SLTUr|XORr| ORr|ANDr| SLLr | SRAr| SRLr |SUBr |ADDr=>

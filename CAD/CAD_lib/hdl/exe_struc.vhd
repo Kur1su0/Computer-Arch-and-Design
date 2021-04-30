@@ -22,7 +22,9 @@ PORT(
    Func_out: OUT RV32I_Op;
    Rd_out: OUT std_ulogic_vector(4 DOWNTO 0);
    Address,Data,Jaddr: OUT std_ulogic_vector(31 DOWNTO 0);
-   Jump,overflow: OUT std_ulogic
+   Jump,overflow: OUT std_ulogic;
+   delay,rst : IN std_ulogic
+    	 
    
 );
 END ENTITY lab7_exe;
@@ -35,22 +37,22 @@ ARCHITECTURE struc OF lab7_exe IS
 BEGIN
   L_reg: ENTITY work.reg(mixed)
   GENERIC MAP(width=>width)
-  PORT MAP(D=>Left,Q=>wire_LReg_to_proc, clk=>clk,enable=>'1',reset=>'0');
+  PORT MAP(D=>Left,Q=>wire_LReg_to_proc, clk=>clk,enable=>not(delay),reset=>rst);
     
   R_reg: ENTITY work.reg(mixed)
   GENERIC MAP(width=>width)
-  PORT MAP(D=>Right,Q=>wire_RReg_to_proc, clk=>clk,enable=>'1',reset=>'0');
+  PORT MAP(D=>Right,Q=>wire_RReg_to_proc, clk=>clk,enable=>not(delay),reset=>rst);
     
   Ex_reg: ENTITY work.reg(mixed)
   GENERIC MAP(width=>width)
-  PORT MAP(D=>Extra,Q=>wire_ExReg_to_proc, clk=>clk,enable=>'1',reset=>'0');
+  PORT MAP(D=>Extra,Q=>wire_ExReg_to_proc, clk=>clk,enable=>not(delay),reset=>rst);
   
   Rd_reg: ENTITY work.reg(mixed)
   GENERIC MAP(width=>5)
-  PORT MAP(D=>Rd_in,Q=>wire_rd_to_out, clk=>clk,enable=>'1',reset=>'0');
+  PORT MAP(D=>Rd_in,Q=>wire_rd_to_out, clk=>clk,enable=>not(delay),reset=>rst);
   
   func_reg: ENTITY work.func_reg(behav)
-  PORT MAP(D=>FunC_in,Q=>wire_funC, clk=>clk,enable=>'1');
+  PORT MAP(D=>FunC_in,Q=>wire_funC, clk=>clk,enable=>not(delay),reset=>rst);
   
   
   EXE_ALU_PROC: ENTITY work.exe_proc(behav) 
@@ -67,8 +69,20 @@ BEGIN
     overflow=>overflow
   );
   
-  Func_out<=wire_funC;
-  Rd_out<=wire_rd_to_out;
+  
+  with delay select FunC_out<=
+		NOP 	  when '1',
+		wire_func when '0',
+		unaffected when others;
+			
+  with delay select Rd_out<=
+		"00000" when '1',
+		wire_rd_to_out when '0',
+		unaffected when others;
+  
+  
+  -- Func_out<=wire_funC;
+  -- Rd_out<=wire_rd_to_out;
   
 END ARCHITECTURE struc;
 

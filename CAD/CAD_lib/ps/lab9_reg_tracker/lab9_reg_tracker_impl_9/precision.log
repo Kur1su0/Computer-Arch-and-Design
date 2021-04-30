@@ -1,0 +1,47 @@
+# Info: [9569]: Logging project transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker_impl_9/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker_impl_9/precision.log.suppressed
+# Info: [9552]: Activated implementation lab9_reg_tracker_impl_9 in project C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker.psp.
+# Info: [15300]: Setting up the design to use synthesis library "xis3.syn"
+# Info: [580]: The global max fanout is currently set to 10000 for Xilinx - SPARTAN3.
+# Info: [15326]: Setting Part to: "3s200ft256".
+# Info: [15327]: Setting Process to: "4".
+# Info: [7512]: The place and route tool for current technology is ISE.
+# Info: [3022]: Reading file: C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/techlibs/xis3.syn.
+# Info: [639]: Loading library initialization file C:/MentorGraphics/PS2018.1_64-bit/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2018a.17
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2018a.17
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd" ...
+# Info: [42502]: Analyzing input file "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd" ...
+# Info: [662]: Current working directory: C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker_impl_9.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:32:49
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2018a.17
+# Info: [40000]: Last compiled on Jun 28 2018 15:52:40
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module CAD_lib.lab9_reg_tracker(behav): Pre-processing...
+# Info: [44523]: Root Module CAD_lib.lab9_reg_tracker(behav): Compiling...
+# Warning: [45784]: "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd", line 31: Module CAD_lib.lab9_reg_tracker(behav), Net(s) rst: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Warning: [45702]: "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd", line 28: Initial value for tracker[31:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd", line 31: Initial value for stall_flag is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Error: [46237]: "C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd", line 31: Unsupported Clocking style: Signal/Variable stall_flag is assigned in async part before sync part ...
+# Info: [44859]: Compilation failed...
+# Info: [44856]: Total lines of RTL compiled: 121.
+# Info: [44835]: Total CPU time for compilation: 0.3 secs.
+# Error: [47002]: RTLCompiler error... aborting compilation.
+# Info: [44859]: Compilation failed...
+# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Error: [679]: Unable to elaborate design CAD_lib.lab9_reg_tracker in vhdl.
+# Info: HDL Designer Synthesis run finished
+source C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/hds/precision.tcl
+# COMMAND: exit -force
+# Warning: [9526]: Discarded unsaved work in implementation lab9_reg_tracker_impl_9.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker_impl_9/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker_impl_9/precision.log.suppressed
+# Info: [9552]: Activated implementation lab9_reg_tracker_impl_9 in project C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker_impl_10.
+# Info: [9557]: Created implementation lab9_reg_tracker_impl_10 in project C:/HDS/CAD/CAD_lib/ps/lab9_reg_tracker/lab9_reg_tracker.psp.

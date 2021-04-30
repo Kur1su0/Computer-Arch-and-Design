@@ -40,7 +40,7 @@ BEGIN
    PORT MAP(Din0=>Reset,Din1=>Jmp,Dout=>wire_pc_rst);
      
      
-   notGate : ENTITY work.pc_enable(behave)
+   pc_enable : ENTITY work.pc_enable(behave)
   PORT MAP(jmp_or_rst=>wire_pc_rst, Delay=>Delay,Dout=>wire_pc_enable);  
   
    pc : ENTITY work.lab2_counter(mixed)

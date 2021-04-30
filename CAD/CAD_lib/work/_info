@@ -49,14 +49,44 @@ n@_opt11
 R4
 R0
 T_opt12
-!s110 1617518657
-VSJKK8Z06iQ7UHH[4lbJb63
-04 23 3 work lab8_mem_stage_struc_tb rtl 1
-=1-2cf05d5c75ff-60696041-296-60f0
+!s110 1618961507
+VE6]<>dR0B^BHe?g2fU2NK2
+04 16 6 work lab10_whole_syst struct 1
+=1-2cf05d5c75ff-607f6463-207-2908
 R2
 R3
 n@_opt12
 R4
+R0
+T_opt13
+!s110 1618961547
+VBUP<0JBIK=OnnL]fneMAR2
+Z6 04 13 5 work lab10_combine struc 1
+=1-2cf05d5c75ff-607f648b-17-4c20
+R2
+R3
+n@_opt13
+R4
+R0
+T_opt14
+!s110 1619815970
+V[1LmV<d3UeE7zUJ=YHNE40
+R6
+=8-2cf05d5c75ff-608c6e22-304-2fa4
+R2
+R3
+n@_opt14
+R4
+T_opt15
+!s110 1619813821
+V>CNNm4S6U9H4?Gm?fQXi^1
+04 20 5 work lab6_decode_pipeline struc 1
+=1-2cf05d5c75ff-608c65bd-34c-7d94
+R2
+R3
+n@_opt15
+R4
+R0
 T_opt2
 !s110 1613345308
 VkBVU@8iCB6LG<7]`4M?6V2
@@ -80,7 +110,7 @@ R0
 T_opt4
 !s110 1614054308
 VWT^642<8:C00UY97Ck`Zh0
-Z6 04 10 6 work lab3_fetch behave 1
+Z7 04 10 6 work lab3_fetch behave 1
 =1-2cf05d5c75ff-603483a4-1e6-4ad4
 R2
 R3
@@ -100,7 +130,7 @@ R0
 T_opt6
 !s110 1614226698
 Vkg>1feYz9a:K><N0oNC6K2
-R6
+R7
 =1-2cf05d5c75ff-6037250a-1dd-50ec
 R2
 R3
@@ -110,7 +140,7 @@ R0
 T_opt7
 !s110 1614230653
 VaSmkUS]o20A_78JQ`G^743
-R6
+R7
 =1-2cf05d5c75ff-6037347d-347-2c18
 R2
 R3
@@ -138,1184 +168,1869 @@ n@_opt9
 R4
 R0
 Edecode_proc
-Z7 w1617221610
-Z8 DPx4 work 5 rv32i 0 22 PIFGGlOb`Og][aJGo54540
-Z9 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z11 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 w1619478762
+Z9 DPx4 work 5 rv32i 0 22 PIFGGlOb`Og][aJGo54540
+Z10 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z12 8C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd
-Z13 FC:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd
+Z13 8C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd
+Z14 FC:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd
 l0
 L15
 VM[Ujc8f1N;_:g7X>]h@7a1
 !s100 <4ehd:W8ejCe>fP;K=AYY1
-Z14 OL;C;10.6e;65
+Z15 OL;C;10.6e;65
 33
-Z15 !s110 1617221621
+Z16 !s110 1619478775
 !i10b 1
-Z16 !s108 1617221620.000000
-Z17 !s90 -work|CAD_lib|-nologo|-2008|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files0|
-Z18 !s107 C:/HDS/CAD/CAD_lib/hdl/decode_proc_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd|
+Z17 !s108 1619478775.000000
+Z18 !s90 -work|CAD_lib|-nologo|-2008|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files0|
+Z19 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd|
 !i113 0
-Z19 o-nologo -work CAD_lib -2008
-Z20 tExplicit 1 CvgOpt 0
+Z20 o-nologo -work CAD_lib -2008
+Z21 tExplicit 1 CvgOpt 0
 Abehav
-R8
 R9
 R10
 R11
-Z21 DEx4 work 11 decode_proc 0 22 M[Ujc8f1N;_:g7X>]h@7a1
+R12
+Z22 DEx4 work 11 decode_proc 0 22 M[Ujc8f1N;_:g7X>]h@7a1
 l32
 L30
-VlTdCMQA6EbP<`D8h`2:o>2
-!s100 oC]Zb^F50Rk4iecmPBPJR2
-R14
-33
+Vn1>ZX7zXXNM1dPF5aznaj3
+!s100 GhWnFE>H];nV[AAE=5`;K3
 R15
-!i10b 1
+33
 R16
+!i10b 1
 R17
 R18
-!i113 0
 R19
+!i113 0
 R20
+R21
 Edecode_proc_tb
-Z22 w1616392707
-R9
+Z23 w1616392707
 R10
 R11
-R8
+R12
+R9
 R0
-Z23 8C:/HDS/CAD/CAD_lib/hdl/decode_proc_tb_tb_rtl.vhd
-Z24 FC:/HDS/CAD/CAD_lib/hdl/decode_proc_tb_tb_rtl.vhd
+Z24 8C:/HDS/CAD/CAD_lib/hdl/decode_proc_tb_tb_rtl.vhd
+Z25 FC:/HDS/CAD/CAD_lib/hdl/decode_proc_tb_tb_rtl.vhd
 l0
 L17
 V<e3@;FNYlRES4Vk1hWVif2
 !s100 7iiSPSKk[JW[d=`Za0B6i3
-R14
-33
 R15
+33
+Z26 !s110 1617221621
 !i10b 1
-R16
-R17
+Z27 !s108 1617221620.000000
 R18
+Z28 !s107 C:/HDS/CAD/CAD_lib/hdl/decode_proc_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd|
 !i113 0
-R19
 R20
+R21
 Artl
 DEx7 cad_lib 11 decode_proc 0 22 M[Ujc8f1N;_:g7X>]h@7a1
-R9
 R10
 R11
-R8
+R12
+R9
 DEx4 work 14 decode_proc_tb 0 22 <e3@;FNYlRES4Vk1hWVif2
 l59
 L25
 Vczg_Y2Lf=dN4J4J]o7QRk1
 !s100 V=?UR=Um@5=d4bBZjig4g1
-R14
-33
 R15
+33
+R26
 !i10b 1
-R16
-R17
+R27
 R18
+R28
 !i113 0
-R19
 R20
+R21
 Eexe_proc
-Z25 w1617233405
-R8
+Z29 w1619490706
 R9
 R10
 R11
+R12
 R0
-Z26 8C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd
-Z27 FC:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd
+Z30 8C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd
+Z31 FC:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd
 l0
 L15
 VMg7o]ilfaQdkPoDZeVI0P1
 !s100 Q<V]elJ][;jkebP=VVmTQ0
-R14
+R15
 33
-Z28 !s110 1617233408
+Z32 !s110 1619490731
 !i10b 1
-Z29 !s108 1617233408.000000
-R17
-Z30 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd|
+Z33 !s108 1619490731.000000
+R18
+Z34 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd|
 !i113 0
-R19
 R20
+R21
 Abehav
-R8
 R9
 R10
 R11
-Z31 DEx4 work 8 exe_proc 0 22 Mg7o]ilfaQdkPoDZeVI0P1
+R12
+Z35 DEx4 work 8 exe_proc 0 22 Mg7o]ilfaQdkPoDZeVI0P1
 l29
 L26
-VBWPlkDP5_30T:UQE]lc`B3
-!s100 Y0aDS2bC6D?lHf?1cHj_j1
-R14
+Vf>zCRRG7[2XRe3Z:giA0b1
+!s100 md14EDhfBhTMfZ_Yk=D:Z2
+R15
 33
-R28
+R32
 !i10b 1
-R29
-R17
-R30
+R33
+R18
+R34
 !i113 0
-R19
 R20
+R21
 Eexe_proc_tb
-Z32 w1617225551
-R9
+Z36 w1617225551
 R10
 R11
-Z33 DPx7 cad_lib 5 rv32i 0 22 PIFGGlOb`Og][aJGo54540
+R12
+Z37 DPx7 cad_lib 5 rv32i 0 22 PIFGGlOb`Og][aJGo54540
 R0
-Z34 8C:/HDS/CAD/CAD_lib/hdl/exe_proc_tb_tb_rtl.vhd
-Z35 FC:/HDS/CAD/CAD_lib/hdl/exe_proc_tb_tb_rtl.vhd
+Z38 8C:/HDS/CAD/CAD_lib/hdl/exe_proc_tb_tb_rtl.vhd
+Z39 FC:/HDS/CAD/CAD_lib/hdl/exe_proc_tb_tb_rtl.vhd
 l0
 L17
 V@9VYd`?h`KMiWX=a:VJAD3
 !s100 5>?P4a^T3<MIj^mPeZN4A0
-R14
+R15
 33
-Z36 !s110 1617233369
+Z40 !s110 1617233369
 !i10b 1
-Z37 !s108 1617233369.000000
-R17
-Z38 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_proc_tb_tb_rtl.vhd|
+Z41 !s108 1617233369.000000
+R18
+Z42 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_proc_tb_tb_rtl.vhd|
 !i113 0
-R19
 R20
+R21
 Artl
 DEx7 cad_lib 8 exe_proc 0 22 Mg7o]ilfaQdkPoDZeVI0P1
-R9
 R10
 R11
-R33
+R12
+R37
 DEx4 work 11 exe_proc_tb 0 22 @9VYd`?h`KMiWX=a:VJAD3
 l59
 L25
 VB71l=QDh?l_OTKoZ8?7kz0
 !s100 mQJ0K5HW]L:^MjXADUhW;0
-R14
+R15
 33
-R36
+R40
 !i10b 1
-R37
-R17
-R38
+R41
+R18
+R42
 !i113 0
-R19
 R20
+R21
 Efetch_tb
-Z39 w1615093608
-R9
+Z43 w1615093608
 R10
 R11
+R12
 R0
-Z40 8C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd
-Z41 FC:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd
+Z44 8C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd
+Z45 FC:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd
 l0
 L8
 Vb?LR0[QXA:8AhX<c?NJL^3
 !s100 7O7>9_jQU03SOgj??3MOD1
-R14
+R15
 33
-Z42 !s110 1615093609
+Z46 !s110 1615093609
 !i10b 1
-Z43 !s108 1615093609.000000
-R17
-Z44 !s107 C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd|
+Z47 !s108 1615093609.000000
+R18
+Z48 !s107 C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd|
 !i113 0
-R19
 R20
+R21
 Atestbench
-Z45 DEx4 work 15 lab3_fetch_unit 0 22 0GaB[_05UEAcf`oYnV;Gl1
-R9
+Z49 DEx4 work 15 lab3_fetch_unit 0 22 0GaB[_05UEAcf`oYnV;Gl1
 R10
 R11
+R12
 DEx4 work 8 fetch_tb 0 22 b?LR0[QXA:8AhX<c?NJL^3
 l26
 L12
 VER00Qz>XN6J2S<M>`PLF]2
 !s100 EUV317g7ahebQ5g4BchUe0
-R14
+R15
 33
-R42
+R46
 !i10b 1
-R43
-R17
-R44
+R47
+R18
+R48
 !i113 0
-R19
 R20
+R21
 Efunc_reg
-Z46 w1617509032
-R8
+Z50 w1619034445
 R9
 R10
 R11
+R12
 R0
-Z47 8C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd
-Z48 FC:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd
+Z51 8C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd
+Z52 FC:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd
 l0
 L15
-V`TZ3?Xhm<nm57;=CcQJ:o2
-!s100 JA@JzEObem<=H;a6SYTA?1
-R14
+VXECQX<`[jnjGMPgZCHGmL0
+!s100 >DYV@1aZ2B^@9CBQPRn]m1
+R15
 33
-Z49 !s110 1617509035
+Z53 !s110 1619035017
 !i10b 1
-Z50 !s108 1617509035.000000
-R17
-Z51 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd|
+Z54 !s108 1619035017.000000
+R18
+Z55 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd|
 !i113 0
-R19
 R20
+R21
 Abehav
-R8
 R9
 R10
 R11
-Z52 DEx4 work 8 func_reg 0 22 `TZ3?Xhm<nm57;=CcQJ:o2
+R12
+Z56 DEx4 work 8 func_reg 0 22 XECQX<`[jnjGMPgZCHGmL0
 l27
 L26
-V<C`RCGXXIbV<jXjJS9N:T3
-!s100 iOFIoiRN?ggcCc6PeL?0L1
-R14
+VH:jLX]3?O<`cYS7h@9?U?3
+!s100 QOa?Q0Vd]Gd:2j4?OmJcY1
+R15
 33
-R49
+R53
 !i10b 1
-R50
-R17
-R51
+R54
+R18
+R55
 !i113 0
-R19
 R20
+R21
 Eincrement
-Z53 w1614061121
-R9
+Z57 w1614061121
 R10
 R11
+R12
 R0
-Z54 8C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd
-Z55 FC:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd
+Z58 8C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd
+Z59 FC:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd
 l0
 L15
 VfYz`@=;2XLn@=af0Mz[_P3
 !s100 5:02jnXkHh[lm5i8BAh`=2
-R14
+R15
 33
-Z56 !s110 1614232071
+Z60 !s110 1618958793
 !i10b 1
-Z57 !s108 1614232071.000000
-R17
-Z58 !s107 C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd|C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd|
+Z61 !s108 1618958792.000000
+R18
+Z62 !s107 C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd|C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd|C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd|C:/HDS/CAD/CAD_lib/hdl/Increment_mixed.vhd|C:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd|C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd|
 !i113 0
-R19
 R20
+R21
 Amixed
-R9
 R10
 R11
-Z59 DEx4 work 9 increment 0 22 fYz`@=;2XLn@=af0Mz[_P3
+R12
+Z63 DEx4 work 9 increment 0 22 fYz`@=;2XLn@=af0Mz[_P3
 l23
 L21
 VLGom2aXehl229[7<95I@]0
 !s100 ?l2Tf[3<OlL]5BdkdNG?_1
-R14
+R15
 33
-R56
+R60
 !i10b 1
-R57
-R17
-R58
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Eincrement_tb
-Z60 w1613413450
-R9
+Z64 w1613413450
 R10
 R11
+R12
 R0
-Z61 8C:/HDS/CAD/CAD_lib/hdl/increment_tb_tb_rtl.vhd
-Z62 FC:/HDS/CAD/CAD_lib/hdl/increment_tb_tb_rtl.vhd
+Z65 8C:/HDS/CAD/CAD_lib/hdl/increment_tb_tb_rtl.vhd
+Z66 FC:/HDS/CAD/CAD_lib/hdl/increment_tb_tb_rtl.vhd
 l0
 L15
 VBX3b^jO1I6I4k@fVfW>]12
 !s100 3d^>kIJhcNPKCAoKDXDMi3
-R14
+R15
 31
-Z63 !s110 1613413452
+Z67 !s110 1613413452
 !i10b 1
-Z64 !s108 1613413452.000000
-Z65 !s90 -work|CAD_lib|-nologo|-93|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files0|
-Z66 !s107 C:/HDS/CAD/CAD_lib/hdl/increment_tb_tb_rtl.vhd|
+Z68 !s108 1613413452.000000
+Z69 !s90 -work|CAD_lib|-nologo|-93|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files0|
+Z70 !s107 C:/HDS/CAD/CAD_lib/hdl/increment_tb_tb_rtl.vhd|
 !i113 0
-Z67 o-nologo -work CAD_lib -93
-R20
+Z71 o-nologo -work CAD_lib -93
+R21
 Artl
 DEx7 cad_lib 9 increment 0 22 fYz`@=;2XLn@=af0Mz[_P3
-R9
 R10
 R11
+R12
 DEx4 work 12 increment_tb 0 22 BX3b^jO1I6I4k@fVfW>]12
 l53
 L26
 VZK9E7l9a?ID]W;43=o<[I3
 !s100 4Dz?Pg:m^bS^E=5=1PLZP1
-R14
+R15
 31
-R63
-!i10b 1
-R64
-R65
-R66
-!i113 0
 R67
-R20
-Elab2_counter
-Z68 w1614067886
+!i10b 1
+R68
+R69
+R70
+!i113 0
+R71
+R21
+Elab10_combine
+Z72 w1618963302
 R9
 R10
 R11
+R12
 R0
-Z69 8C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd
-Z70 FC:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd
+Z73 8C:/HDS/CAD/CAD_lib/hdl/lab10_combine_struc.vhd
+Z74 FC:/HDS/CAD/CAD_lib/hdl/lab10_combine_struc.vhd
+l0
+L16
+VEFW;UN=D^8Y_T:>E15k153
+!s100 g4UKDD06J5lA9Y0ai]GTY2
+R15
+33
+Z75 !s110 1619811791
+!i10b 1
+Z76 !s108 1619811791.000000
+Z77 !s90 -work|CAD_lib|-nologo|-2008|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files1|
+Z78 !s107 C:/HDS/CAD/CAD_lib/hdl/lab10_combine_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd|C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd|
+!i113 0
+R20
+R21
+Astruc
+Z79 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z80 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z81 DEx4 work 12 memorysystem 0 22 B9bc1=ZzSUK2bCd`mid>91
+Z82 DEx4 work 16 lab10_whole_syst 0 22 <e8SS4EiQ_inR6@ldYcob3
+R9
+R10
+R11
+R12
+DEx4 work 13 lab10_combine 0 22 EFW;UN=D^8Y_T:>E15k153
+l32
+L25
+VnA6INlag[Y3h:Qh?8La1M1
+!s100 `DMWe6]3D0l?mY[Q5J]A60
+R15
+33
+R75
+!i10b 1
+R76
+R77
+R78
+!i113 0
+R20
+R21
+Elab10_combine_tb
+Z83 w1618954308
+R10
+R11
+R12
+R37
+R0
+Z84 8C:/HDS/CAD/CAD_lib/hdl/lab10_combine_tb_tb_rtl.vhd
+Z85 FC:/HDS/CAD/CAD_lib/hdl/lab10_combine_tb_tb_rtl.vhd
+l0
+L17
+VKdWo]Z[bQRRS8<9i]lVm`3
+!s100 jVW7gPT[]hh_cHK5DZYA00
+R15
+31
+Z86 !s110 1618954317
+!i10b 1
+Z87 !s108 1618954317.000000
+R69
+Z88 !s107 C:/HDS/CAD/CAD_lib/hdl/lab10_combine_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/lab9_regReadWrite.vhd|
+!i113 0
+R71
+R21
+Artl
+DEx7 cad_lib 13 lab10_combine 0 22 A802[J@WcVK5BUj=^Q`7J1
+R10
+R11
+R12
+R37
+DEx4 work 16 lab10_combine_tb 0 22 KdWo]Z[bQRRS8<9i]lVm`3
+l45
+L25
+VKK8Z;R7kJI7Dc=Q;KR:Lk2
+!s100 =:g4gKmS5zGZk>eH^K@3F1
+R15
+31
+R86
+!i10b 1
+R87
+R69
+R88
+!i113 0
+R71
+R21
+Elab10_whole_syst
+Z89 w1619809771
+R9
+R10
+R11
+R12
+R0
+Z90 8C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd
+Z91 FC:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd
+l0
+L14
+V<e8SS4EiQ_inR6@ldYcob3
+!s100 FOeKc1nLL3CM@IOR3QnfD1
+R15
+33
+Z92 !s110 1619815092
+!i10b 1
+Z93 !s108 1619815092.000000
+R77
+Z94 !s107 C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd|C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd|
+!i113 0
+R20
+R21
+Astruct
+Z95 DEx4 work 12 lab9_regfile 0 22 SVNGnPFfTD8bZG[343lCD0
+Z96 DEx4 work 16 lab9_reg_tracker 0 22 43ZNf>XN[Gfbg=WY4;b>e1
+Z97 DEx4 work 14 lab8_writeback 0 22 XSa`P7IN1L>LPK2o_:DRZ3
+Z98 DEx4 work 20 lab8_mem_stage_struc 0 22 6F;mJV^Zh;oJcQAWVE<Hi3
+Z99 DEx4 work 8 lab7_exe 0 22 ng3]6OlTjHej8BX79BJ<l0
+Z100 DEx4 work 20 lab6_decode_pipeline 0 22 JE5lZ2NkQlAN<_V>UMIVW0
+Z101 DEx4 work 10 lab3_fetch 0 22 `7kfik]3EZaoiX_C;>6mf2
+Z102 DEx4 work 12 lab8_arbiter 0 22 m9IoWRj5>IPMamYK4goRn1
+R9
+R10
+R11
+R12
+R82
+l60
+L26
+V_4;7c1^51k8eTgDAIEWGg0
+!s100 53n4@go8GT<1^460Il7;c2
+R15
+33
+R92
+!i10b 1
+R93
+R77
+R94
+!i113 0
+R20
+R21
+Elab2_counter
+Z103 w1614067886
+R10
+R11
+R12
+R0
+Z104 8C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd
+Z105 FC:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd
 l0
 L14
 V15J6CJN4mmdHNRTchJhFC2
 !s100 aljM7Fi1ZDJcecKldghB]0
-R14
+R15
 33
-R56
+Z106 !s110 1619061986
 !i10b 1
-R57
-R17
-R58
+Z107 !s108 1619061986.000000
+R18
+Z108 !s107 C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd|
 !i113 0
-R19
 R20
+R21
 Amixed
-R59
-Z71 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z72 DEx4 work 3 reg 0 22 bzLPT9>26_2O>MY5X2hgV2
-Z73 DEx4 work 10 mux_2_to_1 0 22 f9jcXKAoTY2_WL]P@n3Pl3
-R9
+R63
+R79
+Z109 DEx4 work 3 reg 0 22 bzLPT9>26_2O>MY5X2hgV2
+Z110 DEx4 work 10 mux_2_to_1 0 22 f9jcXKAoTY2_WL]P@n3Pl3
 R10
 R11
-Z74 DEx4 work 12 lab2_counter 0 22 15J6CJN4mmdHNRTchJhFC2
+R12
+Z111 DEx4 work 12 lab2_counter 0 22 15J6CJN4mmdHNRTchJhFC2
 l34
 L27
 VY4bQL066g?WZz3W24RW^a3
 !s100 QT4eGLhFMW`:C00j6gbzY2
-R14
+R15
 33
-R56
+R106
 !i10b 1
-R57
-R17
-R58
+R107
+R18
+R108
 !i113 0
-R19
 R20
+R21
 Elab2_counter_tb
-Z75 w1614237555
-R9
+Z112 w1614237555
 R10
 R11
+R12
 R0
-Z76 8C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd
-Z77 FC:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd
+Z113 8C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd
+Z114 FC:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd
 l0
 L15
 V60lBEW3]?A9]hIJeEkNWo2
 !s100 O9O`MZ]`LzEDOgS>lj[fS0
-R14
+R15
 31
 !s110 1614237571
 !i10b 1
 !s108 1614237571.000000
-R65
-Z78 !s107 C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd|
+R69
+Z115 !s107 C:/HDS/CAD/CAD_lib/hdl/lab2_counter_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 12 lab2_counter 0 22 15J6CJN4mmdHNRTchJhFC2
-R9
 R10
 R11
+R12
 DEx4 work 15 lab2_counter_tb 0 22 60lBEW3]?A9]hIJeEkNWo2
 l59
 L26
 VG^j;S@mZ_HS3`[JNFM_>23
 !s100 2UlP=_DNoSjmNPl_3F8e:0
-R14
+R15
 31
 !s110 1614198453
 !i10b 1
 !s108 1614198453.000000
-R65
-R78
+R69
+R115
 !i113 0
-R67
-R20
+R71
+R21
 Elab3_fetch
-Z79 w1614388131
-R9
+Z116 w1619489962
 R10
 R11
+R12
 R0
-Z80 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd
-Z81 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd
+Z117 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd
+Z118 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd
 l0
 L14
 V`7kfik]3EZaoiX_C;>6mf2
 !s100 OggK`F8ZZdMc_m@[^EZ772
-R14
+R15
 33
-Z82 !s110 1614388134
+Z119 !s110 1619489970
 !i10b 1
-Z83 !s108 1614388134.000000
-R17
-Z84 !s107 C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd|C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd|
+Z120 !s108 1619489970.000000
+R18
+Z121 !s107 C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_behave.vhd|
 !i113 0
-R19
 R20
+R21
 Abehave
-R9
 R10
 R11
-DEx4 work 10 lab3_fetch 0 22 `7kfik]3EZaoiX_C;>6mf2
+R12
+R101
 l31
 L27
-Vi9ODzEn6;YNPN;e7nO7ha2
-!s100 g=OgWf226f>=o_;65_Y1>2
-R14
+V0?;L1@HPH1WYCVBRHM:HW1
+!s100 zfH;I8[3^B]?]mjfKZW_m0
+R15
 33
-R82
+R119
 !i10b 1
-R83
-R17
-R84
+R120
+R18
+R121
 !i113 0
-R19
 R20
+R21
 Elab3_fetch_tb
-Z85 w1614382598
-R9
+Z122 w1614382598
 R10
 R11
+R12
 R0
-Z86 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_tb_tb_rtl.vhd
-Z87 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_tb_tb_rtl.vhd
+Z123 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_tb_tb_rtl.vhd
+Z124 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_tb_tb_rtl.vhd
 l0
 L15
 V?Ac`d6fl2`15XF5aJWWD91
 !s100 a@CmE8BD6jci0g:S>0MD93
-R14
+R15
 31
-Z88 !s110 1614382601
+Z125 !s110 1614382601
 !i10b 1
-Z89 !s108 1614382601.000000
-R65
-Z90 !s107 C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_tb_tb_rtl.vhd|
+Z126 !s108 1614382601.000000
+R69
+Z127 !s107 C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 10 lab3_fetch 0 22 `7kfik]3EZaoiX_C;>6mf2
-R9
 R10
 R11
+R12
 DEx4 work 13 lab3_fetch_tb 0 22 ?Ac`d6fl2`15XF5aJWWD91
 l66
 L26
 V4O6e<G?F>Z`O6PARYL[AP3
 !s100 NlZf;ACX=`c2T02gD@AOS3
-R14
+R15
 31
-R88
+R125
 !i10b 1
-R89
-R65
-R90
+R126
+R69
+R127
 !i113 0
-R67
-R20
+R71
+R21
 Elab3_fetch_unit
-Z91 w1614391069
-R9
+Z128 w1614391069
 R10
 R11
+R12
 R0
-Z92 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd
-Z93 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd
+Z129 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd
+Z130 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd
 l0
 L14
 V0GaB[_05UEAcf`oYnV;Gl1
 !s100 :Zen1MLXRjH3[TZlg:9E^3
-R14
+R15
 33
-Z94 !s110 1614392047
+R60
 !i10b 1
-Z95 !s108 1614392047.000000
-R17
-Z96 !s107 C:/HDS/CAD/CAD_lib/hdl/fetch_tb.vhd|C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_struct.vhd|C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd|
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Astruct
-Z97 DEx4 work 8 nop_ctrl 0 22 De_GnQ[cAmDS=B8aig2Xo1
-Z98 DEx4 work 9 read_ctrl 0 22 IKETQ4e8:FofTdf04@_Li3
-R74
-Z99 DEx4 work 9 pc_enable 0 22 jM<HzMWd^_8f3QPCjJZBh0
-Z100 DEx4 work 7 or_gate 0 22 3F^ZVI2>2clW99jaG89m63
-R73
-R9
+Z131 DEx4 work 8 nop_ctrl 0 22 De_GnQ[cAmDS=B8aig2Xo1
+Z132 DEx4 work 9 read_ctrl 0 22 IKETQ4e8:FofTdf04@_Li3
+R111
+Z133 DEx4 work 9 pc_enable 0 22 jM<HzMWd^_8f3QPCjJZBh0
+Z134 DEx4 work 7 or_gate 0 22 3F^ZVI2>2clW99jaG89m63
+R110
 R10
 R11
-R45
+R12
+R49
 l32
 L27
 VTE6M9gClcNYN]N;R^L]J^2
 !s100 hW`k>RiXLe^`[:@gficBk3
-R14
+R15
 33
-R94
+R60
 !i10b 1
-R95
-R17
-R96
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Elab3_fetch_unit_tb
-Z101 w1614297281
-R9
+Z135 w1614297281
 R10
 R11
+R12
 R0
-Z102 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd
-Z103 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd
+Z136 8C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd
+Z137 FC:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd
 l0
 L15
 VQ4]:E=TR1nUJMVeOf1:Yk1
 !s100 3ORUhcD>=2=VCfDVV1hVo0
-R14
+R15
 33
 !s110 1614297283
 !i10b 1
 !s108 1614297283.000000
-R17
-Z104 !s107 C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd|
+R18
+Z138 !s107 C:/HDS/CAD/CAD_lib/hdl/lab3_fetch_unit_tb_tb_rtl.vhd|
 !i113 0
-R19
 R20
+R21
 Artl
 DEx7 cad_lib 15 lab3_fetch_unit 0 22 0GaB[_05UEAcf`oYnV;Gl1
-R9
 R10
 R11
+R12
 DEx4 work 18 lab3_fetch_unit_tb 0 22 QX[hDZDib53aAICSTV23P3
 l65
 L26
 V5;JY29P^Mm8=_16i0<ZIT2
 !s100 F=l4k>QKUFB4n0Q_[LeIk2
-R14
+R15
 31
 !s110 1614238776
 !i10b 1
 !s108 1614238776.000000
-R65
-R104
+R69
+R138
 !i113 0
-R67
-R20
+R71
+R21
 Elab5_rv32i_decoder
-Z105 w1615230240
-R8
+Z139 w1619032114
 R9
 R10
 R11
+R12
 R0
-Z106 8C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd
-Z107 FC:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd
+Z140 8C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd
+Z141 FC:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd
 l0
 L17
 VL3OFMdNQJ:=^2ESV_PAc=3
 !s100 @WXbN<L=HkCGl2nVD?RMS1
-R14
+R15
 33
-Z108 !s110 1616979734
+R53
 !i10b 1
-Z109 !s108 1616979734.000000
-R17
-Z110 !s107 C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd|
+R54
+R18
+R55
 !i113 0
-R19
 R20
+R21
 Abehav
-R8
 R9
 R10
 R11
-Z111 DEx4 work 18 lab5_rv32i_decoder 0 22 L3OFMdNQJ:=^2ESV_PAc=3
+R12
+Z142 DEx4 work 18 lab5_rv32i_decoder 0 22 L3OFMdNQJ:=^2ESV_PAc=3
 l33
 L30
-VGAPShg^C45@4J@5N^=kVI1
-!s100 bQWGkj383e8cVTNedF<nL2
-R14
+VV[DUS52NJg>jZS;VX`?In2
+!s100 Z^0==zF;:aWZJ<jY2S0ID1
+R15
 33
-R108
+R53
 !i10b 1
-R109
-R17
-R110
+R54
+R18
+R55
 !i113 0
-R19
 R20
+R21
 Elab5_rv32i_decoder_tb
-Z112 w1615228164
-Z113 DPx4 work 5 rv32i 0 22 <2D]DgdcZg3lSGRP`[f9A0
-R9
+Z143 w1615228164
+Z144 DPx4 work 5 rv32i 0 22 <2D]DgdcZg3lSGRP`[f9A0
 R10
 R11
+R12
 R0
-Z114 8C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_tb_tb_rtl.vhd
-Z115 FC:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_tb_tb_rtl.vhd
+Z145 8C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_tb_tb_rtl.vhd
+Z146 FC:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_tb_tb_rtl.vhd
 l0
 L20
 Vz=2E0RQGG:^6`1zzPY>El1
 !s100 8YKo^]Eg=jI0E<PTQE:W]3
-R14
+R15
 33
-Z116 !s110 1615228328
+Z147 !s110 1615228328
 !i10b 1
-Z117 !s108 1615228328.000000
-R17
-Z118 !s107 C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd|
+Z148 !s108 1615228328.000000
+R18
+Z149 !s107 C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd|
 !i113 0
-R19
 R20
+R21
 Artl
-R111
-R113
-R9
+R142
+R144
 R10
 R11
+R12
 DEx4 work 21 lab5_rv32i_decoder_tb 0 22 z=2E0RQGG:^6`1zzPY>El1
 l43
 L26
 V;a;hzD6EI_V8WbGmFI8BU0
 !s100 8jK6_C=n4zGZ5k<>`R7fo1
-R14
+R15
 33
-R116
+R147
 !i10b 1
-R117
-R17
-R118
+R148
+R18
+R149
 !i113 0
-R19
 R20
+R21
 Elab6_decode_pipeline
-Z119 w1616484130
-R8
+Z150 w1619814260
 R9
 R10
 R11
+R12
 R0
-Z120 8C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd
-Z121 FC:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd
+Z151 8C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd
+Z152 FC:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd
 l0
 L16
-VS>LCm>I2hiiOJA0AAgS]]1
-!s100 Q><LVh@0CNo<;45elmf_61
-R14
+VJE5lZ2NkQlAN<_V>UMIVW0
+!s100 S6Gb_6<P9N][`]MbAP]2:1
+R15
 33
-R108
+Z153 !s110 1619814265
 !i10b 1
-R109
-R17
-R110
+Z154 !s108 1619814265.000000
+R18
+Z155 !s107 C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd|
 !i113 0
-R19
 R20
-Astruc
 R21
-R111
-R71
-R72
-R8
-R9
-R10
-R11
-Z122 DEx4 work 20 lab6_decode_pipeline 0 22 S>LCm>I2hiiOJA0AAgS]]1
-l36
-L32
-V4:5fbQ:l2lGDO3]>VFeih3
-!s100 [kY^leenj>kU1S8_517Ha2
-R14
-33
-R108
-!i10b 1
+Astruc
+R22
+R142
+R79
 R109
-R17
-R110
-!i113 0
-R19
-R20
-Elab6_decode_pipeline_tb
-Z123 w1616976480
 R9
 R10
 R11
-R8
+R12
+R100
+l39
+L34
+V`>P9B=echAji<4YOP=R`:0
+!s100 @oEcZPNFC<NBB[aYDlYNJ1
+R15
+33
+R153
+!i10b 1
+R154
+R18
+R155
+!i113 0
+R20
+R21
+Elab6_decode_pipeline_tb
+Z156 w1616976480
+R10
+R11
+R12
+R9
 R0
-Z124 8C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_tb_tb_rtl.vhd
-Z125 FC:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_tb_tb_rtl.vhd
+Z157 8C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_tb_tb_rtl.vhd
+Z158 FC:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_tb_tb_rtl.vhd
 l0
 L18
 VHcINo?LVU?K?HCX[BdKlH2
 !s100 X1NM5d:Ve8<=gJ2<OAT?31
-R14
+R15
 33
-R108
+Z159 !s110 1616979734
 !i10b 1
-R109
-R17
-R110
+Z160 !s108 1616979734.000000
+R18
+Z161 !s107 C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab5_rv32i_decoder_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/decode_proc_behav.vhd|
 !i113 0
-R19
 R20
+R21
 Artl
-R122
-R9
+DEx4 work 20 lab6_decode_pipeline 0 22 S>LCm>I2hiiOJA0AAgS]]1
 R10
 R11
-R8
+R12
+R9
 DEx4 work 23 lab6_decode_pipeline_tb 0 22 HcINo?LVU?K?HCX[BdKlH2
 l81
 L29
 Vcja=8k[b0nXH8:Hao911^1
 !s100 24DTjBd`c3@`gOkHel5161
-R14
+R15
 33
-R108
+R159
 !i10b 1
-R109
-R17
-R110
+R160
+R18
+R161
 !i113 0
-R19
 R20
+R21
 Elab6_exe
-Z126 w1616977742
-R8
+Z162 w1616977742
 R9
 R10
 R11
+R12
 R0
-Z127 8C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd
-Z128 FC:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd
+Z163 8C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd
+Z164 FC:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd
 l0
 L15
 VV2C4;WIgUbAegmnTKGz]U3
 !s100 m:Bh8d:IFP;IcobCF_LCI2
-R14
+R15
 33
-Z129 !s110 1616977744
+Z165 !s110 1616977744
 !i10b 1
-Z130 !s108 1616977744.000000
-R17
-Z131 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|
+Z166 !s108 1616977744.000000
+R18
+Z167 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|
 !i113 0
-R19
 R20
+R21
 Astruc
-R71
-R72
-R8
+R79
+R109
 R9
 R10
 R11
+R12
 DEx4 work 8 lab6_exe 0 22 V2C4;WIgUbAegmnTKGz]U3
 l34
 L31
 VjPR:AXV8Aa?c4a6oQfcXo0
 !s100 ICGCaY3SUXE3IL?^78a_G1
-R14
+R15
 33
-R129
+R165
 !i10b 1
-R130
-R17
-R131
+R166
+R18
+R167
 !i113 0
-R19
 R20
+R21
 Elab7_exe
-Z132 w1617509021
-R8
+Z168 w1619474836
 R9
 R10
 R11
+R12
 R0
-R127
-R128
+R163
+R164
 l0
 L15
-VENlOZHia=m65X3>`WH=M51
-!s100 66oPG6GVPbgUXzo10Z]BE2
-R14
+Vng3]6OlTjHej8BX79BJ<l0
+!s100 [iKb=Q?ai9hLZ`G;=Eg0O2
+R15
 33
-R49
+Z169 !s110 1619490732
 !i10b 1
-R50
-R17
-R51
+R33
+R18
+R34
 !i113 0
-R19
 R20
+R21
 Astruc
-R31
-R52
-R71
-R72
-R8
+R35
+R56
+R79
+R109
 R9
 R10
 R11
-DEx4 work 8 lab7_exe 0 22 ENlOZHia=m65X3>`WH=M51
-l35
-L31
-Vl<IFZ^ci`eQRi[6D<n;D:0
-!s100 2=dOgUB^GUe1jH:<R5Z`22
-R14
+R12
+R99
+l37
+L33
+VAARi^z[XBERI2@n1OZJ9E1
+!s100 6@`PWgdCEIB6c@KU4:JYQ1
+R15
 33
-R49
+R169
 !i10b 1
-R50
-R17
-R51
+R33
+R18
+R34
 !i113 0
-R19
 R20
+R21
 Elab7_exe_tb
-Z133 w1617220472
-R9
+Z170 w1617220472
 R10
 R11
-R8
+R12
+R9
 R0
-Z134 8C:/HDS/CAD/CAD_lib/hdl/lab7_exe_tb_tb_rtl.vhd
-Z135 FC:/HDS/CAD/CAD_lib/hdl/lab7_exe_tb_tb_rtl.vhd
+Z171 8C:/HDS/CAD/CAD_lib/hdl/lab7_exe_tb_tb_rtl.vhd
+Z172 FC:/HDS/CAD/CAD_lib/hdl/lab7_exe_tb_tb_rtl.vhd
 l0
 L19
 V40:_QRTRGRg^U7JS]m^fm1
 !s100 V<WLHbW8iJi_IF[o8niI@1
-R14
+R15
 33
-Z136 !s110 1617234516
+Z173 !s110 1617234516
 !i10b 1
-Z137 !s108 1617234516.000000
-R17
-Z138 !s107 C:/HDS/CAD/CAD_lib/hdl/lab7_exe_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|
+Z174 !s108 1617234516.000000
+R18
+Z175 !s107 C:/HDS/CAD/CAD_lib/hdl/lab7_exe_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|
 !i113 0
-R19
 R20
+R21
 Artl
 DEx7 cad_lib 8 lab7_exe 0 22 ENlOZHia=m65X3>`WH=M51
-R9
 R10
 R11
-R8
+R12
+R9
 DEx4 work 11 lab7_exe_tb 0 22 40:_QRTRGRg^U7JS]m^fm1
 l78
 L30
 Va5LBEkNTj>=I9?l7Ym:De1
 !s100 S6HV;<63:LXk@hhNHlK0Y0
-R14
+R15
 33
-R136
+R173
 !i10b 1
-R137
-R17
-R138
+R174
+R18
+R175
 !i113 0
-R19
 R20
-Elab8_mem_stage_proc
-Z139 w1617516435
-R8
+R21
+Elab8_arbiter
+Z176 w1619464413
 R9
 R10
 R11
+R12
 R0
-Z140 8C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd
-Z141 FC:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd
+Z177 8C:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_behav.vhd
+Z178 FC:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_behav.vhd
 l0
-L14
-VSg89S?3K2]EDYMAzln`2_2
-!s100 bKRRfV=`aMY;h8eMmOF]g0
-R14
+L15
+Vm9IoWRj5>IPMamYK4goRn1
+!s100 ^PYBQW2GGWe`gkc:gA<Uj1
+R15
 33
-Z142 !s110 1617516438
+Z179 !s110 1619471324
 !i10b 1
-Z143 !s108 1617516438.000000
-R17
-Z144 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd|
+Z180 !s108 1619471324.000000
+R18
+Z181 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_behav.vhd|
 !i113 0
-R19
 R20
+R21
 Abehav
-R8
 R9
 R10
 R11
-Z145 DEx4 work 19 lab8_mem_stage_proc 0 22 Sg89S?3K2]EDYMAzln`2_2
-l33
-L32
-Vdm6>dW0f<41fT_^Sle6E42
-!s100 ;2]J>z5co6]?VJZV<Kb2o3
-R14
+R12
+R102
+l28
+L27
+V?1NciKD@bRUc7RHDKM6@H1
+!s100 oYXY51W9P7HllDo40mZW`1
+R15
 33
-R142
+R179
 !i10b 1
-R143
-R17
-R144
+R180
+R18
+R181
 !i113 0
-R19
 R20
-Elab8_mem_stage_struc
-Z146 w1617517258
-R8
+R21
+Elab8_arbiter_tb
+Z182 w1617744292
+R10
+R11
+R12
+R37
+R0
+Z183 8C:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_tb_tb_rtl.vhd
+Z184 FC:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_tb_tb_rtl.vhd
+l0
+L18
+V?hHa8;iTEFR2:]WKSmnUS1
+!s100 boFj]DYkWG[d]oGbcW=Yl3
+R15
+33
+Z185 !s110 1617744294
+!i10b 1
+Z186 !s108 1617744294.000000
+R18
+Z187 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_arbiter_tb_tb_rtl.vhd|
+!i113 0
+R20
+R21
+Artl
+DEx7 cad_lib 12 lab8_arbiter 0 22 jRWJ1DThIh7[3WA[B_k;`1
+R10
+R11
+R12
+R37
+DEx4 work 15 lab8_arbiter_tb 0 22 ?hHa8;iTEFR2:]WKSmnUS1
+l73
+L26
+V<RQBVi^Zb9RUO>QQ<]MHg3
+!s100 @__g8D9Ni:gTk4ZGnFG`n0
+R15
+33
+R185
+!i10b 1
+R186
+R18
+R187
+!i113 0
+R20
+R21
+Elab8_mem_stage_proc
+Z188 w1619815945
 R9
 R10
 R11
+R12
 R0
-Z147 8C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd
-Z148 FC:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd
+Z189 8C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd
+Z190 FC:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd
 l0
 L14
-VCn`4fJ8e>N;oWHcRY`@@F2
-!s100 ]5oDF9EG6BcEP8j670D3g2
-R14
+VU=LA7XT<2?g_LIBWZj>[g2
+!s100 1mXTGlcUD5ol=X4KKYUO]0
+R15
 33
-Z149 !s110 1617517891
+Z191 !s110 1619815967
 !i10b 1
-Z150 !s108 1617517891.000000
-R17
-Z151 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd|
+Z192 !s108 1619815967.000000
+R18
+Z193 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_proc_behav.vhd|
 !i113 0
-R19
 R20
-Astruc
-R145
-R52
-R71
-R72
-R8
+R21
+Abehav
 R9
 R10
 R11
-DEx4 work 20 lab8_mem_stage_struc 0 22 Cn`4fJ8e>N;oWHcRY`@@F2
-l42
-L35
-V7S^;L9=REnB42?lN]Njf81
-!s100 D]AhPYOJLNjg=`;]2GkSd2
-R14
+R12
+Z194 DEx4 work 19 lab8_mem_stage_proc 0 22 U=LA7XT<2?g_LIBWZj>[g2
+l34
+L33
+V1L=T1EXA`Xi0cOR7@bTf:2
+!s100 lZHD@D0[IiWPM;Gh`8j@c3
+R15
 33
-R149
+R191
 !i10b 1
-R150
-R17
-R151
+R192
+R18
+R193
 !i113 0
-R19
 R20
-Elab8_mem_stage_struc_tb
-Z152 w1617518648
+R21
+Elab8_mem_stage_struc
+Z195 w1619455521
 R9
 R10
 R11
-R33
+R12
 R0
-Z153 8C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc_tb_tb_rtl.vhd
-Z154 FC:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc_tb_tb_rtl.vhd
+Z196 8C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd
+Z197 FC:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd
 l0
-L17
-Vk?L:P6d0JGoQJKiXQT_A13
-!s100 g9<KFLERE8[_Y]ddY6`^T0
-R14
+L14
+V6F;mJV^Zh;oJcQAWVE<Hi3
+!s100 ]3bz:^53J6EZeDJ8nY?T@0
+R15
 33
-Z155 !s110 1617518651
+R191
 !i10b 1
-Z156 !s108 1617518651.000000
-R17
-Z157 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc_tb_tb_rtl.vhd|
+R192
+R18
+R193
 !i113 0
-R19
 R20
+R21
+Astruc
+R194
+R56
+R79
+R109
+R9
+R10
+R11
+R12
+R98
+l44
+L36
+VCDUTX5cR2I2O<0=nY=M<F1
+!s100 ?5FMgO_E<TmUQYaL>N=?91
+R15
+33
+R191
+!i10b 1
+R192
+R18
+R193
+!i113 0
+R20
+R21
+Elab8_mem_stage_struc_tb
+Z198 w1617753394
+R10
+R11
+R12
+R37
+R0
+Z199 8C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc_tb_tb_rtl.vhd
+Z200 FC:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc_tb_tb_rtl.vhd
+l0
+L18
+VifYk8zSdom=Fd4Yib7KB:0
+!s100 m;Yj1CcgLV8khG^;:]H5Q0
+R15
+33
+Z201 !s110 1617753397
+!i10b 1
+Z202 !s108 1617753397.000000
+R18
+Z203 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc_tb_tb_rtl.vhd|
+!i113 0
+R20
+R21
 Artl
 DEx7 cad_lib 20 lab8_mem_stage_struc 0 22 Cn`4fJ8e>N;oWHcRY`@@F2
-R9
 R10
 R11
-R33
-DEx4 work 23 lab8_mem_stage_struc_tb 0 22 k?L:P6d0JGoQJKiXQT_A13
-l79
-L28
-Vd?0YJf7zVJUORlJ61W@NZ3
-!s100 `bbzRzVzW46211CUGaah^0
-R14
+R12
+R37
+DEx4 work 23 lab8_mem_stage_struc_tb 0 22 ifYk8zSdom=Fd4Yib7KB:0
+l80
+L29
+VCRKZ:i6VHMXdY6VkODZ7F3
+!s100 UXTamemO_`aKmeh2BBSP53
+R15
 33
-R155
+R201
 !i10b 1
-R156
-R17
-R157
+R202
+R18
+R203
 !i113 0
-R19
 R20
-Emdata
-Z158 w1613988197
+R21
+Elab8_writeback
+Z204 w1619483246
 R9
 R10
 R11
+R12
 R0
-Z159 8C:/HDS/CAD/CAD_lib/hdl/mdata_behav.vhd
-Z160 FC:/HDS/CAD/CAD_lib/hdl/mdata_behav.vhd
+Z205 8C:/HDS/CAD/CAD_lib/hdl/lab8_writeback_mixed.vhd
+Z206 FC:/HDS/CAD/CAD_lib/hdl/lab8_writeback_mixed.vhd
+l0
+L15
+VXSa`P7IN1L>LPK2o_:DRZ3
+!s100 O:MlNgb6S7_nUaLe1K9]M1
+R15
+33
+Z207 !s110 1619486309
+!i10b 1
+Z208 !s108 1619486309.000000
+R77
+Z209 !s107 C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd|C:/HDS/CAD/CAD_lib/hdl/lab8_writeback_mixed.vhd|
+!i113 0
+R20
+R21
+Amixed
+R56
+R79
+R109
+R9
+R10
+R11
+R12
+R97
+l34
+L30
+V=M10IVSzo58T5ebBgH93c0
+!s100 ]hF:_[ZIbQG5<`n6d:_k02
+R15
+33
+R207
+!i10b 1
+R208
+R77
+R209
+!i113 0
+R20
+R21
+Elab8_writeback_tb
+Z210 w1617747681
+R10
+R11
+R12
+R37
+R0
+Z211 8C:/HDS/CAD/CAD_lib/hdl/lab8_writeback_tb_tb_rtl.vhd
+Z212 FC:/HDS/CAD/CAD_lib/hdl/lab8_writeback_tb_tb_rtl.vhd
+l0
+L18
+V5HgUz6<0We1IgK<_<G6GJ1
+!s100 QK<8I^CHHUIJ9AjUd>lQ03
+R15
+33
+Z213 !s110 1617747692
+!i10b 1
+Z214 !s108 1617747692.000000
+R18
+Z215 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_writeback_tb_tb_rtl.vhd|
+!i113 0
+R20
+R21
+Artl
+DEx7 cad_lib 14 lab8_writeback 0 22 `>=IjZA]fKE]hl<fBR06h0
+R10
+R11
+R12
+R37
+DEx4 work 17 lab8_writeback_tb 0 22 5HgUz6<0We1IgK<_<G6GJ1
+l59
+L26
+V=9@;Fok7S=?;0;i5]Mz6i1
+!s100 TR7^KzWUMd6@DfR@k3`fF0
+R15
+33
+R213
+!i10b 1
+R214
+R18
+R215
+!i113 0
+R20
+R21
+Elab9_reg_tracker
+Z216 w1619815079
+R9
+R10
+R11
+R12
+R0
+Z217 8C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd
+Z218 FC:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd
+l0
+L15
+V43ZNf>XN[Gfbg=WY4;b>e1
+!s100 d8FBNe?fYg9EmKc6h8M833
+R15
+33
+R92
+!i10b 1
+R93
+R77
+R94
+!i113 0
+R20
+R21
+Abehav
+R9
+R10
+R11
+R12
+R96
+l33
+L29
+V[4V[[IA?47ZERAB4e?4Fj2
+!s100 Dl4X=473hb3n@ai[k>a930
+R15
+33
+R92
+!i10b 1
+R93
+R77
+R94
+!i113 0
+R20
+R21
+Elab9_reg_tracker_tb
+Z219 w1618331961
+R10
+R11
+R12
+R9
+R0
+Z220 8C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_tb_tb_rtl.vhd
+Z221 FC:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_tb_tb_rtl.vhd
+l0
+L17
+VQz]3R9U:l`WNS_lHR7oS11
+!s100 BABgKJc=^l1hkYNTA00l83
+R15
+33
+Z222 !s110 1618347331
+!i10b 1
+Z223 !s108 1618347331.000000
+R18
+Z224 !s107 C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_tb_tb_rtl.vhd|C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd|
+!i113 0
+R20
+R21
+Artl
+DEx7 cad_lib 16 lab9_reg_tracker 0 22 JCNn;CJPm7O4NWEQhoY3f3
+R10
+R11
+R12
+R9
+DEx4 work 19 lab9_reg_tracker_tb 0 22 Qz]3R9U:l`WNS_lHR7oS11
+l64
+L25
+VK9^H^5T]P0hZ:dgkf::Wi3
+!s100 P77QgnGDJVZ;6F>zK@LeB3
+R15
+33
+R222
+!i10b 1
+R223
+R18
+R224
+!i113 0
+R20
+R21
+Elab9_regfile
+Z225 w1619814237
+R9
+R10
+R11
+R12
+R0
+Z226 8C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd
+Z227 FC:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd
+l0
+L24
+VSVNGnPFfTD8bZG[343lCD0
+!s100 h`]bzI;zGNR`D:D5X7EVH2
+R15
+33
+R153
+!i10b 1
+R154
+Z228 !s90 -work|CAD_lib|-nologo|-2008|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files2|
+Z229 !s107 C:/HDS/CAD/CAD_lib/hdl/lab10_whole_syst_struct.vhd|C:/HDS/CAD/CAD_lib/hdl/lab9_reg_tracker_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/lab9_regFile_struc.vhd|
+!i113 0
+R20
+R21
+Astruc
+Z230 DEx4 work 17 lab9_regreadwrite 0 22 70QkT@@[K7<cgjLC13M7T3
+Z231 DEx4 work 21 lab9_register_decoder 0 22 [2?2cZRaZ>bA2FFhSVL3j2
+R9
+R10
+R11
+R12
+R95
+l42
+L39
+VcRAcAOzVa1`g?<lS97ZBT1
+!s100 0h^FIlVCE4W`l5zQU<>_X2
+R15
+33
+R153
+!i10b 1
+R154
+R228
+R229
+!i113 0
+R20
+R21
+Elab9_regfile_tb
+Z232 w1618250408
+R10
+R11
+R12
+R0
+Z233 8C:/HDS/CAD/CAD_lib/hdl/lab9_regfile_tb_tb_rtl.vhd
+Z234 FC:/HDS/CAD/CAD_lib/hdl/lab9_regfile_tb_tb_rtl.vhd
+l0
+L16
+VVJeO_ndKjF^e1<<PbhERI0
+!s100 jj06zi^^Y@^GLdQ[T>:EN0
+R15
+33
+Z235 !s110 1618250413
+!i10b 1
+Z236 !s108 1618250413.000000
+R77
+Z237 !s107 C:/HDS/CAD/CAD_lib/hdl/lab9_regfile_tb_tb_rtl.vhd|
+!i113 0
+R20
+R21
+Artl
+DEx7 cad_lib 12 lab9_regfile 0 22 X]i4D<F2lW5mGc6HNG_zY0
+R10
+R11
+R12
+DEx4 work 15 lab9_regfile_tb 0 22 VJeO_ndKjF^e1<<PbhERI0
+l66
+L28
+VS>B[2cIHRihU1AEcAXM4>0
+!s100 k`iOF2c<HPXlzlUPWjiLW2
+R15
+33
+R235
+!i10b 1
+R236
+R77
+R237
+!i113 0
+R20
+R21
+Elab9_register_decoder
+Z238 w1618030475
+R10
+R11
+R12
+R0
+Z239 8C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_behav.vhd
+Z240 FC:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_behav.vhd
+l0
+L14
+V[2?2cZRaZ>bA2FFhSVL3j2
+!s100 kHhEJiB]20fn^cP=02FbC1
+R15
+33
+Z241 !s110 1618032304
+!i10b 1
+Z242 !s108 1618032304.000000
+R18
+Z243 !s107 C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_behav.vhd|
+!i113 0
+R20
+R21
+Abehav
+R10
+R11
+R12
+R231
+l26
+L25
+V[B8fgDOhL5GzUSD5W5QNF2
+!s100 ]dfzC8[Dg`1>0WD5DhV`I0
+R15
+33
+R241
+!i10b 1
+R242
+R18
+R243
+!i113 0
+R20
+R21
+Alab9_regreadwrite
+R79
+R109
+R10
+R11
+R12
+DEx4 work 21 lab9_register_decoder 0 22 Q3E5K<KYR5a1V_DZH7VSI3
+l29
+L25
+VB9P7HF5:O1MG4<gAZHd561
+!s100 0XmSVgCg<8E=NJJGnVkBE2
+R15
+33
+!s110 1618031259
+!i10b 1
+!s108 1618031259.000000
+R18
+!s107 C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_lab9_regReadWrite.vhd|
+!i113 0
+R20
+R21
+FC:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_lab9_regReadWrite.vhd
+w1618031257
+8C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_lab9_regReadWrite.vhd
+Elab9_register_decoder_tb
+Z244 w1618030436
+R10
+R11
+R12
+R0
+Z245 8C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_tb_tb_rtl.vhd
+Z246 FC:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_tb_tb_rtl.vhd
+l0
+L15
+V_lCRO4ObmMGQADok0_R@d3
+!s100 UMQeCM6@`=a3@D8kcTAZ72
+R15
+31
+Z247 !s110 1618030438
+!i10b 1
+Z248 !s108 1618030438.000000
+R69
+Z249 !s107 C:/HDS/CAD/CAD_lib/hdl/lab9_register_decoder_tb_tb_rtl.vhd|
+!i113 0
+R71
+R21
+Artl
+DEx7 cad_lib 21 lab9_register_decoder 0 22 [2?2cZRaZ>bA2FFhSVL3j2
+R10
+R11
+R12
+DEx4 work 24 lab9_register_decoder_tb 0 22 _lCRO4ObmMGQADok0_R@d3
+l53
+L26
+VRL2d0;j5Q73Z:NZoV`]>D1
+!s100 O>05FDU^:c:GWD4bkKz4]0
+R15
+31
+R247
+!i10b 1
+R248
+R69
+R249
+!i113 0
+R71
+R21
+Elab9_regreadwrite
+Z250 w1618031541
+R10
+R11
+R12
+R0
+Z251 8C:/HDS/CAD/CAD_lib/hdl/lab9_regReadWrite.vhd
+Z252 FC:/HDS/CAD/CAD_lib/hdl/lab9_regReadWrite.vhd
+l0
+L14
+V70QkT@@[K7<cgjLC13M7T3
+!s100 6_nV3Zzj@Md5jjRm`Smi42
+R15
+31
+R191
+!i10b 1
+R192
+Z253 !s90 -work|CAD_lib|-nologo|-93|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files1|
+Z254 !s107 C:/HDS/CAD/CAD_lib/hdl/lab9_regReadWrite.vhd|
+!i113 0
+R71
+R21
+Amixed
+R79
+R109
+R10
+R11
+R12
+R230
+l29
+L25
+VFLXDThdYUUdjQZl<MRC:M2
+!s100 8VZF15@YQIBkAUQFQngz;3
+R15
+31
+R191
+!i10b 1
+R192
+R253
+R254
+!i113 0
+R71
+R21
+Elab9_regreadwrite_tb
+Z255 w1618031763
+R10
+R11
+R12
+R0
+Z256 8C:/HDS/CAD/CAD_lib/hdl/lab9_regreadwrite_tb_tb_rtl.vhd
+Z257 FC:/HDS/CAD/CAD_lib/hdl/lab9_regreadwrite_tb_tb_rtl.vhd
+l0
+L15
+VdQfco6mn2K1bm7`@@?UPe2
+!s100 9KR;klR87CEY:fGU5o]FI2
+R15
+31
+Z258 !s110 1618031766
+!i10b 1
+Z259 !s108 1618031766.000000
+R253
+Z260 !s107 C:/HDS/CAD/CAD_lib/hdl/lab9_regreadwrite_tb_tb_rtl.vhd|
+!i113 0
+R71
+R21
+Artl
+DEx7 cad_lib 17 lab9_regreadwrite 0 22 cUgJFX0ooISijj2IDk6L:1
+R10
+R11
+R12
+DEx4 work 20 lab9_regreadwrite_tb 0 22 dQfco6mn2K1bm7`@@?UPe2
+l61
+L26
+V_z>5eJAR::M^3Le>4o[^o3
+!s100 32h<Wd9VgW8mAHeO93D4^0
+R15
+31
+R258
+!i10b 1
+R259
+R253
+R260
+!i113 0
+R71
+R21
+Emdata
+Z261 w1613988197
+R10
+R11
+R12
+R0
+Z262 8C:/HDS/CAD/CAD_lib/hdl/mdata_behav.vhd
+Z263 FC:/HDS/CAD/CAD_lib/hdl/mdata_behav.vhd
 l0
 L14
 V>oh]`gjgWoB[VP8`F]BiL1
 !s100 d[VDI45:6Zz]kETP7:c]g3
-R14
+R15
 33
-Z161 !s110 1613988803
+Z264 !s110 1613988803
 !i10b 1
-Z162 !s108 1613988803.000000
-R17
-Z163 !s107 C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd|C:/HDS/CAD/CAD_lib/hdl/mdata_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/mem_delay_behav.vhd|
+Z265 !s108 1613988803.000000
+R18
+Z266 !s107 C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd|C:/HDS/CAD/CAD_lib/hdl/mdata_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/mem_delay_behav.vhd|
 !i113 0
-R19
 R20
+R21
 Abehav
-R9
 R10
 R11
-Z164 DEx4 work 5 mdata 0 22 >oh]`gjgWoB[VP8`F]BiL1
+R12
+Z267 DEx4 work 5 mdata 0 22 >oh]`gjgWoB[VP8`F]BiL1
 l26
 L25
 V8[QBFkR0e2j@hRkE8D;@Y1
 !s100 4HGIW[42]ZNP0eR``aR:m2
-R14
+R15
 33
-R161
+R264
 !i10b 1
-R162
-R17
-R163
+R265
+R18
+R266
 !i113 0
-R19
 R20
+R21
 Emem
-Z165 w1613988796
-R9
+Z268 w1613988796
 R10
 R11
+R12
 R0
-Z166 8C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd
-Z167 FC:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd
+Z269 8C:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd
+Z270 FC:/HDS/CAD/CAD_lib/hdl/mem_behave.vhd
 l0
 L14
 V5FI?ZE^LR5Gm2nEL`93X?1
 !s100 GOdD>kTa[8F95TNi2dNAH2
-R14
+R15
 33
-R161
+R264
 !i10b 1
-R162
-R17
-R163
+R265
+R18
+R266
 !i113 0
-R19
 R20
+R21
 Abehave
-Z168 DEx4 work 9 mem_delay 0 22 mnBicla7P@oB73FTiFOEJ3
-R164
-R9
+Z271 DEx4 work 9 mem_delay 0 22 mnBicla7P@oB73FTiFOEJ3
+R267
 R10
 R11
+R12
 DEx4 work 3 mem 0 22 5FI?ZE^LR5Gm2nEL`93X?1
 l47
 L46
 V4bL8XZC]LVX`@V[CQho<_3
 !s100 Go`MBZn6lEKHhj>inEG602
-R14
+R15
 33
-R161
+R264
 !i10b 1
-R162
-R17
-R163
+R265
+R18
+R266
 !i113 0
-R19
 R20
+R21
 Emem_delay
-Z169 w1613987947
-R9
+Z272 w1613987947
 R10
 R11
+R12
 R0
-Z170 8C:/HDS/CAD/CAD_lib/hdl/mem_delay_behav.vhd
-Z171 FC:/HDS/CAD/CAD_lib/hdl/mem_delay_behav.vhd
+Z273 8C:/HDS/CAD/CAD_lib/hdl/mem_delay_behav.vhd
+Z274 FC:/HDS/CAD/CAD_lib/hdl/mem_delay_behav.vhd
 l0
 L14
 VmnBicla7P@oB73FTiFOEJ3
 !s100 mQY6ac_=O:1>oiYdLC;;F2
-R14
+R15
 33
-R161
+R264
 !i10b 1
-R162
-R17
-R163
+R265
+R18
+R266
 !i113 0
-R19
 R20
+R21
 Abehav
-R9
 R10
 R11
-R168
+R12
+R271
 l25
 L24
 ViV=^Jd8zI_4:P;iX<FYNb1
 !s100 0PCkoXDM<fnegb=RX2XWI1
-R14
+R15
 33
-R161
+R264
 !i10b 1
-R162
-R17
-R163
+R265
+R18
+R266
 !i113 0
-R19
 R20
+R21
 Emem_system
 w1613983426
-R9
 R10
 R11
+R12
 R0
 8C:/HDS/CAD/CAD_lib/hdl/mem_sys_behav.vhd
 FC:/HDS/CAD/CAD_lib/hdl/mem_sys_behav.vhd
@@ -1323,765 +2038,852 @@ l0
 L14
 V_IdbjZP4hn59?XbghGo9g2
 !s100 O99iJaTUgF?L?mS]dzU3?3
-R14
+R15
 33
 !s110 1613983498
 !i10b 1
 !s108 1613983498.000000
-R17
+R18
 !s107 C:/HDS/CAD/CAD_lib/hdl/mem_sys_behav.vhd|
 !i113 0
-R19
 R20
+R21
 Emem_tb
-Z172 w1613989443
-R9
+Z275 w1613989443
 R10
 R11
+R12
 R0
-Z173 8C:/HDS/CAD/CAD_lib/hdl/mem_tb_tb_rtl.vhd
-Z174 FC:/HDS/CAD/CAD_lib/hdl/mem_tb_tb_rtl.vhd
+Z276 8C:/HDS/CAD/CAD_lib/hdl/mem_tb_tb_rtl.vhd
+Z277 FC:/HDS/CAD/CAD_lib/hdl/mem_tb_tb_rtl.vhd
 l0
 L15
 Vl?4oXTzNd4BakSXaL_h7g0
 !s100 _0LKz7gU;<FenbD6gbm?G3
-R14
+R15
 31
-Z175 !s110 1613989445
+Z278 !s110 1613989445
 !i10b 1
-Z176 !s108 1613989445.000000
-R65
-Z177 !s107 C:/HDS/CAD/CAD_lib/hdl/mem_tb_tb_rtl.vhd|
+Z279 !s108 1613989445.000000
+R69
+Z280 !s107 C:/HDS/CAD/CAD_lib/hdl/mem_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 3 mem 0 22 5FI?ZE^LR5Gm2nEL`93X?1
-R9
 R10
 R11
+R12
 DEx4 work 6 mem_tb 0 22 l?4oXTzNd4BakSXaL_h7g0
 l57
 L26
 VK^UfiCK^@9F4Mgc=^zQJS2
 !s100 cI5`fGa7Nmz[I<W?SV?WL0
-R14
+R15
 31
-R175
+R278
 !i10b 1
-R176
-R65
-R177
+R279
+R69
+R280
 !i113 0
-R67
+R71
+R21
+Ememorysystem
+Z281 w1619488785
+R79
+R80
+R11
+R12
+R0
+Z282 8C:/HDS/CAD/CAD_lib/hdl/MemorySystem_Behavior.vhd
+Z283 FC:/HDS/CAD/CAD_lib/hdl/MemorySystem_Behavior.vhd
+l0
+L17
+VB9bc1=ZzSUK2bCd`mid>91
+!s100 <JKh_b]d@<Ydb_[DdXz>52
+R15
+33
+Z284 !s110 1619488878
+!i10b 1
+Z285 !s108 1619488878.000000
+R18
+Z286 !s107 C:/HDS/CAD/CAD_lib/hdl/MemorySystem_Behavior.vhd|
+!i113 0
 R20
+R21
+Abehavior
+R79
+R80
+R11
+R12
+R81
+l36
+L25
+VTT=6]OOX_ojNZ:JfNEfHi2
+!s100 KkS3heEkeMI7d8ThC4=Y52
+R15
+33
+R284
+!i10b 1
+R285
+R18
+R286
+!i113 0
+R20
+R21
+Ememorysystem_tb
+Z287 w1619056420
+R79
+R80
+R11
+R12
+R0
+Z288 8C:/HDS/CAD/CAD_lib/hdl/memorysystem_tb_tb_rtl.vhd
+Z289 FC:/HDS/CAD/CAD_lib/hdl/memorysystem_tb_tb_rtl.vhd
+l0
+L17
+VoC4^NVDz[ZDA@j4KCinaY3
+!s100 L0^P^Xoa9eAX<X2HljE@c3
+R15
+31
+Z290 !s110 1619056422
+!i10b 1
+Z291 !s108 1619056422.000000
+R69
+Z292 !s107 C:/HDS/CAD/CAD_lib/hdl/memorysystem_tb_tb_rtl.vhd|
+!i113 0
+R71
+R21
+Artl
+DEx7 cad_lib 12 memorysystem 0 22 B9bc1=ZzSUK2bCd`mid>91
+R79
+R80
+R11
+R12
+DEx4 work 15 memorysystem_tb 0 22 oC4^NVDz[ZDA@j4KCinaY3
+l57
+L25
+VAj`IR3QPSeKCT]OUi@EWY1
+!s100 E[nc`Ae=`;@@K7[Sf1fP41
+R15
+31
+R290
+!i10b 1
+R291
+R69
+R292
+!i113 0
+R71
+R21
 Emux_2_to_1
-Z178 w1613350552
-R9
+Z293 w1613350552
 R10
 R11
+R12
 R0
-Z179 8C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd
-Z180 FC:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd
+Z294 8C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd
+Z295 FC:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd
 l0
 L14
 Vf9jcXKAoTY2_WL]P@n3Pl3
 !s100 di_`nhBYH6cC>dj_`MdR61
-R14
+R15
 33
-Z181 !s110 1613350941
+Z296 !s110 1618958792
 !i10b 1
-Z182 !s108 1613350941.000000
-R17
-Z183 !s107 C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd|C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_mixed.vhd|
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Amixed
-R9
 R10
 R11
-R73
+R12
+R110
 l27
 L26
 V]56iFzg;hlGHaG[;5g4?62
 !s100 GzaR7IeX9B6L^]FJ?kJ_J3
-R14
+R15
 33
-R181
+R296
 !i10b 1
-R182
-R17
-R183
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Emux_2_to_1_tb
-Z184 w1613346808
-R71
-R10
+Z297 w1613346808
+R79
 R11
+R12
 R0
-Z185 8C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_tb_tb_rtl.vhd
-Z186 FC:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_tb_tb_rtl.vhd
+Z298 8C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_tb_tb_rtl.vhd
+Z299 FC:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_tb_tb_rtl.vhd
 l0
 L15
 VP7BUkJ32LSHhIi52V4;k;2
 !s100 JF76LLEo?_8^n8iA54J0^2
-R14
+R15
 31
-Z187 !s110 1613346811
+Z300 !s110 1613346811
 !i10b 1
-Z188 !s108 1613346811.000000
-Z189 !s90 -work|CAD_lib|-nologo|-93|-f|C:/Users/1997W_~1/AppData/Local/Temp/Files1|
-Z190 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_tb_tb_rtl.vhd|
+Z301 !s108 1613346811.000000
+R253
+Z302 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_2_to_1_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 10 mux_2_to_1 0 22 k`h:zSfE^4V=d=XY9[WC[0
-R71
-R10
+R79
 R11
+R12
 DEx4 work 13 mux_2_to_1_tb 0 22 P7BUkJ32LSHhIi52V4;k;2
 l55
 L26
 V]^Z9a?9WF3j9mALjdSna^2
 !s100 mBB0HSWW^i6zX:aEi=[eJ3
-R14
+R15
 31
-R187
+R300
 !i10b 1
-R188
-R189
-R190
+R301
+R253
+R302
 !i113 0
-R67
-R20
-Emux_3_to_1
-Z191 w1613178332
 R71
-R10
+R21
+Emux_3_to_1
+Z303 w1613178332
+R79
 R11
+R12
 R0
-Z192 8C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd
-Z193 FC:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd
+Z304 8C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd
+Z305 FC:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd
 l0
 L14
 VX4fL^V@M0K8DH9;Bjj]h61
 !s100 W`Q>Z46n_IRd4jZGG[fcR0
-R14
+R15
 33
-Z194 !s110 1613179758
+Z306 !s110 1613179758
 !i10b 1
-Z195 !s108 1613179758.000000
-Z196 !s90 -reportprogress|300|-nologo|-work|CAD_lib|-2008|C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd|
-Z197 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd|
+Z307 !s108 1613179758.000000
+Z308 !s90 -reportprogress|300|-nologo|-work|CAD_lib|-2008|C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd|
+Z309 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_mixed.vhd|
 !i113 0
-R19
 R20
+R21
 Amixed
-R71
-R10
+R79
 R11
+R12
 DEx4 work 10 mux_3_to_1 0 22 X4fL^V@M0K8DH9;Bjj]h61
 l29
 L28
 VPzRZNmoa^4a5ezKLUfXA:1
 !s100 8heVHi^iM?DBe[4JfCcSI0
-R14
+R15
 33
-R194
+R306
 !i10b 1
-R195
-R196
-R197
+R307
+R308
+R309
 !i113 0
-R19
 R20
+R21
 Emux_3_to_1_tb
-Z198 w1613355974
-R71
-R10
+Z310 w1613355974
+R79
 R11
+R12
 R0
-Z199 8C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_tb_tb_rtl.vhd
-Z200 FC:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_tb_tb_rtl.vhd
+Z311 8C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_tb_tb_rtl.vhd
+Z312 FC:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_tb_tb_rtl.vhd
 l0
 L15
 Vfl^TCX3HJY5LjzSL8a:gz3
 !s100 [NC61MDgDOnJ>A2Y@:OMU0
-R14
+R15
 31
-Z201 !s110 1613355999
+Z313 !s110 1613355999
 !i10b 1
-Z202 !s108 1613355998.000000
-R65
-Z203 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_tb_tb_rtl.vhd|
+Z314 !s108 1613355998.000000
+R69
+Z315 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_3_to_1_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 10 mux_3_to_1 0 22 X4fL^V@M0K8DH9;Bjj]h61
-R71
-R10
+R79
 R11
+R12
 DEx4 work 13 mux_3_to_1_tb 0 22 fl^TCX3HJY5LjzSL8a:gz3
 l57
 L26
 V3d^MP5G]6NG5A@dnGY^]B1
 !s100 ``WdeMlZ[m55]]EDlab_23
-R14
+R15
 31
-R201
+R313
 !i10b 1
-R202
-R65
-R203
+R314
+R69
+R315
 !i113 0
-R67
-R20
-Emux_4_to_1
-Z204 w1613346777
 R71
-R10
+R21
+Emux_4_to_1
+Z316 w1613346777
+R79
 R11
+R12
 R0
-Z205 8C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_mixed.vhd
-Z206 FC:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_mixed.vhd
+Z317 8C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_mixed.vhd
+Z318 FC:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_mixed.vhd
 l0
 L14
 VVEI>A9XnCN9U<^YnSMdGN1
 !s100 88W^9<VnG?VcR2B`:KdfS2
-R14
+R15
 33
-Z207 !s110 1613356511
+Z319 !s110 1613356511
 !i10b 1
-Z208 !s108 1613356511.000000
-R17
-Z209 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_mixed.vhd|
+Z320 !s108 1613356511.000000
+R18
+Z321 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_mixed.vhd|
 !i113 0
-R19
 R20
+R21
 Amixed
-R71
-R10
+R79
 R11
+R12
 DEx4 work 10 mux_4_to_1 0 22 VEI>A9XnCN9U<^YnSMdGN1
 l24
 L23
 Vgzf6VHl4hg:G`;;CI^_6;3
 !s100 n1lc2cL:PiYUi:SEV29l`3
-R14
+R15
 33
-R207
+R319
 !i10b 1
-R208
-R17
-R209
+R320
+R18
+R321
 !i113 0
-R19
 R20
+R21
 Emux_4_to_1_tb
-Z210 w1613356540
-R71
-R10
+Z322 w1613356540
+R79
 R11
+R12
 R0
-Z211 8C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_tb_tb_rtl.vhd
-Z212 FC:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_tb_tb_rtl.vhd
+Z323 8C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_tb_tb_rtl.vhd
+Z324 FC:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_tb_tb_rtl.vhd
 l0
 L15
 Vfi@=W9D7jgdl9LY3cO48G2
 !s100 e=B>QIcRDFDoXESF8Qb0U3
-R14
+R15
 31
-Z213 !s110 1613356542
+Z325 !s110 1613356542
 !i10b 1
-Z214 !s108 1613356542.000000
-R65
-Z215 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_tb_tb_rtl.vhd|
+Z326 !s108 1613356542.000000
+R69
+Z327 !s107 C:/HDS/CAD/CAD_lib/hdl/mux_4_to_1_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 10 mux_4_to_1 0 22 VEI>A9XnCN9U<^YnSMdGN1
-R71
-R10
+R79
 R11
+R12
 DEx4 work 13 mux_4_to_1_tb 0 22 fi@=W9D7jgdl9LY3cO48G2
 l59
 L26
 VRDNlDif1VRIWGgeQg@kcP2
 !s100 R6O^W@eXiOZ5L0Z1I^IGi0
-R14
+R15
 31
-R213
+R325
 !i10b 1
-R214
-R65
-R215
+R326
+R69
+R327
 !i113 0
-R67
-R20
+R71
+R21
 Enop_ctrl
-Z216 w1614030776
-R9
+Z328 w1614030776
 R10
 R11
+R12
 R0
-Z217 8C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd
-Z218 FC:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd
+Z329 8C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd
+Z330 FC:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd
 l0
 L14
 VDe_GnQ[cAmDS=B8aig2Xo1
 !s100 @=T=NgQ8:CC9^ee[<F_hR0
-R14
+R15
 33
-Z219 !s110 1614031106
+R60
 !i10b 1
-Z220 !s108 1614031106.000000
-R17
-Z221 !s107 C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_behav.vhd|
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Abehav
-R9
 R10
 R11
-R97
+R12
+R131
 l25
 L24
 VcRhzJ9@k^[fJGUH=LM^?I1
 !s100 2ndiY`44Jf?;E2>TLX7H72
-R14
+R15
 33
-R219
+R60
 !i10b 1
-R220
-R17
-R221
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Enop_ctrl_tb
-Z222 w1614031137
-R9
+Z331 w1614031137
 R10
 R11
+R12
 R0
-Z223 8C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_tb_tb_rtl.vhd
-Z224 FC:/HDS/CAD/CAD_lib/hdl/nop_ctrl_tb_tb_rtl.vhd
+Z332 8C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_tb_tb_rtl.vhd
+Z333 FC:/HDS/CAD/CAD_lib/hdl/nop_ctrl_tb_tb_rtl.vhd
 l0
 L15
 VTcUXlAog3?KC88Z_FQJml1
 !s100 V@KL[H;D0aR;HeST>8D[Z0
-R14
+R15
 31
-Z225 !s110 1614031139
+Z334 !s110 1614031139
 !i10b 1
-Z226 !s108 1614031139.000000
-R65
-Z227 !s107 C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_tb_tb_rtl.vhd|
+Z335 !s108 1614031139.000000
+R69
+Z336 !s107 C:/HDS/CAD/CAD_lib/hdl/nop_ctrl_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 8 nop_ctrl 0 22 De_GnQ[cAmDS=B8aig2Xo1
-R9
 R10
 R11
+R12
 DEx4 work 11 nop_ctrl_tb 0 22 TcUXlAog3?KC88Z_FQJml1
 l51
 L23
 VONXi<e^ohf=@CHi^9[FQP2
 !s100 4iz2d?Q=bbh=VcjIfBAde3
-R14
+R15
 31
-R225
+R334
 !i10b 1
-R226
-R65
-R227
+R335
+R69
+R336
 !i113 0
-R67
-R20
+R71
+R21
 Enot_gate
-Z228 w1614031412
-R9
+Z337 w1614031412
 R10
 R11
+R12
 R0
-Z229 8C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd
-Z230 FC:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd
+Z338 8C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd
+Z339 FC:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd
 l0
 L14
 V0@=<S=gP]8`e[zhN]Z_dQ3
 !s100 hKcbG8Qh[PYUi>emK[Ji:0
-R14
+R15
 33
-Z231 !s110 1614033024
+Z340 !s110 1614033024
 !i10b 1
-Z232 !s108 1614033024.000000
-R17
-Z233 !s107 C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd|
+Z341 !s108 1614033024.000000
+R18
+Z342 !s107 C:/HDS/CAD/CAD_lib/hdl/not_gate_behave.vhd|
 !i113 0
-R19
 R20
+R21
 Abehave
-R9
 R10
 R11
+R12
 DEx4 work 8 not_gate 0 22 0@=<S=gP]8`e[zhN]Z_dQ3
 l23
 L22
 VeO:Kid;DOQnzbcFWFV=C=0
 !s100 QlTSbQXiKjb0zfTPBAW@02
-R14
+R15
 33
-R231
+R340
 !i10b 1
-R232
-R17
-R233
+R341
+R18
+R342
 !i113 0
-R19
 R20
+R21
 Enot_gate_tb
-Z234 w1614033022
-R9
+Z343 w1614033022
 R10
 R11
+R12
 R0
-Z235 8C:/HDS/CAD/CAD_lib/hdl/not_gate_tb_tb_rtl.vhd
-Z236 FC:/HDS/CAD/CAD_lib/hdl/not_gate_tb_tb_rtl.vhd
+Z344 8C:/HDS/CAD/CAD_lib/hdl/not_gate_tb_tb_rtl.vhd
+Z345 FC:/HDS/CAD/CAD_lib/hdl/not_gate_tb_tb_rtl.vhd
 l0
 L15
 VOE1mF1IXAboJMz2Yg]`[52
 !s100 b_[kOlW6h7jCTAJmO6aCW0
-R14
+R15
 31
-R231
+R340
 !i10b 1
-R232
-R189
-Z237 !s107 C:/HDS/CAD/CAD_lib/hdl/not_gate_tb_tb_rtl.vhd|
+R341
+R253
+Z346 !s107 C:/HDS/CAD/CAD_lib/hdl/not_gate_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 8 not_gate 0 22 0@=<S=gP]8`e[zhN]Z_dQ3
-R9
 R10
 R11
+R12
 DEx4 work 11 not_gate_tb 0 22 OE1mF1IXAboJMz2Yg]`[52
 l45
 L23
 VI]j7=^e^l>AASA[gUP`_M0
 !s100 [?dkQ<ORMJ^d@6iJlW[lL1
-R14
+R15
 31
-R231
+R340
 !i10b 1
-R232
-R189
-R237
+R341
+R253
+R346
 !i113 0
-R67
-R20
+R71
+R21
 Eor_gate
-Z238 w1614033672
-R9
+Z347 w1614033672
 R10
 R11
+R12
 R0
-Z239 8C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd
-Z240 FC:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd
+Z348 8C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd
+Z349 FC:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd
 l0
 L14
 V3F^ZVI2>2clW99jaG89m63
 !s100 8jYRPi1I1DT2ll7]bad[^0
-R14
+R15
 33
-Z241 !s110 1614033776
+R296
 !i10b 1
-Z242 !s108 1614033776.000000
-R17
-Z243 !s107 C:/HDS/CAD/CAD_lib/hdl/or_gate_behave.vhd|
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Abehave
-R9
 R10
 R11
-R100
+R12
+R134
 l24
 L23
 V<;MG^gf0=_Gm4;o8R8LS?0
 !s100 <EfK8zdA6hV_iWVPie=2o2
-R14
+R15
 33
-R241
+R296
 !i10b 1
-R242
-R17
-R243
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Epc_enable
-Z244 w1614388718
-R9
+Z350 w1614388718
 R10
 R11
+R12
 R0
-R229
-R230
+R338
+R339
 l0
 L14
 VjM<HzMWd^_8f3QPCjJZBh0
 !s100 l28[URXBS[DQ?JPORPVMi2
-R14
+R15
 33
-R94
+R60
 !i10b 1
-R95
-R17
-R96
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Abehave
-R9
 R10
 R11
-R99
+R12
+R133
 l24
 L23
 VKMLNg_:KjAfMbO0Z?^ATa1
 !s100 Yg;Pi5@eR6<99nmCje2Ba3
-R14
+R15
 33
-R94
+R60
 !i10b 1
-R95
-R17
-R96
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Eread_ctrl
-Z245 w1614029421
-R9
+Z351 w1614029421
 R10
 R11
+R12
 R0
-Z246 8C:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd
-Z247 FC:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd
+Z352 8C:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd
+Z353 FC:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd
 l0
 L14
 VIKETQ4e8:FofTdf04@_Li3
 !s100 >F4ai]ToF<`0CHoVKMf?P2
-R14
+R15
 33
-Z248 !s110 1614029534
+R60
 !i10b 1
-Z249 !s108 1614029534.000000
-R17
-Z250 !s107 C:/HDS/CAD/CAD_lib/hdl/read_ctrl_behav.vhd|
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Abehav
-R9
 R10
 R11
-R98
+R12
+R132
 l23
 L22
 Vkf:4jlD59f4RW?]5b27Ke0
 !s100 IMeO1zCc7Q2Z9WE>ENEC73
-R14
+R15
 33
-R248
+R60
 !i10b 1
-R249
-R17
-R250
+R61
+R18
+R62
 !i113 0
-R19
 R20
+R21
 Eread_ctrl_tb
-Z251 w1614029532
-R9
+Z354 w1614029532
 R10
 R11
+R12
 R0
-Z252 8C:/HDS/CAD/CAD_lib/hdl/read_ctrl_tb_tb_rtl.vhd
-Z253 FC:/HDS/CAD/CAD_lib/hdl/read_ctrl_tb_tb_rtl.vhd
+Z355 8C:/HDS/CAD/CAD_lib/hdl/read_ctrl_tb_tb_rtl.vhd
+Z356 FC:/HDS/CAD/CAD_lib/hdl/read_ctrl_tb_tb_rtl.vhd
 l0
 L15
 VeC95N<z7agBicXFXa>e[31
 !s100 [^jH_B5A7KW8BZ[C5kJd40
-R14
+R15
 31
-Z254 !s110 1614029535
+Z357 !s110 1614029535
 !i10b 1
-Z255 !s108 1614029535.000000
-R189
-Z256 !s107 C:/HDS/CAD/CAD_lib/hdl/read_ctrl_tb_tb_rtl.vhd|
+Z358 !s108 1614029535.000000
+R253
+Z359 !s107 C:/HDS/CAD/CAD_lib/hdl/read_ctrl_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 9 read_ctrl 0 22 IKETQ4e8:FofTdf04@_Li3
-R9
 R10
 R11
+R12
 DEx4 work 12 read_ctrl_tb 0 22 eC95N<z7agBicXFXa>e[31
 l47
 L23
 V=T@NfNVZ=@TlaJ31M`l871
 !s100 ABc]561YL8;YcmHlnA17k0
-R14
+R15
 31
-R254
+R357
 !i10b 1
-R255
-R189
-R256
+R358
+R253
+R359
 !i113 0
-R67
-R20
-Ereg
-Z257 w1617234183
 R71
-R10
+R21
+Ereg
+Z360 w1619480446
+R79
 R11
+R12
 R0
-Z258 8C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd
-Z259 FC:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd
+Z361 8C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd
+Z362 FC:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd
 l0
 L14
 VbzLPT9>26_2O>MY5X2hgV2
 !s100 j2DO4VL1D6C0eQ=LjKTT?0
-R14
+R15
 33
-Z260 !s110 1617509025
+Z363 !s110 1619480449
 !i10b 1
-Z261 !s108 1617509025.000000
-R17
-Z262 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/func_reg_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd|
+Z364 !s108 1619480449.000000
+R18
+Z365 !s107 C:/HDS/CAD/CAD_lib/hdl/lab8_mem_stage_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/exe_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/lab6_decode_pipeline_struc.vhd|C:/HDS/CAD/CAD_lib/hdl/reg_mixed.vhd|
 !i113 0
-R19
 R20
+R21
 Amixed
-R71
-R10
+R79
 R11
-R72
-l26
+R12
+R109
+l27
 L25
-VinlDclz1V7=8Ez[HPLh3G1
-!s100 SP@9=C<BM>`625_fAKf1B3
-R14
+Vk<^8H[1>_L@z0mOLKHG1P1
+!s100 B13[=4AnY67HMHUknKoU[1
+R15
 33
-R260
+R363
 !i10b 1
-R261
-R17
-R262
+R364
+R18
+R365
 !i113 0
-R19
 R20
+R21
 Ereg_tb
-Z263 w1614195391
-R71
-R10
+Z366 w1614195391
+R79
 R11
+R12
 R0
-Z264 8C:/HDS/CAD/CAD_lib/hdl/reg_tb_tb_rtl.vhd
-Z265 FC:/HDS/CAD/CAD_lib/hdl/reg_tb_tb_rtl.vhd
+Z367 8C:/HDS/CAD/CAD_lib/hdl/reg_tb_tb_rtl.vhd
+Z368 FC:/HDS/CAD/CAD_lib/hdl/reg_tb_tb_rtl.vhd
 l0
 L15
 VeMzIdGLiLkjGLQ__lZ?E?2
 !s100 dDFF=P;B1OFHzLnjJl<Fn0
-R14
+R15
 31
-Z266 !s110 1614195394
+Z369 !s110 1614195394
 !i10b 1
-Z267 !s108 1614195394.000000
-R65
-Z268 !s107 C:/HDS/CAD/CAD_lib/hdl/reg_tb_tb_rtl.vhd|
+Z370 !s108 1614195394.000000
+R69
+Z371 !s107 C:/HDS/CAD/CAD_lib/hdl/reg_tb_tb_rtl.vhd|
 !i113 0
-R67
-R20
+R71
+R21
 Artl
 DEx7 cad_lib 3 reg 0 22 bzLPT9>26_2O>MY5X2hgV2
-R71
-R10
+R79
 R11
+R12
 DEx4 work 6 reg_tb 0 22 eMzIdGLiLkjGLQ__lZ?E?2
 l57
 L26
 Vf6c=4hdgPbSOLZ6H0GLG]2
 !s100 AJLfn[[oV<YzkjQWa=:9F1
-R14
+R15
 31
-R266
+R369
 !i10b 1
-R267
-R65
-R268
+R370
+R69
+R371
 !i113 0
-R67
-R20
+R71
+R21
 Erst_syn
-Z269 w1614064592
-R9
+Z372 w1614064592
 R10
 R11
+R12
 R0
-Z270 8C:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd
-Z271 FC:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd
+Z373 8C:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd
+Z374 FC:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd
 l0
 L14
 Vc:I4j<^^4kd5iTK=z@c_V0
 !s100 4^oh@Zf<i`EQNWiDB6iJP3
-R14
+R15
 33
-Z272 !s110 1614064833
+Z375 !s110 1614064833
 !i10b 1
-Z273 !s108 1614064832.000000
-R17
-Z274 !s107 C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd|C:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd|
+Z376 !s108 1614064832.000000
+R18
+Z377 !s107 C:/HDS/CAD/CAD_lib/hdl/lab2_counter_mixed.vhd|C:/HDS/CAD/CAD_lib/hdl/rst_syn_behav.vhd|
 !i113 0
-R19
 R20
+R21
 Abehav
-R9
 R10
 R11
+R12
 DEx4 work 7 rst_syn 0 22 c:I4j<^^4kd5iTK=z@c_V0
 l23
 L22
 VoIVV;@=_lgYPLFo22@0>03
 !s100 ngcB66W^m3j0I@;<GXO6o1
-R14
+R15
 33
-R272
+R375
 !i10b 1
-R273
-R17
-R274
+R376
+R18
+R377
 !i113 0
-R19
 R20
+R21
 Prv32i
-R10
 R11
+R12
 w1616971495
 R0
 8C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd
@@ -2090,21 +2892,21 @@ l0
 L15
 VPIFGGlOb`Og][aJGo54540
 !s100 PJmMeW@VQVigeIGK]IiUA2
-R14
+R15
 33
 b1
-Z275 !s110 1616972241
+Z378 !s110 1616972241
 !i10b 1
-Z276 !s108 1616972241.000000
-R17
-Z277 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd|C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd|
+Z379 !s108 1616972241.000000
+R18
+Z380 !s107 C:/HDS/CAD/CAD_lib/hdl/exe_proc_behav.vhd|C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd|C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg.vhd|
 !i113 0
-R19
 R20
+R21
 Bbody
-R8
-R10
+R9
 R11
+R12
 w1615156278
 8C:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd
 FC:/HDS/CAD/CAD_lib/hdl/RV32I_pkg_body.vhd
@@ -2112,13 +2914,13 @@ l0
 L10
 V5eX7=Y0Gd2C7VblzHSdVh2
 !s100 ;4WEJkP0ZP4;za_84mThj0
-R14
+R15
 33
-R275
+R378
 !i10b 1
-R276
-R17
-R277
+R379
+R18
+R380
 !i113 0
-R19
 R20
+R21

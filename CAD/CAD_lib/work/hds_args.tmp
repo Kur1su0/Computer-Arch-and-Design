@@ -1,1 +1,1 @@
- -L CAD_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays CAD_lib.lab8_mem_stage_struc_tb(rtl)
+ -L CAD_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays CAD_lib.lab10_combine(struc)

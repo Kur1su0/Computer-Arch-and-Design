@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom rtl
+DEFAULT_FILE atom lab8_arbiter_tb_tb_rtl.vhd

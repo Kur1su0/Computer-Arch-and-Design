@@ -82,3 +82,8 @@
 source C:/HDS/CAD/CAD_lib/ps/lab8_mem_stage_struc_struc/hds/precision.tcl
 # COMMAND: exit -force
 # Warning: [9526]: Discarded unsaved work in implementation lab8_mem_stage_struc_struc_impl_5.
+# Info: [9568]: Appending project transcript to file C:/HDS/CAD/CAD_lib/ps/lab8_mem_stage_struc_struc/lab8_mem_stage_struc_struc_impl_5/precision.log
+# Info: [9568]: Appending suppressed messages transcript to file C:/HDS/CAD/CAD_lib/ps/lab8_mem_stage_struc_struc/lab8_mem_stage_struc_struc_impl_5/precision.log.suppressed
+# Info: [9552]: Activated implementation lab8_mem_stage_struc_struc_impl_5 in project C:/HDS/CAD/CAD_lib/ps/lab8_mem_stage_struc_struc/lab8_mem_stage_struc_struc.psp.
+# Info: [9531]: Created directory: C:/HDS/CAD/CAD_lib/ps/lab8_mem_stage_struc_struc/lab8_mem_stage_struc_struc_impl_6.
+# Info: [9557]: Created implementation lab8_mem_stage_struc_struc_impl_6 in project C:/HDS/CAD/CAD_lib/ps/lab8_mem_stage_struc_struc/lab8_mem_stage_struc_struc.psp.

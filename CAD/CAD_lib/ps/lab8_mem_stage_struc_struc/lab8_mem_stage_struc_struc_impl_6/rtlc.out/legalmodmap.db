@@ -1,0 +1,5 @@
+reg-32 reg_32
+lab8_mem_stage_proc lab8_mem_stage_proc
+lab8_mem_stage_struc lab8_mem_stage_struc
+reg-5 reg_5
+#LEGALIZEDMOD_COUNTER 0

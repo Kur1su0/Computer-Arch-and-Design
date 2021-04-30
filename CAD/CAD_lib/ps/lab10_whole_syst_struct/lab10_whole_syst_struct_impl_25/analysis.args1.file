@@ -1,0 +1,11 @@
+8:-out_dir
+87:C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_25//rtlc.out
+10:-pipe_flow
+4:-vhf
+98:C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_25//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+87:C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct/lab10_whole_syst_struct_impl_25//.jaguarc
+7:-sv2009
+76:+incdir+C:/HDS/CAD/CAD_lib/hdl+C:/HDS/CAD/CAD_lib/ps/lab10_whole_syst_struct
+17:+define+synthesis

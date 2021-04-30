@@ -1,0 +1,453 @@
+(edif lab10_whole_syst 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2021 04 20 21 05 18)
+   (program "Precision RTL Synthesis" (version "64-bit 2018.1.0.19"))
+   (author "Mentor Graphics Corporation")))
+ (external cyclonev 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell GND (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Y (direction OUTPUT)))))
+  (cell VCC (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Y (direction OUTPUT)))))
+  (cell cyclonev_io_obuf (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port i (direction INPUT))
+     (port oe (direction INPUT))
+     (port dynamicterminationcontrol (direction INPUT))
+     (port (array (rename seriesterminationcontrol "seriesterminationcontrol(15:0)") 16 )(direction INPUT))
+     (port (array (rename parallelterminationcontrol "parallelterminationcontrol(15:0)") 16 )(direction INPUT))
+     (port devoe (direction INPUT))
+     (port o (direction OUTPUT))
+     (port obar (direction OUTPUT))))))
+ (library cad_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell lab10_whole_syst (cellType GENERIC)
+   (view struct  (viewType NETLIST)
+    (interface 
+     (port mdelay (direction INPUT))
+     (port (array (rename DataOut "DataOut(31:0)") 32 )(direction INPUT))
+     (port clk (direction INPUT)
+      (property INFF (string "FALSE")))
+     (port (array (rename MemSyst_Dout "MemSyst_Dout(31:0)") 32 )(direction OUTPUT))
+     (port (array (rename MemSyst_Addr "MemSyst_Addr(31:0)") 32 )(direction OUTPUT))
+     (port MemSyst_read (direction OUTPUT))
+     (port MemSyst_we (direction OUTPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance wire_Jaddr_31_ (viewRef NETLIST  (cellRef GND (libraryRef cyclonev ))))
+     (instance MemSyst_read (viewRef NETLIST  (cellRef VCC (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_31_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_30_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_29_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_28_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_27_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_26_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_25_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_24_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_23_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_22_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_21_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_20_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_19_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_18_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_17_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_16_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_15_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_14_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_13_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_12_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_11_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_10_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_9_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_8_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_7_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_6_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_5_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_4_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_3_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_2_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_1_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Dout_obuf_0_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_31_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_30_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_29_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_28_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_27_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_26_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_25_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_24_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_23_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_22_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_21_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_20_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_19_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_18_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_17_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_16_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_15_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_14_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_13_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_12_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_11_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_10_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_9_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_8_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_7_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_6_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_5_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_4_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_3_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_2_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_1_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_Addr_obuf_0_ (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_read_obuf (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (instance MemSyst_we_obuf (viewRef NETLIST  (cellRef cyclonev_io_obuf (libraryRef cyclonev ))))
+     (net MemSyst_Dout_31_ 
+      (joined 
+       (portRef (member MemSyst_Dout 0))
+       (portRef o (instanceRef MemSyst_Dout_obuf_31_ ))))
+     (net MemSyst_Dout_30_ 
+      (joined 
+       (portRef (member MemSyst_Dout 1))
+       (portRef o (instanceRef MemSyst_Dout_obuf_30_ ))))
+     (net MemSyst_Dout_29_ 
+      (joined 
+       (portRef (member MemSyst_Dout 2))
+       (portRef o (instanceRef MemSyst_Dout_obuf_29_ ))))
+     (net MemSyst_Dout_28_ 
+      (joined 
+       (portRef (member MemSyst_Dout 3))
+       (portRef o (instanceRef MemSyst_Dout_obuf_28_ ))))
+     (net MemSyst_Dout_27_ 
+      (joined 
+       (portRef (member MemSyst_Dout 4))
+       (portRef o (instanceRef MemSyst_Dout_obuf_27_ ))))
+     (net MemSyst_Dout_26_ 
+      (joined 
+       (portRef (member MemSyst_Dout 5))
+       (portRef o (instanceRef MemSyst_Dout_obuf_26_ ))))
+     (net MemSyst_Dout_25_ 
+      (joined 
+       (portRef (member MemSyst_Dout 6))
+       (portRef o (instanceRef MemSyst_Dout_obuf_25_ ))))
+     (net MemSyst_Dout_24_ 
+      (joined 
+       (portRef (member MemSyst_Dout 7))
+       (portRef o (instanceRef MemSyst_Dout_obuf_24_ ))))
+     (net MemSyst_Dout_23_ 
+      (joined 
+       (portRef (member MemSyst_Dout 8))
+       (portRef o (instanceRef MemSyst_Dout_obuf_23_ ))))
+     (net MemSyst_Dout_22_ 
+      (joined 
+       (portRef (member MemSyst_Dout 9))
+       (portRef o (instanceRef MemSyst_Dout_obuf_22_ ))))
+     (net MemSyst_Dout_21_ 
+      (joined 
+       (portRef (member MemSyst_Dout 10))
+       (portRef o (instanceRef MemSyst_Dout_obuf_21_ ))))
+     (net MemSyst_Dout_20_ 
+      (joined 
+       (portRef (member MemSyst_Dout 11))
+       (portRef o (instanceRef MemSyst_Dout_obuf_20_ ))))
+     (net MemSyst_Dout_19_ 
+      (joined 
+       (portRef (member MemSyst_Dout 12))
+       (portRef o (instanceRef MemSyst_Dout_obuf_19_ ))))
+     (net MemSyst_Dout_18_ 
+      (joined 
+       (portRef (member MemSyst_Dout 13))
+       (portRef o (instanceRef MemSyst_Dout_obuf_18_ ))))
+     (net MemSyst_Dout_17_ 
+      (joined 
+       (portRef (member MemSyst_Dout 14))
+       (portRef o (instanceRef MemSyst_Dout_obuf_17_ ))))
+     (net MemSyst_Dout_16_ 
+      (joined 
+       (portRef (member MemSyst_Dout 15))
+       (portRef o (instanceRef MemSyst_Dout_obuf_16_ ))))
+     (net MemSyst_Dout_15_ 
+      (joined 
+       (portRef (member MemSyst_Dout 16))
+       (portRef o (instanceRef MemSyst_Dout_obuf_15_ ))))
+     (net MemSyst_Dout_14_ 
+      (joined 
+       (portRef (member MemSyst_Dout 17))
+       (portRef o (instanceRef MemSyst_Dout_obuf_14_ ))))
+     (net MemSyst_Dout_13_ 
+      (joined 
+       (portRef (member MemSyst_Dout 18))
+       (portRef o (instanceRef MemSyst_Dout_obuf_13_ ))))
+     (net MemSyst_Dout_12_ 
+      (joined 
+       (portRef (member MemSyst_Dout 19))
+       (portRef o (instanceRef MemSyst_Dout_obuf_12_ ))))
+     (net MemSyst_Dout_11_ 
+      (joined 
+       (portRef (member MemSyst_Dout 20))
+       (portRef o (instanceRef MemSyst_Dout_obuf_11_ ))))
+     (net MemSyst_Dout_10_ 
+      (joined 
+       (portRef (member MemSyst_Dout 21))
+       (portRef o (instanceRef MemSyst_Dout_obuf_10_ ))))
+     (net MemSyst_Dout_9_ 
+      (joined 
+       (portRef (member MemSyst_Dout 22))
+       (portRef o (instanceRef MemSyst_Dout_obuf_9_ ))))
+     (net MemSyst_Dout_8_ 
+      (joined 
+       (portRef (member MemSyst_Dout 23))
+       (portRef o (instanceRef MemSyst_Dout_obuf_8_ ))))
+     (net MemSyst_Dout_7_ 
+      (joined 
+       (portRef (member MemSyst_Dout 24))
+       (portRef o (instanceRef MemSyst_Dout_obuf_7_ ))))
+     (net MemSyst_Dout_6_ 
+      (joined 
+       (portRef (member MemSyst_Dout 25))
+       (portRef o (instanceRef MemSyst_Dout_obuf_6_ ))))
+     (net MemSyst_Dout_5_ 
+      (joined 
+       (portRef (member MemSyst_Dout 26))
+       (portRef o (instanceRef MemSyst_Dout_obuf_5_ ))))
+     (net MemSyst_Dout_4_ 
+      (joined 
+       (portRef (member MemSyst_Dout 27))
+       (portRef o (instanceRef MemSyst_Dout_obuf_4_ ))))
+     (net MemSyst_Dout_3_ 
+      (joined 
+       (portRef (member MemSyst_Dout 28))
+       (portRef o (instanceRef MemSyst_Dout_obuf_3_ ))))
+     (net MemSyst_Dout_2_ 
+      (joined 
+       (portRef (member MemSyst_Dout 29))
+       (portRef o (instanceRef MemSyst_Dout_obuf_2_ ))))
+     (net MemSyst_Dout_1_ 
+      (joined 
+       (portRef (member MemSyst_Dout 30))
+       (portRef o (instanceRef MemSyst_Dout_obuf_1_ ))))
+     (net MemSyst_Dout_0_ 
+      (joined 
+       (portRef (member MemSyst_Dout 31))
+       (portRef o (instanceRef MemSyst_Dout_obuf_0_ ))))
+     (net MemSyst_Addr_31_ 
+      (joined 
+       (portRef (member MemSyst_Addr 0))
+       (portRef o (instanceRef MemSyst_Addr_obuf_31_ ))))
+     (net MemSyst_Addr_30_ 
+      (joined 
+       (portRef (member MemSyst_Addr 1))
+       (portRef o (instanceRef MemSyst_Addr_obuf_30_ ))))
+     (net MemSyst_Addr_29_ 
+      (joined 
+       (portRef (member MemSyst_Addr 2))
+       (portRef o (instanceRef MemSyst_Addr_obuf_29_ ))))
+     (net MemSyst_Addr_28_ 
+      (joined 
+       (portRef (member MemSyst_Addr 3))
+       (portRef o (instanceRef MemSyst_Addr_obuf_28_ ))))
+     (net MemSyst_Addr_27_ 
+      (joined 
+       (portRef (member MemSyst_Addr 4))
+       (portRef o (instanceRef MemSyst_Addr_obuf_27_ ))))
+     (net MemSyst_Addr_26_ 
+      (joined 
+       (portRef (member MemSyst_Addr 5))
+       (portRef o (instanceRef MemSyst_Addr_obuf_26_ ))))
+     (net MemSyst_Addr_25_ 
+      (joined 
+       (portRef (member MemSyst_Addr 6))
+       (portRef o (instanceRef MemSyst_Addr_obuf_25_ ))))
+     (net MemSyst_Addr_24_ 
+      (joined 
+       (portRef (member MemSyst_Addr 7))
+       (portRef o (instanceRef MemSyst_Addr_obuf_24_ ))))
+     (net MemSyst_Addr_23_ 
+      (joined 
+       (portRef (member MemSyst_Addr 8))
+       (portRef o (instanceRef MemSyst_Addr_obuf_23_ ))))
+     (net MemSyst_Addr_22_ 
+      (joined 
+       (portRef (member MemSyst_Addr 9))
+       (portRef o (instanceRef MemSyst_Addr_obuf_22_ ))))
+     (net MemSyst_Addr_21_ 
+      (joined 
+       (portRef (member MemSyst_Addr 10))
+       (portRef o (instanceRef MemSyst_Addr_obuf_21_ ))))
+     (net MemSyst_Addr_20_ 
+      (joined 
+       (portRef (member MemSyst_Addr 11))
+       (portRef o (instanceRef MemSyst_Addr_obuf_20_ ))))
+     (net MemSyst_Addr_19_ 
+      (joined 
+       (portRef (member MemSyst_Addr 12))
+       (portRef o (instanceRef MemSyst_Addr_obuf_19_ ))))
+     (net MemSyst_Addr_18_ 
+      (joined 
+       (portRef (member MemSyst_Addr 13))
+       (portRef o (instanceRef MemSyst_Addr_obuf_18_ ))))
+     (net MemSyst_Addr_17_ 
+      (joined 
+       (portRef (member MemSyst_Addr 14))
+       (portRef o (instanceRef MemSyst_Addr_obuf_17_ ))))
+     (net MemSyst_Addr_16_ 
+      (joined 
+       (portRef (member MemSyst_Addr 15))
+       (portRef o (instanceRef MemSyst_Addr_obuf_16_ ))))
+     (net MemSyst_Addr_15_ 
+      (joined 
+       (portRef (member MemSyst_Addr 16))
+       (portRef o (instanceRef MemSyst_Addr_obuf_15_ ))))
+     (net MemSyst_Addr_14_ 
+      (joined 
+       (portRef (member MemSyst_Addr 17))
+       (portRef o (instanceRef MemSyst_Addr_obuf_14_ ))))
+     (net MemSyst_Addr_13_ 
+      (joined 
+       (portRef (member MemSyst_Addr 18))
+       (portRef o (instanceRef MemSyst_Addr_obuf_13_ ))))
+     (net MemSyst_Addr_12_ 
+      (joined 
+       (portRef (member MemSyst_Addr 19))
+       (portRef o (instanceRef MemSyst_Addr_obuf_12_ ))))
+     (net MemSyst_Addr_11_ 
+      (joined 
+       (portRef (member MemSyst_Addr 20))
+       (portRef o (instanceRef MemSyst_Addr_obuf_11_ ))))
+     (net MemSyst_Addr_10_ 
+      (joined 
+       (portRef (member MemSyst_Addr 21))
+       (portRef o (instanceRef MemSyst_Addr_obuf_10_ ))))
+     (net MemSyst_Addr_9_ 
+      (joined 
+       (portRef (member MemSyst_Addr 22))
+       (portRef o (instanceRef MemSyst_Addr_obuf_9_ ))))
+     (net MemSyst_Addr_8_ 
+      (joined 
+       (portRef (member MemSyst_Addr 23))
+       (portRef o (instanceRef MemSyst_Addr_obuf_8_ ))))
+     (net MemSyst_Addr_7_ 
+      (joined 
+       (portRef (member MemSyst_Addr 24))
+       (portRef o (instanceRef MemSyst_Addr_obuf_7_ ))))
+     (net MemSyst_Addr_6_ 
+      (joined 
+       (portRef (member MemSyst_Addr 25))
+       (portRef o (instanceRef MemSyst_Addr_obuf_6_ ))))
+     (net MemSyst_Addr_5_ 
+      (joined 
+       (portRef (member MemSyst_Addr 26))
+       (portRef o (instanceRef MemSyst_Addr_obuf_5_ ))))
+     (net MemSyst_Addr_4_ 
+      (joined 
+       (portRef (member MemSyst_Addr 27))
+       (portRef o (instanceRef MemSyst_Addr_obuf_4_ ))))
+     (net MemSyst_Addr_3_ 
+      (joined 
+       (portRef (member MemSyst_Addr 28))
+       (portRef o (instanceRef MemSyst_Addr_obuf_3_ ))))
+     (net MemSyst_Addr_2_ 
+      (joined 
+       (portRef (member MemSyst_Addr 29))
+       (portRef o (instanceRef MemSyst_Addr_obuf_2_ ))))
+     (net MemSyst_Addr_1_ 
+      (joined 
+       (portRef (member MemSyst_Addr 30))
+       (portRef o (instanceRef MemSyst_Addr_obuf_1_ ))))
+     (net MemSyst_Addr_0_ 
+      (joined 
+       (portRef (member MemSyst_Addr 31))
+       (portRef o (instanceRef MemSyst_Addr_obuf_0_ ))))
+     (net MemSyst_read 
+      (joined 
+       (portRef MemSyst_read )
+       (portRef o (instanceRef MemSyst_read_obuf ))))
+     (net MemSyst_we 
+      (joined 
+       (portRef MemSyst_we )
+       (portRef o (instanceRef MemSyst_we_obuf ))))
+     (net wire_Jaddr_31_ 
+      (joined 
+       (portRef Y (instanceRef wire_Jaddr_31_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_31_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_30_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_29_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_28_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_27_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_26_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_25_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_24_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_23_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_22_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_21_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_20_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_19_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_18_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_17_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_16_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_15_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_14_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_13_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_12_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_11_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_10_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_9_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_8_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_7_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_6_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_5_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_4_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_3_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_2_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_1_ ))
+       (portRef i (instanceRef MemSyst_Dout_obuf_0_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_31_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_30_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_29_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_28_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_27_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_26_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_25_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_24_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_23_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_22_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_21_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_20_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_19_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_18_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_17_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_16_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_15_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_14_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_13_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_12_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_11_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_10_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_9_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_8_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_7_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_6_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_5_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_4_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_3_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_2_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_1_ ))
+       (portRef i (instanceRef MemSyst_Addr_obuf_0_ ))
+       (portRef i (instanceRef MemSyst_we_obuf )))
+      (property use_dffenable (string "0")))
+     (net MemSyst_read_dup_0 
+      (joined 
+       (portRef Y (instanceRef MemSyst_read ))
+       (portRef i (instanceRef MemSyst_read_obuf ))))))))
+ (design lab10_whole_syst (cellRef lab10_whole_syst (libraryRef cad_lib ))))

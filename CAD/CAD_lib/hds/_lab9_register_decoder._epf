@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behav
+DEFAULT_FILE atom lab9_register_decoder_behav.vhd

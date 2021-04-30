@@ -58,35 +58,39 @@ BEGIN
 			
 			WHEN BEQ =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				if L = R then Data<= Extra; Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				if L = R then Jaddr<= Extra; Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 				
 			WHEN BNE =>
 				overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				if L /= R then Data<= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				-- IF L(0)='X' or L(0)='U' or R(0)='X' or R(0)='U' then Jaddr<= Extra;
+				-- else
+					if L /= R then Jaddr<= Extra;  Jump<= '1';
+					ELSE Jaddr<=ZEROS_32; end if;
+				
+				-- end if;
 			WHEN BLT =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF SIGNED(L) < SIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF SIGNED(L) < SIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 			WHEN BLTU =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF UNSIGNED(L) < UNSIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF UNSIGNED(L) < UNSIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 			WHEN BGE =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF SIGNED(L) >= SIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF SIGNED(L) >= SIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 			WHEN BGEU =>
 			overflow<='0';
-				Address	<= ZEROS_32; Jaddr<= ZEROS_32; Jump<= '0';
-				IF UNSIGNED(L) >= UNSIGNED(R) then Data <= Extra;  Jump<= '1';
-				ELSE Data<=ZEROS_32; end if;
+				Address	<= ZEROS_32; Data<= ZEROS_32; Jump<= '0';
+				IF UNSIGNED(L) >= UNSIGNED(R) then Jaddr <= Extra;  Jump<= '1';
+				ELSE Jaddr<=ZEROS_32; end if;
 				
 				
 			

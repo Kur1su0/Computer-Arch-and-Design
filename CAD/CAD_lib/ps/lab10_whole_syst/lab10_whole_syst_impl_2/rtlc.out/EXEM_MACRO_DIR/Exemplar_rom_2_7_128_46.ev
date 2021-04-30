@@ -1,0 +1,13 @@
+module rom_2_7_128_46(address, q );
+
+input [6 : 0] address;
+wire [6 : 0] address;
+output [1 : 0] q;
+wire [1 : 0] q;
+
+mux_128u_7u mux0 (.a({ 95'b11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111, 1'b0, 31'b1111111111111111111111111111111, 1'b0 }), .b({ address[6], address[5], address[4], address[3], address[2], address[1], address[0] }), .d(q[0]));
+
+mux_128u_7u mux1 (.a({ 95'b0, 1'b1, 31'b0, 1'b1 }), .b({ address[6], address[5], address[4], address[3], address[2], address[1], address[0] }), .d(q[1]));
+
+endmodule
+

@@ -1,0 +1,8 @@
+E/LD:  Call stack:
+E/LD:   0x00000000400b1960
+E/LD:   0x00000000400b7174
+E/LD:   0x00000000400b0494
+E/LD:   0xfffffffffffffffc
+D/TC:? 0 user_ta_enter:167 tee_user_ta_enter: TA panicked with code 0xdeadbeef
+D/TC:? 0 destroy_ta_ctx_from_session:313 Remove references to context (0xe17c780)
+D/TC:? 0 destroy_context:298 Destroy TA ctx (0xe17c780)

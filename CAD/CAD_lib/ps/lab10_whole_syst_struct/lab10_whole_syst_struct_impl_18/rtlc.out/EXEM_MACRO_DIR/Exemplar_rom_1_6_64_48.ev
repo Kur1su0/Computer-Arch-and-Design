@@ -1,0 +1,11 @@
+module rom_1_6_64_48(address, q );
+
+input [5 : 0] address;
+wire [5 : 0] address;
+output q;
+wire q;
+
+mux_64u_6u mux0 (.a({ 25'b1111111111111111111111111, 1'b0, 20'b11111111111111111111, 3'b0, 5'b11111, 6'b0, 4'b1111 }), .b({ address[5], address[4], address[3], address[2], address[1], address[0] }), .d(q));
+
+endmodule
+

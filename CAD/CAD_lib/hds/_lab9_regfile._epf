@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom struc
+DEFAULT_FILE atom lab9_regFile_struc.vhd

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom struc
+DEFAULT_FILE atom lab10_combine_struc.vhd

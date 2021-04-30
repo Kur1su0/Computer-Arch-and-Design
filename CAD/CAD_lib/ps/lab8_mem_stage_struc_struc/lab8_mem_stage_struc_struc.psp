@@ -17,14 +17,14 @@
 # received written authorization from the owner.
 #
 #
-# Date : Sun Apr 04 02:21:03 2021
+# Date : Wed Apr 07 14:06:34 2021
 # Designer : W
 #
 #<PROJFILE format='0'>
 error "Error: This file can only be used with Precision version 2003c or later." "load_project failed" E_NEW_PROJECT
 #</PROJFILE>
 #<OBJ name='project' version='0'>
-#  <PROP key='defimpl' type='ESVT_STRING' value='lab8_mem_stage_struc_struc_impl_5' />
+#  <PROP key='defimpl' type='ESVT_STRING' value='lab8_mem_stage_struc_struc_impl_6' />
 #  <PROP key='usetempdir' type='ESVT_BOOL' value='false' />
 #  <OBJ name='impl' version='0'>
 #    <PROP key='name' type='ESVT_STRING' value='lab8_mem_stage_struc_struc_impl_1' />
@@ -52,6 +52,12 @@ error "Error: This file can only be used with Precision version 2003c or later."
 #  </OBJ>
 #  <OBJ name='impl' version='0'>
 #    <PROP key='name' type='ESVT_STRING' value='lab8_mem_stage_struc_struc_impl_5' />
+#    <PROP key='comment' type='ESVT_STRING' value='' />
+#    <PROP key='basename' type='ESVT_STRING' value='' />
+#    <PROP key='impltype' type='ESVT_STRING' value='default' />
+#  </OBJ>
+#  <OBJ name='impl' version='0'>
+#    <PROP key='name' type='ESVT_STRING' value='lab8_mem_stage_struc_struc_impl_6' />
 #    <PROP key='comment' type='ESVT_STRING' value='' />
 #    <PROP key='basename' type='ESVT_STRING' value='' />
 #    <PROP key='impltype' type='ESVT_STRING' value='default' />
